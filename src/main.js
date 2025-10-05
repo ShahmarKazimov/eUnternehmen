@@ -70,8 +70,175 @@ function playVideo() {
     const iframe = document.querySelector('.hero__video-iframe');
 
     if (thumbnail && iframe) {
+        // Add autoplay parameter to src when playing
+        const currentSrc = iframe.src;
+        if (!currentSrc.includes('autoplay=1')) {
+            iframe.src = currentSrc + '&autoplay=1';
+        }
+
         thumbnail.style.display = 'none';
         iframe.classList.remove('hidden');
         iframe.style.display = 'block';
     }
 }
+
+// Add event listener for video play
+document.addEventListener('DOMContentLoaded', function () {
+    const videoThumbnail = document.querySelector('.hero__video-thumbnail');
+    const playButton = document.querySelector('.hero__video-play-button');
+
+    if (videoThumbnail) {
+        videoThumbnail.addEventListener('click', playVideo);
+    }
+
+    if (playButton) {
+        playButton.addEventListener('click', playVideo);
+    }
+});
+
+// Mobile Pricing Slider
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.pricing__slide');
+    const dots = document.querySelectorAll('.pricing__dot');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.classList.remove('pricing__slide--active');
+        });
+
+        // Show current slide
+        slides[index].classList.add('pricing__slide--active');
+
+        // Update dots
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('pricing__dot--active', i === index);
+        });
+    }
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Touch/swipe support
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    const sliderWrapper = document.querySelector('.pricing__slider-wrapper');
+
+    if (sliderWrapper) {
+        sliderWrapper.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
+
+        sliderWrapper.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            currentX = e.touches[0].clientX;
+        });
+
+        sliderWrapper.addEventListener('touchend', () => {
+            if (!isDragging) return;
+
+            const diffX = startX - currentX;
+            const threshold = 50; // Minimum swipe distance
+
+            if (Math.abs(diffX) > threshold) {
+                if (diffX > 0 && currentSlide < slides.length - 1) {
+                    // Swipe left - next slide
+                    currentSlide++;
+                } else if (diffX < 0 && currentSlide > 0) {
+                    // Swipe right - previous slide
+                    currentSlide--;
+                }
+                showSlide(currentSlide);
+            }
+
+            isDragging = false;
+        });
+    }
+
+    // Initialize
+    showSlide(0);
+});
+
+// Additional Services Mobile Slider
+document.addEventListener('DOMContentLoaded', () => {
+    const additionalSlides = document.querySelectorAll('.pricing__additional-slider .pricing__service');
+    const additionalDots = document.querySelectorAll('.pricing__additional-dot');
+    const additionalWrapper = document.querySelector('.pricing__additional-wrapper');
+
+    if (!additionalSlides.length || !additionalDots.length || !additionalWrapper) return;
+
+    let currentAdditionalSlide = 0;
+
+    function showAdditionalSlide(index) {
+        // Update active dot
+        additionalDots.forEach((dot, i) => {
+            dot.classList.toggle('pricing__additional-dot--active', i === index);
+        });
+
+        // Scroll to the slide
+        const slideWidth = additionalSlides[0].offsetWidth + 16; // width + gap
+        additionalWrapper.scrollTo({
+            left: slideWidth * index,
+            behavior: 'smooth'
+        });
+
+        currentAdditionalSlide = index;
+    }
+
+    // Dot navigation for additional services
+    additionalDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentAdditionalSlide = index;
+            showAdditionalSlide(currentAdditionalSlide);
+        });
+    });
+
+    // Touch/swipe support for additional services
+    let additionalStartX = 0;
+    let additionalCurrentX = 0;
+    let additionalIsDragging = false;
+
+    if (additionalWrapper) {
+        additionalWrapper.addEventListener('touchstart', (e) => {
+            additionalStartX = e.touches[0].clientX;
+            additionalIsDragging = true;
+        });
+
+        additionalWrapper.addEventListener('touchmove', (e) => {
+            if (!additionalIsDragging) return;
+            additionalCurrentX = e.touches[0].clientX;
+        });
+
+        additionalWrapper.addEventListener('touchend', () => {
+            if (!additionalIsDragging) return;
+
+            const diffX = additionalStartX - additionalCurrentX;
+            const threshold = 50; // Minimum swipe distance
+
+            if (Math.abs(diffX) > threshold) {
+                if (diffX > 0 && currentAdditionalSlide < additionalSlides.length - 1) {
+                    // Swipe left - next slide
+                    currentAdditionalSlide++;
+                } else if (diffX < 0 && currentAdditionalSlide > 0) {
+                    // Swipe right - previous slide
+                    currentAdditionalSlide--;
+                }
+                showAdditionalSlide(currentAdditionalSlide);
+            }
+
+            additionalIsDragging = false;
+        });
+    }
+
+    // Initialize additional services slider
+    showAdditionalSlide(0);
+});
