@@ -1,0 +1,14 @@
+/* ============================================
+   MAIN CSS FILE - Imports all CSS modules
+   ============================================ */
+
+/* Import all CSS modules in the correct order */
+@import './base.css';
+@import './layout.css';
+@import './components.css';
+@import './header.css';
+@import './sections.css';
+@import './footer.css';
+@import './responsive.css';
+
+/* Temporary: Include essential styles until we finish modularization */

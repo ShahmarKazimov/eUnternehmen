@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>eCompany</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/css/main.css">
 </head>
 
 <body>
@@ -14,13 +14,13 @@
     <nav class="nav">
       <!-- Logo -->
       <a href="#" class="nav__logo">
-        <img src="logo.svg" alt="eCompany Logo">
+        <img src="./src/assets/icons/logo.svg" alt="eCompany Logo">
         <span class="nav__logo-text">eCompany</span>
       </a>
 
       <!-- Desktop Menu -->
       <ul class="nav__menu">
-        <li><a href="#" class="nav__link">Home</a></li>
+        <li><a href="./src/html/pages/homepage.html" class="nav__link">Home</a></li>
         <li><a href="#" class="nav__link">Features</a></li>
         <li><a href="#" class="nav__link">Incorporation Assistant</a></li>
         <li><a href="#" class="nav__link">Demo Dashboard</a></li>
@@ -782,7 +782,7 @@
               </div>
             </div>
             <div class="dashboard__inbox-items">
-              <img class="w-full h-full" src="./public/Feature card.png" alt="John Smith">
+              <img class="w-full h-full" src="./src/assets/images/Feature card.png" alt="John Smith">
             </div>
           </div>
 
@@ -807,7 +807,7 @@
               </div>
             </div>
             <div class="dashboard__deadline-items">
-              <img class="w-full h-full" src="./public/Chart.png" alt="chart" srcset="">
+              <img class="w-full h-full" src="./src/assets/images/Chart.png" alt="chart" srcset="">
             </div>
           </div>
         </div>
@@ -832,8 +832,8 @@
               </div>
             </div>
             <div class="dashboard__forwarding-content">
-              <img class="dashboard__all__images w-full h-full sm:h-[240px]" src="./public/Physical Forwarding.png"
-                alt="Physical Forwarding" />
+              <img class="dashboard__all__images w-full h-full sm:h-[240px]"
+                src="./src/assets/images/physical forwarding.png" alt="Physical Forwarding" />
             </div>
           </div>
 
@@ -858,7 +858,7 @@
               </div>
             </div>
             <div class="dashboard__storage-content">
-              <img class="dashboard__all__images w-full h-full sm:h-[240px]" src="./public/storage_chart.png"
+              <img class="dashboard__all__images w-full h-full sm:h-[240px]" src="./src/assets/images/storage_chart.png"
                 alt="storage">
             </div>
           </div>
@@ -882,7 +882,8 @@
               </div>
             </div>
             <div class="dashboard__todo-content">
-              <img class="dashboard__all__images w-full h-full" src="./public/Contact Modal.png" alt="contact-modal" />
+              <img class="dashboard__all__images w-full h-full" src="./src/assets/images/Contact Modal.png"
+                alt="contact-modal" />
             </div>
           </div>
         </div>
@@ -915,7 +916,7 @@
             </button>
           </div>
           <div class="incorporation__image">
-            <img src="./public/incorporation.png" alt="Workspace Interface" class="incorporation__img" />
+            <img src="./src/assets/images/incorporation.png" alt="Workspace Interface" class="incorporation__img" />
           </div>
         </div>
       </div>
@@ -935,7 +936,7 @@
         <div class="streamline__visual">
           <div class="streamline__circle">
             <div class="streamline__main-image">
-              <img src="./public/logo.svg" alt="Main feature" class="streamline__center-img">
+              <img src="./src/assets/icons/logo.svg" alt="Main feature" class="streamline__center-img">
             </div>
 
             <!-- Top icons -->
@@ -1133,11 +1134,42 @@
     </section>
 
   </main>
-  <footer>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__content">
+        <!-- Navigation Links -->
+        <div class="footer__nav">
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">Imprint</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms and Conditions</a>
+        </div>
 
+        <!-- Divider Line -->
+        <div class="footer__divider"></div>
+
+        <div class="footer_logo-copyright">
+          <!-- Logo Section -->
+          <div class="footer__brand">
+            <a href="#" class="footer__logo">
+              <img src="./src/assets/icons/logo.svg" alt="eCompany Logo" class="footer__logo-img">
+              <span class="footer__logo-text">eCompany</span>
+            </a>
+          </div>
+          <!-- Copyright -->
+          <div class="footer__copyright">
+            <span>© 2024 ecompany. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <script src="./src/main.js"></script>
+  <!-- JavaScript Modules -->
+  <script src="./src/js/header.js"></script>
+  <script src="./src/js/homepage.js"></script>
+  <script src="./src/js/faq.js"></script>
+  <script src="./src/js/main.js"></script>
 </body>
 
 </html>
