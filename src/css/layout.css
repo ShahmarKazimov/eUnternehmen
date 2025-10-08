@@ -1,0 +1,80 @@
+/* ============================================
+   LAYOUT STYLES - Container, Grid, Flexbox
+   ============================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Flexbox utilities */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* Background utilities */
+.bg-gray-100 {
+    background-color: #f7f7f7;
+}
+
+.bg-gray-700 {
+    background-color: #374151;
+}
+
+/* Height utilities */
+.h-thin {
+    height: 0.2px;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* Position utilities */
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.top-22 {
+    top: 5.5rem;
+}
+
+/* Responsive flexbox */
+@media (min-width: 640px) {
+    .sm-flex-row {
+        flex-direction: row;
+    }
+
+    .sm-h-240 {
+        height: 240px;
+    }
+}

@@ -1,0 +1,65 @@
+/* ============================================
+   BASE STYLES - Reset, Variables, Typography, Utilities
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+:root {
+    --font-inter-display: 'Inter', sans-serif;
+    --font-geist: 'Inter', sans-serif;
+    --font-size-22: 22px;
+    --opacity-20: 20px;
+    --item-spacing-10: 10px;
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(115deg, rgba(199, 199, 252, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 75%, rgba(190, 189, 252, 1) 100%);
+    height: 1083px;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding-top: 100px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.hidden {
+    display: none;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   TEXT UTILITIES
+   ============================================ */
+.text-3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* Medium screens and up */
+@media (min-width: 768px) {
+    .md\:text-\[16px\] {
+        font-size: 16px;
+    }
+}

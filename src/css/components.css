@@ -1,0 +1,113 @@
+/* ============================================
+   COMPONENTS - Buttons, Badges, Forms
+   ============================================ */
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background: #7A77FF;
+    color: white;
+    box-shadow: 0 1.344px 0.537px -0.625px rgba(0, 0, 0, 0.09),
+        0 3.185px 1.274px -1.25px rgba(0, 0, 0, 0.09),
+        0 5.809px 2.324px -1.875px rgba(0, 0, 0, 0.08),
+        0 9.658px 3.863px -2.5px rgba(0, 0, 0, 0.08);
+}
+
+.btn--primary:hover {
+    background: #6865ee;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(122, 119, 255, 0.4);
+}
+
+.btn--outline {
+    background: white;
+    border: 1px solid #0D0D12;
+    color: #0D0D12;
+}
+
+.btn--outline:hover {
+    background: #f5f5f5;
+}
+
+.btn--mobile--nav {
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.btn--large {
+    display: flex;
+    height: 48px;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--item-spacing-10, 10px);
+    border-radius: 12px;
+    background: #7A77FF;
+    box-shadow: 0 1.344px 0.537px -0.625px rgba(0, 0, 0, 0.09),
+        0 3.185px 1.274px -1.25px rgba(0, 0, 0, 0.09),
+        0 5.809px 2.324px -1.875px rgba(0, 0, 0, 0.08),
+        0 9.658px 3.863px -2.5px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+.badge {
+    position: relative;
+    display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+    width: max-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: #7A77FF;
+    z-index: 1;
+    font-weight: 600;
+    height: 32px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(167, 165, 255, 0.10) 0%, rgba(122, 119, 255, 0.10) 100%);
+    text-align: center;
+    font-family: var(--font-inter-display);
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.badge::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0.8px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #7A77FF 0%, #7A77FF00 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.badge-icon {
+    width: 5.4px;
+    height: 6px;
+    border-radius: 100%;
+    background: #7A77FF;
+}
