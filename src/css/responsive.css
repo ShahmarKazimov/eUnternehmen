@@ -472,7 +472,6 @@
     /* ===== FOOTER SECTION ===== */
     .footer {
         padding: 32px 0;
-        margin-top: 48px;
     }
 
     .footer__container {
@@ -553,5 +552,106 @@
 
     .incorporation__button {
         width: 100%;
+    }
+
+    /* Privacy Mobile Styles */
+
+    .privacy-hero {
+        height: 267px;
+        top: -13px
+    }
+
+    .privacy-content {
+        padding: 32px 0;
+    }
+
+    .privacy-hero__title {
+        color: #0D0D12;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .privacy-hero__description {
+        color: #686E7E;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+
+    .privacy-subsection {
+        gap: 8px;
+    }
+
+    .privacy-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+        padding: 0 16px;
+    }
+
+    .privacy-section h2 {
+        color: #0D0D12;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .privacy-section h3 {
+        color: #0D0D12;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .privacy-subsection h5,
+    .privacy-section h5 {
+        color: #686E7E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .privacy-section h6 {
+        color: #686E7E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .privacy-section p {
+        color: #686E7E;
+        text-align: start;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+
+    .special-paragraph {
+        color: #686E7E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+
+    .white-section {
+        background-color: white;
+        border-radius: 16px;
+        padding: 16px 0;
     }
 }
