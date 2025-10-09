@@ -740,4 +740,117 @@
         line-height: 20px;
         padding: 0 16px;
     }
+
+    /* Imprint Mobile Styles */
+
+    .imprint-hero {
+        height: 267px;
+        top: -13px
+    }
+
+    .imprint-content {
+        padding: 32px 0;
+    }
+
+    .imprint-hero__title {
+        color: #0D0D12;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .imprint-hero__description {
+        color: #686E7E;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+
+    .imprint-subsection {
+        gap: 8px;
+    }
+
+    .imprint-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+        padding: 0 16px;
+    }
+
+    .imprint-section h1 {
+        color: #0D0D12;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 8px;
+    }
+
+    .imprint-section h2 {
+        color: #0D0D12;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .imprint-section h3 {
+        color: #0D0D12;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .imprint-subsection h5,
+    .imprint-section h5 {
+        color: #686E7E;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .imprint-section h6 {
+        color: #686E7E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .imprint-section p {
+        color: #686E7E;
+        text-align: start;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+
+    .imprint-section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+        padding-left: 30px;
+    }
+
+    .imprint-section ul li {
+        color: #686E7E;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        list-style: disc;
+    }
 }
