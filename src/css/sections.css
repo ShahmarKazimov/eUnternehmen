@@ -1497,142 +1497,275 @@
    ============================================ */
 
 /* Privacy Hero */
-        .privacy-hero {
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            color: white;
-        }
+.privacy-hero {
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
 
 
-        .privacy-hero__content {
-            display: flex;
-            width: 900px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-            text-align: center;
-        }
+.privacy-hero__content {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: center;
+}
 
-        .privacy-hero__title {
-            color: #0D0D12;
-            text-align: center;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin: 0 auto;
-        }
+.privacy-hero__title {
+    color: #0D0D12;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+}
 
-        .privacy-hero__description {
-            color: #686E7E;
-            text-align: center;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-        }
+.privacy-hero__description {
+    color: #686E7E;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
 
-        .privacy-content {
-            margin: 0 auto;
-            padding: 80px 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 56px;
-            align-self: stretch;
-        }
+.privacy-content {
+    margin: 0 auto;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+}
 
-        .privacy-section {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 24px;
-            align-self: stretch;
-            /* border: 1px solid red; */
-            /* border-radius: 20px; */
-        }
+.privacy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    /* border: 1px solid red; */
+    /* border-radius: 20px; */
+}
 
-        .privacy-subsection {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
-            align-self: stretch;
-        }
+.privacy-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
 
-        .privacy-section h2 {
-            color: #0D0D12;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
+.privacy-section h2 {
+    color: #0D0D12;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
-        .privacy-section h3 {
-            color: #0D0D12;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
+.privacy-section h3 {
+    color: #0D0D12;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
-        .privacy-section h4 {
-            color: #0D0D12;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            padding: 0 0 16px 16px;
-        }
+.privacy-section h4 {
+    color: #0D0D12;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 0 16px 16px;
+}
 
 
-        .privacy-section h5 {
-            color: #686E7E;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-        }
+.privacy-section h5 {
+    color: #686E7E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
 
-        .privacy-section h6 {
-            color: #686E7E;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-        }
+.privacy-section h6 {
+    color: #686E7E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
 
-        .special-paragraph,
-        .privacy-section p {
-            color: #686E7E;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            padding: 0 16px;
-        }
+.special-paragraph,
+.privacy-section p {
+    color: #686E7E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 16px;
+}
 
-        .privacy-section ul {
-            padding-left: 30px;
-        }
+.privacy-section ul {
+    padding-left: 30px;
+}
 
-        .privacy-section ul li {
-            color: #0D0D12;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
-            list-style: disc;
-            /* 150% */
-        }
+.privacy-section ul li {
+    color: #0D0D12;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    list-style: disc;
+    /* 150% */
+}
 
-        .white-section {
-            background-color: white;
-            border-radius: 20px;
-            padding: 16px 0;
-        }
+.white-section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px 0;
+}
+
+/* ============================================
+   TERMS SECTION
+   ============================================ */
+
+/* Terms Hero */
+.terms-hero {
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.terms-hero__content {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: center;
+}
+
+.terms-hero__title {
+    color: #0D0D12;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+.terms-hero__description {
+    color: #686E7E;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.terms-content {
+    margin: 0 auto;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+}
+
+.terms-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.terms-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.terms-section h2 {
+    color: #0D0D12;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.terms-section h3 {
+    color: #0D0D12;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.terms-section h4 {
+    color: #0D0D12;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 0 16px 16px;
+}
+
+.terms-section h5 {
+    color: #686E7E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.terms-section h6 {
+    color: #686E7E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.terms-section p {
+    color: #686E7E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 16px;
+}
+
+.terms-section ul {
+    padding-left: 30px;
+}
+
+.terms-section ul li {
+    color: #0D0D12;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    list-style: disc;
+}
