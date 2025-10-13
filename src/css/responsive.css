@@ -944,7 +944,6 @@
         line-height: normal;
     }
 
-
     .privacy-subsection h5,
     .privacy-section h5 {
         color: #686E7E;
@@ -978,18 +977,17 @@
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
-        padding: 0 0 0 16px;
-    }
-
-    .special-paragraph ul {
-        padding: 0 0 0 13px;
+        padding: 0 16px;
     }
 
     .white-section {
         background-color: white;
         border-radius: 16px;
         padding: 16px 0;
-        width: 100%;
+    }
+
+    .special-paragraph ul {
+        padding-left: 13px;
     }
 
     /* Terms Mobile Styles */
