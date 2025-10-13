@@ -52,3 +52,5 @@ if (typeof module !== 'undefined' && module.exports) {
 } else {
     window.FAQ = FAQ;
 }
+
+export default FAQ;

@@ -190,3 +190,5 @@ if (typeof module !== 'undefined' && module.exports) {
 } else {
     window.Homepage = Homepage;
 }
+
+export default Homepage;

@@ -1,4 +1,4 @@
-import { teamMembers } from '../constants/team.js';
+import { teamMembers } from '../constants/teamMembers.js';
 
 class TeamSlider {
     constructor() {
@@ -292,7 +292,11 @@ class TeamSlider {
     }
 }
 
-// Initialize slider when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    new TeamSlider();
-});
+// Export for module usage or initialize directly
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = TeamSlider;
+} else {
+    window.TeamSlider = TeamSlider;
+}
+
+export default TeamSlider;

@@ -1,3 +1,8 @@
+import TeamSlider from './team.js';
+import Header from './header.js';
+import FAQ from './faq.js';
+import Homepage from './homepage.js';
+
 // ============================================
 // MAIN APPLICATION ENTRY POINT
 // ============================================
@@ -22,18 +27,22 @@ class App {
         // Initialize all components
         try {
             // Header functionality (Navigation, dropdowns, mobile menu)
-            if (window.Header) {
-                new window.Header();
+            if (Header) {
+                new Header();
             }
 
             // Homepage functionality (Video player, pricing slider)
-            if (window.Homepage) {
-                new window.Homepage();
+            if (Homepage) {
+                new Homepage();
             }
 
             // FAQ functionality
-            if (window.FAQ) {
-                new window.FAQ();
+            if (FAQ) {
+                new FAQ();
+            }
+            // Team slider functionality
+            if (TeamSlider) {
+                new TeamSlider();
             }
 
         } catch (error) {
