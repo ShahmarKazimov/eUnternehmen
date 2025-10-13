@@ -1,4 +1,4 @@
-import { teamMembers } from '../constants/team.js';
+import { teamMembers } from '../src/constants/team.js';
 
 class TeamSlider {
     constructor() {

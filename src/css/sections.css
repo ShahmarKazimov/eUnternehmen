@@ -1852,7 +1852,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../src/assets/images/Circle_BG.png');
+    /* background-image: url('../src/assets/images/Circle_BG.png'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
