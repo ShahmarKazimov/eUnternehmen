@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - eUnternehmen</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="nav">
+            <!-- Logo -->
+            <a href="./index.html" class="nav__logo">
+                <img src="./src/assets/icons/logo.svg" alt="eCompany Logo">
+                <span class="nav__logo-text">eCompany</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav__menu">
+                <li><a href="./index.html" class="nav__link">Home</a></li>
+                <li><a href="./features.html" class="nav__link">Features</a></li>
+                <li><a href="./incorporation-assistant.html" class="nav__link">Incorporation Assistant</a></li>
+                <li><a href="./demo-dashboard.html" class="nav__link">Demo Dashboard</a></li>
+                <li><a href="./pricing.html" class="nav__link">Pricing</a></li>
+                <li><a href="./faq.html" class="nav__link">FAQ</a></li>
+            </ul>
+
+            <!-- Desktop Actions -->
+            <div class="nav__actions">
+                <div class="lang-selector">
+                    <button class="btn btn--outline lang-selector__trigger" data-dropdown="lang-desktop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_2025_13829)">
+                                <path
+                                    d="M8 0C3.58875 0 0 3.58875 0 8C0 12.4113 3.58875 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58875 12.4113 0 8 0ZM7.53125 3.92676C6.81812 3.89612 6.11218 3.7959 5.43811 3.63293C5.54578 3.37781 5.6626 3.13281 5.78857 2.90063C6.30542 1.94824 6.93994 1.27991 7.53125 1.03784V3.92676ZM7.53125 4.86499V7.53125H4.60339C4.64465 6.4906 4.82202 5.45752 5.11536 4.51782C5.8927 4.71362 6.70874 4.83215 7.53125 4.86499ZM7.53125 8.46875V11.135C6.70874 11.1678 5.8927 11.2864 5.11536 11.4822C4.82202 10.5425 4.64465 9.5094 4.60339 8.46875H7.53125ZM7.53125 12.0732V14.9622C6.93994 14.7201 6.30542 14.0518 5.78857 13.0994C5.6626 12.8672 5.54578 12.6222 5.43811 12.3671C6.11218 12.2041 6.81799 12.1039 7.53125 12.0732ZM8.46875 12.0732C9.18188 12.1039 9.88782 12.2041 10.5619 12.3671C10.4542 12.6222 10.3374 12.8672 10.2114 13.0994C9.69458 14.0518 9.06006 14.7201 8.46875 14.9622V12.0732ZM8.46875 11.135V8.46875H11.3966C11.3553 9.5094 11.178 10.5425 10.8846 11.4822C10.1073 11.2864 9.29126 11.1678 8.46875 11.135ZM8.46875 7.53125V4.86499C9.29126 4.83215 10.1073 4.71362 10.8846 4.51782C11.178 5.45752 11.3553 6.4906 11.3966 7.53125H8.46875ZM8.46875 3.92676V1.03784C9.06006 1.27991 9.69458 1.94824 10.2114 2.90063C10.3374 3.13281 10.4542 3.37781 10.5619 3.63293C9.88782 3.7959 9.18188 3.89612 8.46875 3.92676ZM11.0354 2.45349C10.8007 2.02087 10.5457 1.63953 10.2769 1.31421C11.2141 1.63428 12.0631 2.14636 12.7771 2.8031C12.3699 3.02124 11.931 3.21069 11.4694 3.36902C11.3384 3.0509 11.1936 2.74487 11.0354 2.45349ZM4.9646 2.45349C4.8064 2.74487 4.66162 3.0509 4.53064 3.36902C4.06897 3.21069 3.63013 3.02112 3.2229 2.8031C3.93689 2.14636 4.78589 1.63428 5.72314 1.31421C5.45435 1.63953 5.19946 2.02075 4.9646 2.45349ZM4.2135 4.25012C3.89355 5.27368 3.70544 6.38953 3.66492 7.53125H0.953491C1.05383 6.00769 1.63892 4.61438 2.5564 3.50525C3.06555 3.79724 3.62317 4.047 4.2135 4.25012ZM3.66492 8.46875C3.70544 9.6106 3.89355 10.7263 4.2135 11.7499C3.62317 11.953 3.06555 12.2028 2.5564 12.4948C1.63892 11.3856 1.05383 9.99231 0.953491 8.46875H3.66492ZM4.53064 12.631C4.66162 12.9491 4.8064 13.2551 4.9646 13.5465C5.19946 13.9791 5.45435 14.3605 5.72314 14.6858C4.78589 14.3657 3.93689 13.8536 3.22302 13.1969C3.63 12.9789 4.06897 12.7893 4.53064 12.631ZM11.0354 13.5465C11.1936 13.2551 11.3384 12.9491 11.4694 12.631C11.931 12.7893 12.3699 12.9789 12.7771 13.1969C12.0631 13.8536 11.2141 14.3657 10.2769 14.6858C10.5457 14.3605 10.8005 13.9792 11.0354 13.5465ZM11.7865 11.7499C12.1064 10.7263 12.2946 9.61047 12.3351 8.46875H15.0465C14.9462 9.99231 14.3611 11.3856 13.4436 12.4948C12.9344 12.2028 12.3768 11.953 11.7865 11.7499ZM12.3351 7.53125C12.2946 6.3894 12.1064 5.27368 11.7865 4.25012C12.3768 4.047 12.9344 3.79724 13.4436 3.50525C14.3611 4.61438 14.9462 6.00769 15.0465 7.53125H12.3351Z"
+                                    fill="#0D0D12" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2025_13829">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>English</span>
+                        <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
+                        </svg>
+                    </button>
+                    <div class="lang-selector__menu hidden" id="lang-desktop">
+                        <a href="#" class="lang-selector__item" data-lang="English" data-flag="🇺🇸">
+                            <span class="lang-selector__flag">🇺🇸</span>
+                            <span>English</span>
+                        </a>
+                        <a href="#" class="lang-selector__item" data-lang="Deutsch" data-flag="🇩🇪">
+                            <span class="lang-selector__flag">🇩🇪</span>
+                            <span>Deutsch</span>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="btn btn--primary btn--mobile--nav">
+                    <span>Try for Free</span>
+                    <svg class="icon" viewBox="0 0 16 16" fill="white">
+                        <path
+                            d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
+                    </svg>
+                </button>
+
+                <!-- Hamburger -->
+                <button class="hamburger" data-toggle="mobile-menu">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="nav__mobile-menu" id="mobile-menu">
+                <ul class="nav__mobile-links">
+                    <li><a href="./index.html" class="nav__mobile-link">Home</a></li>
+                    <li><a href="#" class="nav__mobile-link">Features</a></li>
+                    <li><a href="#" class="nav__mobile-link">Incorporation Assistant</a></li>
+                    <li><a href="#" class="nav__mobile-link">Demo Dashboard</a></li>
+                    <li><a href="#" class="nav__mobile-link">Pricing</a></li>
+                    <li><a href="#" class="nav__mobile-link">FAQ</a></li>
+                </ul>
+
+                <!-- Mobile Actions - Hamburger menunun içində -->
+                <div class="nav__mobile-actions">
+                    <!-- Mobile Language Selector -->
+                    <div class="lang-selector">
+                        <button class="btn btn--outline btn--mobile--nav lang-selector__trigger"
+                            data-dropdown="lang-mobile">
+                            <svg class="icon" viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_2025_13829)">
+                                    <path
+                                        d="M8 0C3.58875 0 0 3.58875 0 8C0 12.4113 3.58875 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58875 12.4113 0 8 0ZM7.53125 3.92676C6.81812 3.89612 6.11218 3.7959 5.43811 3.63293C5.54578 3.37781 5.6626 3.13281 5.78857 2.90063C6.30542 1.94824 6.93994 1.27991 7.53125 1.03784V3.92676ZM7.53125 4.86499V7.53125H4.60339C4.64465 6.4906 4.82202 5.45752 5.11536 4.51782C5.8927 4.71362 6.70874 4.83215 7.53125 4.86499ZM7.53125 8.46875V11.135C6.70874 11.1678 5.8927 11.2864 5.11536 11.4822C4.82202 10.5425 4.64465 9.5094 4.60339 8.46875H7.53125ZM7.53125 12.0732V14.9622C6.93994 14.7201 6.30542 14.0518 5.78857 13.0994C5.6626 12.8672 5.54578 12.6222 5.43811 12.3671C6.11218 12.2041 6.81799 12.1039 7.53125 12.0732ZM8.46875 12.0732C9.18188 12.1039 9.88782 12.2041 10.5619 12.3671C10.4542 12.6222 10.3374 12.8672 10.2114 13.0994C9.69458 14.0518 9.06006 14.7201 8.46875 14.9622V12.0732ZM8.46875 11.135V8.46875H11.3966C11.3553 9.5094 11.178 10.5425 10.8846 11.4822C10.1073 11.2864 9.29126 11.1678 8.46875 11.135ZM8.46875 7.53125V4.86499C9.29126 4.83215 10.1073 4.71362 10.8846 4.51782C11.178 5.45752 11.3553 6.4906 11.3966 7.53125H8.46875ZM8.46875 3.92676V1.03784C9.06006 1.27991 9.69458 1.94824 10.2114 2.90063C10.3374 3.13281 10.4542 3.37781 10.5619 3.63293C9.88782 3.7959 9.18188 3.89612 8.46875 3.92676ZM11.0354 2.45349C10.8007 2.02087 10.5457 1.63953 10.2769 1.31421C11.2141 1.63428 12.0631 2.14636 12.7771 2.8031C12.3699 3.02124 11.931 3.21069 11.4694 3.36902C11.3384 3.0509 11.1936 2.74487 11.0354 2.45349ZM4.9646 2.45349C4.8064 2.74487 4.66162 3.0509 4.53064 3.36902C4.06897 3.21069 3.63013 3.02112 3.2229 2.8031C3.93689 2.14636 4.78589 1.63428 5.72314 1.31421C5.45435 1.63953 5.19946 2.02075 4.9646 2.45349ZM4.2135 4.25012C3.89355 5.27368 3.70544 6.38953 3.66492 7.53125H0.953491C1.05383 6.00769 1.63892 4.61438 2.5564 3.50525C3.06555 3.79724 3.62317 4.047 4.2135 4.25012ZM3.66492 8.46875C3.70544 9.6106 3.89355 10.7263 4.2135 11.7499C3.62317 11.953 3.06555 12.2028 2.5564 12.4948C1.63892 11.3856 1.05383 9.99231 0.953491 8.46875H3.66492ZM4.53064 12.631C4.66162 12.9491 4.8064 13.2551 4.9646 13.5465C5.19946 13.9791 5.45435 14.3605 5.72314 14.6858C4.78589 14.3657 3.93689 13.8536 3.22302 13.1969C3.63 12.9789 4.06897 12.7893 4.53064 12.631ZM11.0354 13.5465C11.1936 13.2551 11.3384 12.9491 11.4694 12.631C11.931 12.7893 12.3699 12.9789 12.7771 13.1969C12.0631 13.8536 11.2141 14.3657 10.2769 14.6858C10.5457 14.3605 10.8005 13.9792 11.0354 13.5465ZM11.7865 11.7499C12.1064 10.7263 12.2946 9.61047 12.3351 8.46875H15.0465C14.9462 9.99231 14.3611 11.3856 13.4436 12.4948C12.9344 12.2028 12.3768 11.953 11.7865 11.7499ZM12.3351 7.53125C12.2946 6.3894 12.1064 5.27368 11.7865 4.25012C12.3768 4.047 12.9344 3.79724 13.4436 3.50525C14.3611 4.61438 14.9462 6.00769 15.0465 7.53125H12.3351Z"
+                                        fill="#0D0D12" />
+                                </g>
+                            </svg>
+                            <span>Eng</span>
+                            <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
+                            </svg>
+                        </button>
+                        <div class="lang-selector__menu hidden" id="lang-mobile">
+                            <a href="#" class="lang-selector__item" data-lang="Eng" data-flag="🇺🇸">
+                                <span class="lang-selector__flag">🇺🇸</span>
+                                <span>Eng</span>
+                            </a>
+                            <a href="#" class="lang-selector__item" data-lang="Deu" data-flag="🇩🇪">
+                                <span class="lang-selector__flag">🇩🇪</span>
+                                <span>Deu</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Try Button -->
+                    <button class="btn btn--primary btn--mobile--nav">
+                        <span>Try for Free</span>
+                        <svg class="icon" viewBox="0 0 16 16" fill="white">
+                            <path
+                                d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Hero Section -->
+        <section class="about">
+            <div class="about__container container">
+                <!-- Breadcrumb -->
+                <nav class="about__breadcrumb">
+                    <a href="./index.html" class="about__breadcrumb-link">Home</a>
+                    <span class="about__breadcrumb-separator">></span>
+                    <span class="about__breadcrumb-current">About Us</span>
+                </nav>
+
+                <div class="about__content">
+                    <!-- Left Content -->
+                    <div class="about__text">
+                        <h1 class="about__title">HPMA</h1>
+                        <div class="about__description">
+                            <p>We are HPMA Consulting, a interdisciplinary Founding team out of the areas engineering,
+                                Financial accounting and Right – with one common Mission: Pursue in Germany and Europe
+                                the digital transformation to facilitate.<br>
+                                With our Experience and Expertise have we one powerful platform developed, the classic
+                                business processes How accounting, Annual financial statements, Document management and
+                                digital Business addresses new thinks – efficient, secure and complete digital.
+                            </p>
+                        </div>
+
+                        <button class="about__cta-button">
+                            <span>Our Services</span>
+                            <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Right Content - Dashboard Image -->
+                    <div class="about__dashboard">
+                        <img src="./src/assets/images/hpma.png" alt="Dashboard Preview" class="about__dashboard-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HPMA Solutions Section -->
+        <section class="hpma-solutions">
+            <div class="hpma-solutions__container container">
+                <!-- Top Content -->
+                <div class="hpma-solutions__header">
+                    <div class="hpma-solutions__badge">
+                        <span>• Who We Are</span>
+                    </div>
+                    <h2 class="hpma-solutions__title">HPMA – Your partner for digital business solutions</h2>
+                    <div class="hpma-solutions__description">
+                        <p>Our solutions combine automated workflows, proprietary AI models, and GDPR-compliant hosting
+                            to not only optimize but also modernize workflows – for law firms, startups, and established
+                            companies alike.</p>
+                        <p>With DataKub, we also offer a digital business address with transparent registry information
+                            – ideal for modern companies that value efficiency, structure, and legal certainty.</p>
+                    </div>
+                </div>
+
+                <!-- Bottom Content -->
+                <div class="hpma-solutions__content">
+                    <!-- Left - Office Image -->
+                    <div class="hpma-solutions__image">
+                        <img src="./src/assets/images/hpma-partner.png" alt="HPMA Office Interior"
+                            class="hpma-solutions__img">
+                    </div>
+
+                    <!-- Right - Features -->
+                    <div class="hpma-solutions__features">
+                        <h3 class="hpma-solutions__features-title">What sets us apart:</h3>
+
+                        <div class="hpma-solutions__features-list">
+                            <div class="hpma-solutions__feature">
+                                <div class="hpma-solutions__feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
+                                        fill="none">
+                                        <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="hpma-solutions__feature-text">Practical experience in technology, tax
+                                    consulting and law</span>
+                            </div>
+
+                            <div class="hpma-solutions__feature">
+                                <div class="hpma-solutions__feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
+                                        fill="none">
+                                        <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="hpma-solutions__feature-text">Clear, user-friendly solutions instead of
+                                    complicated tools</span>
+                            </div>
+
+                            <div class="hpma-solutions__feature">
+                                <div class="hpma-solutions__feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
+                                        fill="none">
+                                        <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="hpma-solutions__feature-text">Responsible handling of data – made & hosted
+                                    in Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Vision Section -->
+        <section class="vision-section">
+            <div class="vision-section__container container">
+                <div class="flex flex-col gap-3">
+                    <!-- Vision Badge -->
+                    <div class="vision-section__badge">
+                        <span>• Vision</span>
+                    </div>
+
+                    <!-- Vision Content -->
+                    <div class="vision-section__content">
+                        <!-- Left - Title -->
+                        <div class="vision-section__text">
+                            <h2 class="vision-section__title">Our Vision</h2>
+                        </div>
+
+                        <!-- Right - Description -->
+                        <div class="vision-section__description">
+                            <p>We believe that digital processes must be not only efficient, but also understandable and
+                                enjoyable. That's why we develop tools that take real work off your hands, save time,
+                                and
+                                meet the highest data protection standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vision Image -->
+                <div class="vision-section__image">
+                    <img src="./src/assets/images/vision.png" alt="Our Vision - Team Working Together"
+                        class="vision-section__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Missions Section -->
+        <section class="missions-section">
+            <div class="missions-section__container container">
+                <div class="gap-3 flex flex-col">
+                    <!-- Badge -->
+                    <div class="missions-section__badge">
+                        <span>• Our Missions</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h2 class="missions-section__title">Digitize processes, simplify procedures and sustainably
+                        strengthen companies.</h2>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="missions-section__content">
+                    <!-- Left - Features -->
+                    <div class="missions-section__features">
+                        <!-- Main Mission -->
+                        <div class="missions-section__main-feature">
+                            <p>We are committed to transforming complex workflows into smart, digital solutions that
+                                empower businesses to grow with confidence.</p>
+                        </div>
+
+                        <div class="w-full h-[0.5px] bg-[#ECECEC]"></div>
+
+                        <!-- Feature Items -->
+                        <div class="missions-section__features-list">
+                            <div class="missions-section__feature">
+                                <div class="dashboard__widget-icon dashboard__widget-icon--blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.33259 8.56256C1.83301 9.54339 1.83301 10.8267 1.83301 13.3934C1.83301 15.9601 1.83301 17.2434 2.33259 18.2242C2.772 19.0866 3.47314 19.7877 4.33551 20.2271C5.31634 20.7267 6.59967 20.7267 9.16634 20.7267H12.833C15.3997 20.7267 16.683 20.7267 17.6638 20.2271C18.5262 19.7877 19.2273 19.0866 19.6668 18.2242C20.1663 17.2434 20.1663 15.9601 20.1663 13.3934C20.1663 10.8267 20.1663 9.54339 19.6668 8.56256C19.2273 7.70019 18.5262 6.99905 17.6638 6.55964C16.683 6.06006 15.3997 6.06006 12.833 6.06006H9.16634C6.59967 6.06006 5.31634 6.06006 4.33551 6.55964C3.47314 6.99905 2.772 7.70019 2.33259 8.56256ZM13.8047 12.0184C13.9262 11.8822 13.9887 11.7034 13.9784 11.5212C13.9681 11.3389 13.8858 11.1683 13.7497 11.0467C13.6135 10.9252 13.4347 10.8627 13.2524 10.873C13.0702 10.8833 12.8996 10.9656 12.778 11.1017L10.0179 14.1946L9.22042 13.3017C9.09854 13.167 8.92831 13.0861 8.74692 13.0765C8.56553 13.0669 8.38772 13.1295 8.25233 13.2506C8.11694 13.3717 8.03498 13.5415 8.02435 13.7228C8.01372 13.9041 8.07528 14.0823 8.19559 14.2184L9.50459 15.6851C9.56908 15.7573 9.64811 15.8151 9.73649 15.8547C9.82488 15.8943 9.92062 15.9147 10.0175 15.9147C10.1143 15.9147 10.2101 15.8943 10.2984 15.8547C10.3868 15.8151 10.4658 15.7573 10.5303 15.6851L13.8047 12.0184Z"
+                                            fill="white" />
+                                        <path
+                                            d="M18.8235 3.73543C17.4806 2.39343 15.32 2.39343 10.9988 2.39343C6.67765 2.39343 4.5189 2.39343 3.17507 3.73543C2.48023 4.43027 2.14565 5.34327 1.9834 6.66143C2.47262 6.11663 3.05806 5.66667 3.7104 5.3341C4.42723 4.96927 5.19448 4.82077 6.04331 4.75202C6.86373 4.6851 7.8739 4.6851 9.10773 4.6851H12.8899C14.1246 4.6851 15.1339 4.6851 15.9543 4.75202C16.8041 4.82168 17.5713 4.96927 18.2872 5.3341C18.9396 5.66665 19.525 6.11662 20.0142 6.66143C19.8529 5.34327 19.5183 4.43027 18.8235 3.73543Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="missions-section__feature-content">
+                                    <h3>Empowering entrepreneurs</h3>
+                                    <p>We support founders and teams with clear digital solutions, automation, and
+                                        structure – so the focus is back on the business, not on paperwork. Simplify
+                                        operational processes</p>
+                                </div>
+                            </div>
+
+                            <div class="missions-section__feature">
+                                <div class="dashboard__widget-icon dashboard__widget-icon--blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.33259 8.56256C1.83301 9.54339 1.83301 10.8267 1.83301 13.3934C1.83301 15.9601 1.83301 17.2434 2.33259 18.2242C2.772 19.0866 3.47314 19.7877 4.33551 20.2271C5.31634 20.7267 6.59967 20.7267 9.16634 20.7267H12.833C15.3997 20.7267 16.683 20.7267 17.6638 20.2271C18.5262 19.7877 19.2273 19.0866 19.6668 18.2242C20.1663 17.2434 20.1663 15.9601 20.1663 13.3934C20.1663 10.8267 20.1663 9.54339 19.6668 8.56256C19.2273 7.70019 18.5262 6.99905 17.6638 6.55964C16.683 6.06006 15.3997 6.06006 12.833 6.06006H9.16634C6.59967 6.06006 5.31634 6.06006 4.33551 6.55964C3.47314 6.99905 2.772 7.70019 2.33259 8.56256ZM13.8047 12.0184C13.9262 11.8822 13.9887 11.7034 13.9784 11.5212C13.9681 11.3389 13.8858 11.1683 13.7497 11.0467C13.6135 10.9252 13.4347 10.8627 13.2524 10.873C13.0702 10.8833 12.8996 10.9656 12.778 11.1017L10.0179 14.1946L9.22042 13.3017C9.09854 13.167 8.92831 13.0861 8.74692 13.0765C8.56553 13.0669 8.38772 13.1295 8.25233 13.2506C8.11694 13.3717 8.03498 13.5415 8.02435 13.7228C8.01372 13.9041 8.07528 14.0823 8.19559 14.2184L9.50459 15.6851C9.56908 15.7573 9.64811 15.8151 9.73649 15.8547C9.82488 15.8943 9.92062 15.9147 10.0175 15.9147C10.1143 15.9147 10.2101 15.8943 10.2984 15.8547C10.3868 15.8151 10.4658 15.7573 10.5303 15.6851L13.8047 12.0184Z"
+                                            fill="white" />
+                                        <path
+                                            d="M18.8235 3.73543C17.4806 2.39343 15.32 2.39343 10.9988 2.39343C6.67765 2.39343 4.5189 2.39343 3.17507 3.73543C2.48023 4.43027 2.14565 5.34327 1.9834 6.66143C2.47262 6.11663 3.05806 5.66667 3.7104 5.3341C4.42723 4.96927 5.19448 4.82077 6.04331 4.75202C6.86373 4.6851 7.8739 4.6851 9.10773 4.6851H12.8899C14.1246 4.6851 15.1339 4.6851 15.9543 4.75202C16.8041 4.82168 17.5713 4.96927 18.2872 5.3341C18.9396 5.66665 19.525 6.11662 20.0142 6.66143C19.8529 5.34327 19.5183 4.43027 18.8235 3.73543Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="missions-section__feature-content">
+                                    <h3>Simplify operational processes</h3>
+                                    <p>With AI-supported tools and digital infrastructure, we reduce complexity in
+                                        accounting, document management, and compliance – GDPR-compliant and
+                                        future-proof.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right - Image -->
+                    <div class="missions-section__image">
+                        <img src="./src/assets/images/mission.png    " alt="Modern Meeting Room"
+                            class="missions-section__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="team-section">
+            <div class="team-section__container">
+                <div class="flex flex-col gap-3 container">
+                    <!-- Badge -->
+                    <div class="team-section__badge">
+                        <span>• Team</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h2 class="team-section__title">Our Team</h2>
+
+                    <!-- Description -->
+                    <p class="team-section__description">Our solutions combine automated workflows , proprietary AI
+                        models , and GDPR-compliant hosting to not only optimize but also modernize workflows - for law
+                        firms, startups, and established companies alike.<br><br>
+                        With DataKub, we also offer a digital business address with transparent registry information –
+                        ideal for modern companies that value efficiency, structure, and legal certainty.</p>
+                </div>
+                <!-- Team Slider -->
+                <div class="team-section__slider">
+                    <div class="team-section__slider-wrapper">
+                        <!-- Slides will be populated by JavaScript -->
+                    </div>
+                    <!-- Navigation Dots -->
+                    <div class="team-section__dots"></div>
+                </div>
+                <!-- Join Our Team Section -->
+                <section class="join-team container">
+                    <div class="join-team__container">
+                        <div class="join-team__content">
+                            <div class="join-team__image">
+                                <div class="join-team__overlay">
+                                    <h2 class="join-team__overlay-title">Our team behind all our successes</h2>
+                                    <p class="join-team__overlay-text">Our success is driven by our dedicated team,
+                                        whose expertise, dedication, and hard work drive our success and innovation.</p>
+                                </div>
+                                <img src="./src/assets/images/team-success.png" alt="Join Our Team"
+                                    class="join-team__img">
+                            </div>
+                            <div class="join-team__text">
+                                <h2 class="join-team__title">Become part of the team</h2>
+                                <p class="join-team__description">If you are interested in becoming part of our team,
+                                    please share your skills and experience with us and we would be happy to discuss
+                                    possible entry opportunities with you.</p>
+                                <a href="#" class="join-team__button">
+                                    <span>We are hiring</span>
+                                    <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
+                                        <path
+                                            d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <!-- Navigation Links -->
+                <div class="footer__nav">
+                    <a href="./about.html" class="footer__link">About Us</a>
+                    <a href="./imprint.html" class="footer__link">Imprint</a>
+                    <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+                    <a href="./terms.html" class="footer__link">Terms and Conditions</a>
+                </div>
+
+                <!-- Divider Line -->
+                <div class="footer__divider"></div>
+
+                <div class="footer_logo-copyright">
+                    <!-- Logo Section -->
+                    <div class="footer__brand">
+                        <a href="./index.html" class="footer__logo">
+                            <img src="./src/assets/icons/logo.svg" alt="eCompany Logo">
+                            <span class="footer__logo-text">eCompany</span>
+                        </a>
+                    </div>
+                    <!-- Copyright -->
+                    <div class="footer__copyright">
+                        <span>© 2024 ecompany. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules -->
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/homepage.js"></script>
+    <script src="./src/js/faq.js"></script>
+    <script src="./src/js/team.js" type="module"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
