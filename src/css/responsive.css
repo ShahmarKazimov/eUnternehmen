@@ -2,6 +2,132 @@
    RESPONSIVE STYLES
    ============================================ */
 
+/* Join Team Section Responsive */
+@media (max-width: 768px) {
+    .join-team {
+        max-height: none;
+        padding: 0;
+    }
+
+    .join-team__content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .join-team__text {
+        max-width: 100%;
+        text-align: center;
+        padding: 32px 20px;
+        order: 2;
+    }
+
+    .join-team__title {
+        color: #0D0D12;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .join-team__description {
+        color: #686E7E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: start;
+        margin-bottom: 32px;
+    }
+
+    .join-team__image {
+        width: 100%;
+        order: 1;
+    }
+
+    .join-team__img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .join-team__overlay {
+        left: 24px;
+        right: 24px;
+    }
+
+    .join-team__overlay-title {
+        margin-bottom: 8px;
+        color: #FFF;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .join-team__overlay-text {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .join-team__overlay-title {
+        font-size: 32px;
+    }
+
+    .join-team__overlay-text {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-main {
+        flex-direction: column;
+
+    }
+
+    .price-card__image {
+        width: 100%;
+        height: 300px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-main {
+        flex-direction: column;
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+        display: block;
+    }
+
+
+
+    .signup-form {
+        padding: 0;
+    }
+
+    .signup-form__section-title {
+        font-size: 16px;
+    }
+
+    .signup-form__checkbox-label {
+        font-size: 16px;
+    }
+
+    .price-card__title,
+    .price-card__price,
+    .price-card__date-title {
+        font-size: 18px;
+    }
+
+    .price-card__subtitle,
+    .price-card__info-row,
+    .price-card__date-value {
+        font-size: 16px;
+    }
+}
+
 /* ============================================
    DESKTOP STYLES (min-width: 768px)
    ============================================ */

@@ -2,6 +2,455 @@
    SECTIONS STYLES
    ============================================ */
 
+/* Join Team Section */
+.join-team {
+    background-color: white;
+    width: 100%;
+    max-height: 381px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 1.344px 2.537px -0.625px rgba(0, 0, 0, 0.07),
+        0px 3.185px 6.274px -1.25px rgba(0, 0, 0, 0.07),
+        0px 5.809px 12.324px -1.875px rgba(0, 0, 0, 0.06);
+}
+
+.join-team__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-team__text {
+    flex: 1;
+    /* position: relative;
+    top:20px;
+    right: 80px;
+    left: 0px; */
+    padding: 0 80px;
+}
+
+.join-team__title {
+    margin-bottom: 8px;
+    color: #0D0D12;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+}
+
+.join-team__description {
+    margin-bottom: 48px;
+    color: #686E7E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.join-team__button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    text-decoration: none;
+    background: #7A77FF;
+    color: white;
+    box-shadow: 0 1.344px 0.537px -0.625px rgba(0, 0, 0, 0.09),
+        0 3.185px 1.274px -1.25px rgba(0, 0, 0, 0.09),
+        0 5.809px 2.324px -1.875px rgba(0, 0, 0, 0.08),
+        0 9.658px 3.863px -2.5px rgba(0, 0, 0, 0.08);
+}
+
+.join-team__button:hover {
+    background: #6865ee;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(122, 119, 255, 0.4);
+}
+
+.join-team__button .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.join-team__image {
+    flex: 1;
+    position: relative;
+}
+
+.join-team__img {
+    width: 100%;
+    height: 381px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.join-team__overlay {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.join-team__overlay-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.join-team__overlay-text {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.join-team__image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.join-team__overlay {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    right: 80px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.join-team__overlay-title {
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.join-team__overlay-text {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.join-team__image {
+    position: relative;
+}
+
+.join-team__image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+/* Contact Form Styles */
+.signup-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.signup-form__section {
+    margin-bottom: 42px;
+}
+
+.signup-form__section-title {
+    color: #686E7E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.signup-form__divider {
+    height: 1px;
+    background-color: #EBEBEB;
+    margin-bottom: 16px;
+}
+
+.signup-form__field {
+    margin-bottom: 16px;
+}
+
+.signup-form__label {
+    display: block;
+    color: #4B4D4E;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.signup-form__input,
+.signup-form__select,
+.signup-form__textarea {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #4B4D4E;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    box-sizing: border-box;
+}
+
+.signup-form__input:focus,
+.signup-form__select:focus,
+.signup-form__textarea:focus {
+    outline: none;
+    border-color: #7A77FF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0 0 0 3px rgba(122, 119, 255, 0.1);
+}
+
+.signup-form__input::placeholder,
+.signup-form__select,
+.signup-form__textarea::placeholder {
+    color: #686E7E;
+}
+
+.signup-form__textarea {
+    min-height: 136px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.signup-form__helper-text {
+    color: #686E7E;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.signup-form__link {
+    color: #7A77FF;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.signup-form__link:hover {
+    color: #6865ee;
+    text-decoration: underline;
+}
+
+.signup-form__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.signup-form__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D0D5DD;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.signup-form__checkbox-label {
+    color: #686E7E;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.signup-form__required {
+    color: #ef4444;
+}
+
+.signup-form__submit-btn {
+    width: 100%;
+    height: 48px;
+    background: #7A77FF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 9.66px 3.86px -2.5px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s, transform 0.1s;
+}
+
+.signup-form__submit-btn:hover {
+    background: #6865ee;
+}
+
+.signup-form__submit-btn:active {
+    transform: scale(0.98);
+}
+
+.signup-form__select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%23686E7E' stroke-width='1.67' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+/* Price Card Styles */
+.price-card {
+    flex: 1 1 0;
+    background: white;
+    box-shadow: 0px 14px 48px -22px rgba(15.96, 23.62, 40.04, 0.18);
+    overflow: hidden;
+    border-radius: 8px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.price-card__image {
+    width: 100%;
+    height: 333px;
+    object-fit: cover;
+}
+
+.price-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.price-card__header {
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.price-card__title {
+    flex: 1;
+    color: #0D0D12;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.price-card__subtitle {
+    color: #686E7E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 16px;
+}
+
+.price-card__price {
+    color: #0D0D12;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.price-card__divider {
+    height: 1px;
+    background-color: #EBEBEB;
+}
+
+.price-card__details {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.price-card__info-row {
+    display: flex;
+    gap: 24px;
+    color: #686E7E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.price-card__info-label {
+    min-width: 181px;
+}
+
+.price-card__link {
+    color: #7A77FF;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.price-card__link:hover {
+    color: #6865ee;
+}
+
+.price-card__dates {
+    display: flex;
+    gap: 24px;
+}
+
+.price-card__date-item {
+    flex: 1;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.price-card__date-title {
+    color: #0D0D12;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.price-card__date-value {
+    color: #686E7E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Contact Page Main Container */
+.contact-main {
+    padding: 80px 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+
 /* ============================================
    HERO SECTION
    ============================================ */
