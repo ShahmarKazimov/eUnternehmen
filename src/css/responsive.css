@@ -79,7 +79,6 @@
     }
 }
 
-
 @media (max-width: 768px) {
     .contact-main {
         flex-direction: column;
@@ -100,8 +99,6 @@
         padding-bottom: 32px !important;
         display: block;
     }
-
-
 
     .signup-form {
         padding: 0;
@@ -169,10 +166,152 @@
     }
 }
 
-/* ============================================
-   TABLET & MOBILE STYLES (max-width: 768px)
-   ============================================ */
+
 @media (max-width: 768px) {
+    .team-section__slide {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-section__slide {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    .team-section__slider {
+        padding: 10px 0;
+    }
+
+    .team-section__dots {
+        margin: 24px 16px;
+        justify-content: center;
+    }
+
+    .team-section__nav-button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Team Section Responsive */
+    .team-section {
+        padding: 32px 16px;
+    }
+
+    .team-section__container {
+        gap: 32px;
+    }
+
+    .team-section__title {
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .team-section__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .team-section__slider {
+        padding: 0;
+    }
+
+    .team-section__dots {
+        gap: 12px;
+        margin-top: 24px;
+        padding: 0 16px;
+    }
+
+    .team-section__nav-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .team-section__slide {
+        width: calc(100% - 32px);
+        height: 360px;
+        margin: 0 16px;
+    }
+
+    .team-section__member-info {
+        padding: 12px;
+    }
+
+    .team-section__member-info h3 {
+        font-size: 18px;
+    }
+
+    .team-section__member-info p {
+        font-size: 14px;
+    }
+
+    /* Missions Section */
+    .missions-section {
+        padding: 32px 0;
+    }
+
+    .missions-section__container {
+        gap: 32px
+    }
+
+    .missions-section__content {
+        grid-template-columns: 1fr;
+    }
+
+    .missions-section__image {
+        order: 1;
+    }
+
+    .missions-section__img {
+        height: 238px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .missions-section__features {
+        order: 2;
+        border-radius: 16px;
+        padding: 20px;
+        gap: 24px;
+    }
+
+    .missions-section__title {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: 600;
+    }
+
+    .missions-section__content {
+        gap: 2rem;
+        max-height: 100%;
+    }
+
+    .missions-section__feature-content {
+        font-size: 20px;
+    }
+
+    .missions-section__feature-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .missions-section__features-list {
+        gap: 24px;
+    }
+
+    .missions-section__main-feature {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
 
     /* ===== GLOBAL ===== */
     .container {
@@ -253,7 +392,6 @@
     .hero__title {
         color: #0D0D12;
         text-align: center;
-        font-family: var(--font-inter-display);
         font-size: 28px;
         font-style: normal;
         font-weight: 600;
@@ -450,6 +588,16 @@
     }
 
     /* ===== DASHBOARD SECTION ===== */
+
+
+    @media (max-width: 768px) {
+
+        .dashboard__widget--inbox,
+        .dashboard__widget--deadlines {
+            overflow: visible;
+        }
+    }
+
     .dashboard {
         padding: 32px 16px;
         gap: 48px;
@@ -496,6 +644,64 @@
         overflow: hidden;
     }
 
+
+    /* Team Section Responsive */
+    @media screen and (max-width: 768px) {
+        .team-section__slide {
+            min-width: calc(50% - 12px);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .team-section {
+            padding: 32px 0;
+        }
+
+        .team-section__container {
+            gap: 32px;
+        }
+
+        .team-section__title {
+            font-size: 24px;
+        }
+
+        .team-section__description {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+
+        .team-section__slide {
+            max-width: 100%;
+            margin: 0 16px;
+            max-width: 248px;
+            max-height: 296px;
+        }
+
+        .team-section__slider {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .team-section__member-info {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            padding: 12px;
+            background: transparent;
+            backdrop-filter: blur(32px);
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .team-section__member-image {
+            height: 100%;
+        }
+    }
 
     /* ===== STREAMLINE SECTION ===== */
     .streamline {
@@ -570,7 +776,6 @@
 
     .faq__question {
         color: #0D0D12;
-        font-family: var(--font-inter-display);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -978,5 +1183,175 @@
         font-weight: 400;
         line-height: 24px;
         list-style: disc;
+    }
+
+    /* About Mobile Styles */
+
+    .about {
+        padding: 23px 0 32px 0;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about__title {
+        font-size: 28px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .about__text {
+        gap: 16px;
+    }
+
+    .about__description p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 400;
+        padding-bottom: 8px;
+
+    }
+
+    .about__cta-button {
+        align-self: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about__dashboard-image {
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .about__breadcrumb {
+        margin-bottom: 24px;
+    }
+
+    /* HPMA Solutions Mobile Styles */
+
+    .hpma-solutions {
+        padding: 32px 0;
+    }
+
+    .hpma-solutions__container {
+        gap: 32px;
+    }
+
+    .hpma-solutions__header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px
+    }
+
+    .hpma-solutions__title {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: 600;
+    }
+
+    .hpma-solutions__description {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .hpma-solutions__description p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .hpma-solutions__content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .hpma-solutions__features-title {
+        font-size: 20px;
+        line-height: 100%;
+        text-align: start;
+        font-weight: 500;
+    }
+
+    .hpma-solutions__features-list {
+        gap: 20px;
+    }
+
+    .hpma-solutions__features {
+        gap: 16px;
+    }
+
+    .hpma-solutions__feature {
+        gap: 12px;
+    }
+
+    .hpma-solutions__feature-icon {
+        width: 24px;
+        height: 24px;
+        padding: 8px;
+
+    }
+
+    .hpma-solutions__feature-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .hpma-solutions__feature-text {
+        font-size: 16px;
+        line-height: 100%;
+        font-weight: 500;
+    }
+
+    .hpma-solutions__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hpma-solutions__img {
+        border-radius: 12px;
+    }
+
+    /* Vision Section Mobile Styles */
+
+    .vision-section {
+        padding: 32px 0;
+    }
+
+    .vision-section__container {
+        gap: 32px;
+
+    }
+
+    .vision-section__content {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .vision-section__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .vision-section__badge {
+        margin: 0 auto;
+    }
+
+    .vision-section__description p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .vision-section__image {
+        margin-top: 24px;
+        height: 221px;
+    }
+
+    .vision-section__img {
+        border-radius: 16px;
     }
 }
