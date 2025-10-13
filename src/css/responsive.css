@@ -79,6 +79,52 @@
     }
 }
 
+@media (max-width: 768px) {
+    .contact-main {
+        flex-direction: column;
+
+    }
+
+    .price-card__image {
+        width: 100%;
+        height: 300px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-main {
+        flex-direction: column;
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+        display: block;
+    }
+
+    .signup-form {
+        padding: 0;
+    }
+
+    .signup-form__section-title {
+        font-size: 16px;
+    }
+
+    .signup-form__checkbox-label {
+        font-size: 16px;
+    }
+
+    .price-card__title,
+    .price-card__price,
+    .price-card__date-title {
+        font-size: 18px;
+    }
+
+    .price-card__subtitle,
+    .price-card__info-row,
+    .price-card__date-value {
+        font-size: 16px;
+    }
+}
+
 /* ============================================
    DESKTOP STYLES (min-width: 768px)
    ============================================ */

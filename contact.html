@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - CoWoS Virtual Office</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/contact-form.css">
+</head>
+
+<body>
+    <div class="bg-[#F9FAFB] text-[#0D0D12]">
+        <header class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <a href="./index.html" class="nav__logo">
+                    <img src="./src/assets/icons/logo.svg" alt="eCompany Logo">
+                    <span class="nav__logo-text">eCompany</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="nav__menu">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li><a href="./features.html" class="nav__link">Features</a></li>
+                    <li><a href="./incorporation-assistant.html" class="nav__link">Incorporation Assistant</a></li>
+                    <li><a href="./demo-dashboard.html" class="nav__link">Demo Dashboard</a></li>
+                    <li><a href="./pricing.html" class="nav__link">Pricing</a></li>
+                    <li><a href="./faq.html" class="nav__link">FAQ</a></li>
+                </ul>
+
+                <!-- Desktop Actions -->
+                <div class="nav__actions">
+                    <div class="lang-selector">
+                        <button class="btn btn--outline lang-selector__trigger" data-dropdown="lang-desktop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_2025_13829)">
+                                    <path
+                                        d="M8 0C3.58875 0 0 3.58875 0 8C0 12.4113 3.58875 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58875 12.4113 0 8 0ZM7.53125 3.92676C6.81812 3.89612 6.11218 3.7959 5.43811 3.63293C5.54578 3.37781 5.6626 3.13281 5.78857 2.90063C6.30542 1.94824 6.93994 1.27991 7.53125 1.03784V3.92676ZM7.53125 4.86499V7.53125H4.60339C4.64465 6.4906 4.82202 5.45752 5.11536 4.51782C5.8927 4.71362 6.70874 4.83215 7.53125 4.86499ZM7.53125 8.46875V11.135C6.70874 11.1678 5.8927 11.2864 5.11536 11.4822C4.82202 10.5425 4.64465 9.5094 4.60339 8.46875H7.53125ZM7.53125 12.0732V14.9622C6.93994 14.7201 6.30542 14.0518 5.78857 13.0994C5.6626 12.8672 5.54578 12.6222 5.43811 12.3671C6.11218 12.2041 6.81799 12.1039 7.53125 12.0732ZM8.46875 12.0732C9.18188 12.1039 9.88782 12.2041 10.5619 12.3671C10.4542 12.6222 10.3374 12.8672 10.2114 13.0994C9.69458 14.0518 9.06006 14.7201 8.46875 14.9622V12.0732ZM8.46875 11.135V8.46875H11.3966C11.3553 9.5094 11.178 10.5425 10.8846 11.4822C10.1073 11.2864 9.29126 11.1678 8.46875 11.135ZM8.46875 7.53125V4.86499C9.29126 4.83215 10.1073 4.71362 10.8846 4.51782C11.178 5.45752 11.3553 6.4906 11.3966 7.53125H8.46875ZM8.46875 3.92676V1.03784C9.06006 1.27991 9.69458 1.94824 10.2114 2.90063C10.3374 3.13281 10.4542 3.37781 10.5619 3.63293C9.88782 3.7959 9.18188 3.89612 8.46875 3.92676ZM11.0354 2.45349C10.8007 2.02087 10.5457 1.63953 10.2769 1.31421C11.2141 1.63428 12.0631 2.14636 12.7771 2.8031C12.3699 3.02124 11.931 3.21069 11.4694 3.36902C11.3384 3.0509 11.1936 2.74487 11.0354 2.45349ZM4.9646 2.45349C4.8064 2.74487 4.66162 3.0509 4.53064 3.36902C4.06897 3.21069 3.63013 3.02112 3.2229 2.8031C3.93689 2.14636 4.78589 1.63428 5.72314 1.31421C5.45435 1.63953 5.19946 2.02075 4.9646 2.45349ZM4.2135 4.25012C3.89355 5.27368 3.70544 6.38953 3.66492 7.53125H0.953491C1.05383 6.00769 1.63892 4.61438 2.5564 3.50525C3.06555 3.79724 3.62317 4.047 4.2135 4.25012ZM3.66492 8.46875C3.70544 9.6106 3.89355 10.7263 4.2135 11.7499C3.62317 11.953 3.06555 12.2028 2.5564 12.4948C1.63892 11.3856 1.05383 9.99231 0.953491 8.46875H3.66492ZM4.53064 12.631C4.66162 12.9491 4.8064 13.2551 4.9646 13.5465C5.19946 13.9791 5.45435 14.3605 5.72314 14.6858C4.78589 14.3657 3.93689 13.8536 3.22302 13.1969C3.63 12.9789 4.06897 12.7893 4.53064 12.631ZM11.0354 13.5465C11.1936 13.2551 11.3384 12.9491 11.4694 12.631C11.931 12.7893 12.3699 12.9789 12.7771 13.1969C12.0631 13.8536 11.2141 14.3657 10.2769 14.6858C10.5457 14.3605 10.8005 13.9792 11.0354 13.5465ZM11.7865 11.7499C12.1064 10.7263 12.2946 9.61047 12.3351 8.46875H15.0465C14.9462 9.99231 14.3611 11.3856 13.4436 12.4948C12.9344 12.2028 12.3768 11.953 11.7865 11.7499ZM12.3351 7.53125C12.2946 6.3894 12.1064 5.27368 11.7865 4.25012C12.3768 4.047 12.9344 3.79724 13.4436 3.50525C14.3611 4.61438 14.9462 6.00769 15.0465 7.53125H12.3351Z"
+                                        fill="#0D0D12" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2025_13829">
+                                        <rect width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>English</span>
+                            <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
+                            </svg>
+                        </button>
+                        <div class="lang-selector__menu hidden" id="lang-desktop">
+                            <a href="#" class="lang-selector__item" data-lang="English" data-flag="🇺🇸">
+                                <span class="lang-selector__flag">🇺🇸</span>
+                                <span>English</span>
+                            </a>
+                            <a href="#" class="lang-selector__item" data-lang="Deutsch" data-flag="🇩🇪">
+                                <span class="lang-selector__flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn--primary btn--mobile--nav">
+                        <span>Try for Free</span>
+                        <svg class="icon" viewBox="0 0 16 16" fill="white">
+                            <path
+                                d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
+                        </svg>
+                    </button>
+
+                    <!-- Hamburger -->
+                    <button class="hamburger" data-toggle="mobile-menu">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="nav__mobile-menu" id="mobile-menu">
+                    <ul class="nav__mobile-links">
+                        <li><a href="./index.html" class="nav__mobile-link">Home</a></li>
+                        <li><a href="./features.html" class="nav__mobile-link">Features</a></li>
+                        <li><a href="./incorporation-assistant.html" class="nav__mobile-link">Incorporation
+                                Assistant</a></li>
+                        <li><a href="./demo-dashboard.html" class="nav__mobile-link">Demo Dashboard</a></li>
+                        <li><a href="./pricing.html" class="nav__mobile-link">Pricing</a></li>
+                        <li><a href="./faq.html" class="nav__mobile-link">FAQ</a></li>
+                    </ul>
+
+                    <!-- Mobile Actions -->
+                    <div class="nav__mobile-actions">
+                        <!-- Mobile Language Selector -->
+                        <div class="lang-selector">
+                            <button class="btn btn--outline btn--mobile--nav lang-selector__trigger"
+                                data-dropdown="lang-mobile">
+                                <svg class="icon" viewBox="0 0 16 16" fill="none">
+                                    <g clip-path="url(#clip0_2025_13829)">
+                                        <path
+                                            d="M8 0C3.58875 0 0 3.58875 0 8C0 12.4113 3.58875 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58875 12.4113 0 8 0ZM7.53125 3.92676C6.81812 3.89612 6.11218 3.7959 5.43811 3.63293C5.54578 3.37781 5.6626 3.13281 5.78857 2.90063C6.30542 1.94824 6.93994 1.27991 7.53125 1.03784V3.92676ZM7.53125 4.86499V7.53125H4.60339C4.64465 6.4906 4.82202 5.45752 5.11536 4.51782C5.8927 4.71362 6.70874 4.83215 7.53125 4.86499ZM7.53125 8.46875V11.135C6.70874 11.1678 5.8927 11.2864 5.11536 11.4822C4.82202 10.5425 4.64465 9.5094 4.60339 8.46875H7.53125ZM7.53125 12.0732V14.9622C6.93994 14.7201 6.30542 14.0518 5.78857 13.0994C5.6626 12.8672 5.54578 12.6222 5.43811 12.3671C6.11218 12.2041 6.81799 12.1039 7.53125 12.0732ZM8.46875 12.0732C9.18188 12.1039 9.88782 12.2041 10.5619 12.3671C10.4542 12.6222 10.3374 12.8672 10.2114 13.0994C9.69458 14.0518 9.06006 14.7201 8.46875 14.9622V12.0732ZM8.46875 11.135V8.46875H11.3966C11.3553 9.5094 11.178 10.5425 10.8846 11.4822C10.1073 11.2864 9.29126 11.1678 8.46875 11.135ZM8.46875 7.53125V4.86499C9.29126 4.83215 10.1073 4.71362 10.8846 4.51782C11.178 5.45752 11.3553 6.4906 11.3966 7.53125H8.46875ZM8.46875 3.92676V1.03784C9.06006 1.27991 9.69458 1.94824 10.2114 2.90063C10.3374 3.13281 10.4542 3.37781 10.5619 3.63293C9.88782 3.7959 9.18188 3.89612 8.46875 3.92676ZM11.0354 2.45349C10.8007 2.02087 10.5457 1.63953 10.2769 1.31421C11.2141 1.63428 12.0631 2.14636 12.7771 2.8031C12.3699 3.02124 11.931 3.21069 11.4694 3.36902C11.3384 3.0509 11.1936 2.74487 11.0354 2.45349ZM4.9646 2.45349C4.8064 2.74487 4.66162 3.0509 4.53064 3.36902C4.06897 3.21069 3.63013 3.02112 3.2229 2.8031C3.93689 2.14636 4.78589 1.63428 5.72314 1.31421C5.45435 1.63953 5.19946 2.02075 4.9646 2.45349ZM4.2135 4.25012C3.89355 5.27368 3.70544 6.38953 3.66492 7.53125H0.953491C1.05383 6.00769 1.63892 4.61438 2.5564 3.50525C3.06555 3.79724 3.62317 4.047 4.2135 4.25012ZM3.66492 8.46875C3.70544 9.6106 3.89355 10.7263 4.2135 11.7499C3.62317 11.953 3.06555 12.2028 2.5564 12.4948C1.63892 11.3856 1.05383 9.99231 0.953491 8.46875H3.66492ZM4.53064 12.631C4.66162 12.9491 4.8064 13.2551 4.9646 13.5465C5.19946 13.9791 5.45435 14.3605 5.72314 14.6858C4.78589 14.3657 3.93689 13.8536 3.22302 13.1969C3.63 12.9789 4.06897 12.7893 4.53064 12.631ZM11.0354 13.5465C11.1936 13.2551 11.3384 12.9491 11.4694 12.631C11.931 12.7893 12.3699 12.9789 12.7771 13.1969C12.0631 13.8536 11.2141 14.3657 10.2769 14.6858C10.5457 14.3605 10.8005 13.9792 11.0354 13.5465ZM11.7865 11.7499C12.1064 10.7263 12.2946 9.61047 12.3351 8.46875H15.0465C14.9462 9.99231 14.3611 11.3856 13.4436 12.4948C12.9344 12.2028 12.3768 11.953 11.7865 11.7499ZM12.3351 7.53125C12.2946 6.3894 12.1064 5.27368 11.7865 4.25012C12.3768 4.047 12.9344 3.79724 13.4436 3.50525C14.3611 4.61438 14.9462 6.00769 15.0465 7.53125H12.3351Z"
+                                            fill="#0D0D12" />
+                                    </g>
+                                </svg>
+                                <span>Eng</span>
+                                <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
+                                </svg>
+                            </button>
+                            <div class="lang-selector__menu hidden" id="lang-mobile">
+                                <a href="#" class="lang-selector__item" data-lang="Eng" data-flag="🇺🇸">
+                                    <span class="lang-selector__flag">🇺🇸</span>
+                                    <span>Eng</span>
+                                </a>
+                                <a href="#" class="lang-selector__item" data-lang="Deu" data-flag="🇩🇪">
+                                    <span class="lang-selector__flag">🇩🇪</span>
+                                    <span>Deu</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Try Button -->
+                        <button class="btn btn--primary btn--mobile--nav">
+                            <span>Try for Free</span>
+                            <svg class="icon" viewBox="0 0 16 16" fill="white">
+                                <path
+                                    d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="contact-main container">
+                <!-- Price Card -->
+                <div class="price-card">
+                    <img src="./src/assets/images/contact.png" alt="CoWoS Virtual Office" class="price-card__image" />
+
+                    <div class="price-card__content">
+                        <div class="price-card__header">
+                            <div>
+                                <div class="price-card__title">
+                                    CoWoS Virtual Office - Business Pro | Kolonnenstr. 8 | 10827 Berlin
+                                </div>
+                                <div class="price-card__subtitle">
+                                    Renews automatically
+                                </div>
+                            </div>
+                            <div class="price-card__price">
+                                35 EUR / month
+                            </div>
+                        </div>
+
+                        <div class="price-card__divider"></div>
+
+                        <div class="price-card__details">
+                            <div class="price-card__info-row">
+                                All prices excluding value added tax (MwSt.)
+                            </div>
+
+                            <div class="price-card__info-row">
+                                <span class="price-card__info-label">Cancellation Notice</span>
+                                <span>14 days</span>
+                            </div>
+
+                            <div class="price-card__info-row">
+                                <span class="price-card__info-label">Minimum Commitment</span>
+                                <span>1 month (recurring)</span>
+                            </div>
+
+                            <div class="price-card__info-row">
+                                For monthly booking, the price is €35.
+                            </div>
+
+                            <div class="price-card__info-row">
+                                Pro: Legally valid business address for companies: GbR, OHG, UG, GmbH, gGmbH, GmbH & Co.
+                                KG,
+                                AG, SE, as well as associations and societies, as well as sole proprietors and solo
+                                entrepreneurs. Mail service with delivery once a week.
+                            </div>
+
+                            <div class="price-card__info-row">
+                                <span class="price-card__link">Terms and Conditions »</span>
+                            </div>
+                        </div>
+
+                        <div class="price-card__divider"></div>
+
+                        <div class="price-card__dates">
+                            <div class="price-card__date-item">
+                                <div class="price-card__date-title">Plan start date:</div>
+                                <div class="price-card__date-value">09 Sep</div>
+                            </div>
+
+                            <div class="price-card__date-item">
+                                <div class="price-card__date-title">Prorated amount for September:</div>
+                                <div class="price-card__date-value">25.67 EUR</div>
+                            </div>
+                        </div>
+
+                        <div class="price-card__details" style="padding-bottom: 24px;">
+                            <div class="price-card__date-title">Regular membership due:</div>
+                            <div class="price-card__date-value">01 Oct 2025</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signup Form -->
+                <form class="signup-form" id="signupForm">
+                    <!-- Account Details Section -->
+                    <div class="signup-form__section">
+                        <h2 class="signup-form__section-title">Account Details</h2>
+                        <div class="signup-form__divider"></div>
+
+                        <div class="signup-form__field">
+                            <label for="email" class="signup-form__label">
+                                Email <span class="signup-form__required">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" class="signup-form__input" placeholder="Email"
+                                required>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="password" class="signup-form__label">
+                                Password <span class="signup-form__required">*</span>
+                            </label>
+                            <input type="password" id="password" name="password" placeholder="Password"
+                                class="signup-form__input" required>
+                            <p class="signup-form__helper-text">
+                                If you don't have an account, enter a new password.
+                                <a href="#" class="signup-form__link">Forgot password?</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Personal Details Section -->
+                    <div class="signup-form__section">
+                        <h2 class="signup-form__section-title">Personal Details</h2>
+                        <div class="signup-form__divider"></div>
+
+                        <div class="signup-form__field">
+                            <label for="fullname" class="signup-form__label">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" class="signup-form__input"
+                                placeholder="Full Name">
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="company" class="signup-form__label">
+                                Company <span class="signup-form__required">*</span>
+                            </label>
+                            <input type="text" id="company" name="company" class="signup-form__input" required>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="address" class="signup-form__label">
+                                Street Address <span class="signup-form__required">*</span>
+                            </label>
+                            <textarea id="address" name="address" class="signup-form__textarea" required></textarea>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="country" class="signup-form__label">Country</label>
+                            <select id="country" name="country" class="signup-form__select">
+                                <option value="">Select country</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="de">Germany</option>
+                                <option value="fr">France</option>
+                                <option value="az">Azerbaijan</option>
+                            </select>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="state" class="signup-form__label">State</label>
+                            <select id="state" name="state" class="signup-form__select">
+                                <option value="">Select state</option>
+                            </select>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="city" class="signup-form__label">
+                                City <span class="signup-form__required">*</span>
+                            </label>
+                            <select id="city" name="city" class="signup-form__select" required>
+                                <option value="">Select city</option>
+                            </select>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="postcode" class="signup-form__label">
+                                Post Code <span class="signup-form__required">*</span>
+                            </label>
+                            <input type="text" id="postcode" name="postcode" class="signup-form__input" required>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="phone" class="signup-form__label">
+                                Phone <span class="signup-form__required">*</span>
+                            </label>
+                            <input type="tel" id="phone" name="phone" class="signup-form__input" required>
+                        </div>
+
+                        <div class="signup-form__field">
+                            <label for="ustid" class="signup-form__label">USt-ID: DE339807129</label>
+                            <input type="text" id="ustid" name="ustid" class="signup-form__input">
+                        </div>
+                    </div>
+
+                    <!-- Start Date Section -->
+                    <div class="signup-form__section">
+                        <h2 class="signup-form__section-title">Start Date</h2>
+                        <div class="signup-form__divider"></div>
+
+                        <div class="signup-form__field">
+                            <label for="startdate" class="signup-form__label">
+                                When do you want to start? <span class="signup-form__required">*</span>
+                            </label>
+                            <input type="date" id="startdate" name="startdate" class="signup-form__input" required>
+                        </div>
+
+                        <div class="signup-form__divider"></div>
+
+                        <div class="signup-form__checkbox-wrapper">
+                            <input type="checkbox" id="newsletter" name="newsletter" class="signup-form__checkbox">
+                            <label for="newsletter" class="signup-form__checkbox-label">
+                                I agree to receive e-mail newsletters in the future
+                            </label>
+                        </div>
+
+                        <div class="signup-form__checkbox-wrapper">
+                            <input type="checkbox" id="terms" name="terms" class="signup-form__checkbox" required>
+                            <label for="terms" class="signup-form__checkbox-label">
+                                I accept the CoWoS Berlin <a href="./terms.html" class="signup-form__link">Terms and
+                                    Conditions<span class="signup-form__required">*</span></a>
+                            </label>
+                        </div>
+
+                        <div class="signup-form__checkbox-wrapper">
+                            <input type="checkbox" id="privacy" name="privacy" class="signup-form__checkbox" required>
+                            <label for="privacy" class="signup-form__checkbox-label">
+                                I accept the CoWoS Berlin <a href="./privacy.html" class="signup-form__link">Privacy
+                                    Policy<span class="signup-form__required">*</span></a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--large w-full">Sign up</button>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <!-- Navigation Links -->
+                    <div class="footer__nav">
+                        <a href="./about.html" class="footer__link">About Us</a>
+                        <a href="./imprint.html" class="footer__link">Imprint</a>
+                        <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+                        <a href="./terms.html" class="footer__link">Terms and Conditions</a>
+                    </div>
+
+                    <!-- Divider Line -->
+                    <div class="footer__divider"></div>
+
+                    <div class="footer_logo-copyright">
+                        <!-- Logo Section -->
+                        <div class="footer__brand">
+                            <a href="./index.html" class="footer__logo">
+                                <img src="./src/assets/icons/logo.svg" alt="eCompany Logo">
+                                <span class="footer__logo-text">eCompany</span>
+                            </a>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="footer__copyright">
+                            <span>© 2024 ecompany. All rights reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html
