@@ -39,7 +39,7 @@ class TeamSlider {
                 <img src="${member.image}" alt="${member.name}" class="team-section__member-image">
                 <div class="team-section__member-info">
                     <h3>${member.name}</h3>
-                    <p>${member.position}</p>
+                    <p data-i18n="about.team.positions.${member.position}">${member.position}</p>
                 </div>
             `;
 
@@ -78,7 +78,7 @@ class TeamSlider {
                 <img src="${member.image}" alt="${member.name}" class="team-section__member-image">
                 <div class="team-section__member-info">
                     <h3>${member.name}</h3>
-                    <p>${member.position}</p>
+                    <p data-i18n="about.team.positions.${member.position}">${member.position}</p>
                 </div>
             `;
 

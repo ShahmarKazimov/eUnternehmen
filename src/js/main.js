@@ -2,6 +2,7 @@ import TeamSlider from './team.js';
 import Header from './header.js';
 import FAQ from './faq.js';
 import Homepage from './homepage.js';
+import I18n from './i18n.js';
 
 // ============================================
 // MAIN APPLICATION ENTRY POINT
@@ -43,6 +44,10 @@ class App {
             // Team slider functionality
             if (TeamSlider) {
                 new TeamSlider();
+            }
+
+            if (I18n) {
+                new I18n();
             }
 
         } catch (error) {

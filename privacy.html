@@ -10,23 +10,25 @@
 </head>
 
 <body>
-    <header class="container">
+    <header>
         <nav class="nav">
             <!-- Logo -->
             <a href="/" class="nav__logo">
                 <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
-                <span class="nav__logo-text">eCompany</span>
+                <span data-i18n="nav.logo" class="nav__logo-text">eCompany</span>
             </a>
 
             <!-- Desktop Menu -->
             <ul class="nav__menu">
-                <li><a href="./index.html" class="nav__link">Home</a></li>
-                <li><a href="#" class="nav__link">Features</a></li>
-                <li><a href="#" class="nav__link">Incorporation Assistant</a></li>
-                <li><a href="#" class="nav__link">Demo Dashboard</a></li>
-                <li><a href="#" class="nav__link">Pricing</a></li>
-                <li><a href="#" class="nav__link">FAQ</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.home">Home</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.features">Features</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
+                </li>
+                <li><a href="/" class="nav__link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
             </ul>
+
 
             <!-- Desktop Actions -->
             <div class="nav__actions">
@@ -50,19 +52,19 @@
                         </svg>
                     </button>
                     <div class="lang-selector__menu hidden" id="lang-desktop">
-                        <a href="#" class="lang-selector__item" data-lang="English" data-flag="🇺🇸">
+                        <a href="#" class="lang-selector__item" data-lang="Eng" data-flag="🇺🇸">
                             <span class="lang-selector__flag">🇺🇸</span>
                             <span>English</span>
                         </a>
-                        <a href="#" class="lang-selector__item" data-lang="Deutsch" data-flag="🇩🇪">
+                        <a href="#" class="lang-selector__item" data-lang="Deu" data-flag="🇩🇪">
                             <span class="lang-selector__flag">🇩🇪</span>
-                            <span>Deutsch</span>
+                            <span>German</span>
                         </a>
                     </div>
                 </div>
 
                 <button class="btn btn--primary btn--mobile--nav">
-                    <span>Try for Free</span>
+                    <span data-i18n="buttons.tryForFree">Try for Free</span>
                     <svg class="icon" viewBox="0 0 16 16" fill="white">
                         <path
                             d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -80,12 +82,14 @@
             <!-- Mobile Menu -->
             <div class="nav__mobile-menu" id="mobile-menu">
                 <ul class="nav__mobile-links">
-                    <li><a href="./index.html" class="nav__mobile-link">Home</a></li>
-                    <li><a href="#" class="nav__mobile-link">Features</a></li>
-                    <li><a href="#" class="nav__mobile-link">Incorporation Assistant</a></li>
-                    <li><a href="#" class="nav__mobile-link">Demo Dashboard</a></li>
-                    <li><a href="#" class="nav__mobile-link">Pricing</a></li>
-                    <li><a href="#" class="nav__mobile-link">FAQ</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.features">Features</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.incorporationAssistant">Incorporation
+                            Assistant</a>
+                    </li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
                 </ul>
 
                 <!-- Mobile Actions - Hamburger menunun içində -->
@@ -95,11 +99,8 @@
                         <button class="btn btn--outline btn--mobile--nav lang-selector__trigger"
                             data-dropdown="lang-mobile">
                             <svg class="icon" viewBox="0 0 16 16" fill="none">
-                                <g clip-path="url(#clip0_2025_13829)">
-                                    <path
-                                        d="M8 0C3.58875 0 0 3.58875 0 8C0 12.4113 3.58875 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58875 12.4113 0 8 0ZM7.53125 3.92676C6.81812 3.89612 6.11218 3.7959 5.43811 3.63293C5.54578 3.37781 5.6626 3.13281 5.78857 2.90063C6.30542 1.94824 6.93994 1.27991 7.53125 1.03784V3.92676ZM7.53125 4.86499V7.53125H4.60339C4.64465 6.4906 4.82202 5.45752 5.11536 4.51782C5.8927 4.71362 6.70874 4.83215 7.53125 4.86499ZM7.53125 8.46875V11.135C6.70874 11.1678 5.8927 11.2864 5.11536 11.4822C4.82202 10.5425 4.64465 9.5094 4.60339 8.46875H7.53125ZM7.53125 12.0732V14.9622C6.93994 14.7201 6.30542 14.0518 5.78857 13.0994C5.6626 12.8672 5.54578 12.6222 5.43811 12.3671C6.11218 12.2041 6.81799 12.1039 7.53125 12.0732ZM8.46875 12.0732C9.18188 12.1039 9.88782 12.2041 10.5619 12.3671C10.4542 12.6222 10.3374 12.8672 10.2114 13.0994C9.69458 14.0518 9.06006 14.7201 8.46875 14.9622V12.0732ZM8.46875 11.135V8.46875H11.3966C11.3553 9.5094 11.178 10.5425 10.8846 11.4822C10.1073 11.2864 9.29126 11.1678 8.46875 11.135ZM8.46875 7.53125V4.86499C9.29126 4.83215 10.1073 4.71362 10.8846 4.51782C11.178 5.45752 11.3553 6.4906 11.3966 7.53125H8.46875ZM8.46875 3.92676V1.03784C9.06006 1.27991 9.69458 1.94824 10.2114 2.90063C10.3374 3.13281 10.4542 3.37781 10.5619 3.63293C9.88782 3.7959 9.18188 3.89612 8.46875 3.92676ZM11.0354 2.45349C10.8007 2.02087 10.5457 1.63953 10.2769 1.31421C11.2141 1.63428 12.0631 2.14636 12.7771 2.8031C12.3699 3.02124 11.931 3.21069 11.4694 3.36902C11.3384 3.0509 11.1936 2.74487 11.0354 2.45349ZM4.9646 2.45349C4.8064 2.74487 4.66162 3.0509 4.53064 3.36902C4.06897 3.21069 3.63013 3.02112 3.2229 2.8031C3.93689 2.14636 4.78589 1.63428 5.72314 1.31421C5.45435 1.63953 5.19946 2.02075 4.9646 2.45349ZM4.2135 4.25012C3.89355 5.27368 3.70544 6.38953 3.66492 7.53125H0.953491C1.05383 6.00769 1.63892 4.61438 2.5564 3.50525C3.06555 3.79724 3.62317 4.047 4.2135 4.25012ZM3.66492 8.46875C3.70544 9.6106 3.89355 10.7263 4.2135 11.7499C3.62317 11.953 3.06555 12.2028 2.5564 12.4948C1.63892 11.3856 1.05383 9.99231 0.953491 8.46875H3.66492ZM4.53064 12.631C4.66162 12.9491 4.8064 13.2551 4.9646 13.5465C5.19946 13.9791 5.45435 14.3605 5.72314 14.6858C4.78589 14.3657 3.93689 13.8536 3.22302 13.1969C3.63 12.9789 4.06897 12.7893 4.53064 12.631ZM11.0354 13.5465C11.1936 13.2551 11.3384 12.9491 11.4694 12.631C11.931 12.7893 12.3699 12.9789 12.7771 13.1969C12.0631 13.8536 11.2141 14.3657 10.2769 14.6858C10.5457 14.3605 10.8005 13.9792 11.0354 13.5465ZM11.7865 11.7499C12.1064 10.7263 12.2946 9.61047 12.3351 8.46875H15.0465C14.9462 9.99231 14.3611 11.3856 13.4436 12.4948C12.9344 12.2028 12.3768 11.953 11.7865 11.7499ZM12.3351 7.53125C12.2946 6.3894 12.1064 5.27368 11.7865 4.25012C12.3768 4.047 12.9344 3.79724 13.4436 3.50525C14.3611 4.61438 14.9462 6.00769 15.0465 7.53125H12.3351Z"
-                                        fill="#0D0D12" />
-                                </g>
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" />
+                                <path d="M8 1v14M1 8h14" stroke="currentColor" />
                             </svg>
                             <span>Eng</span>
                             <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
@@ -120,7 +121,7 @@
 
                     <!-- Mobile Try Button -->
                     <button class="btn btn--primary btn--mobile--nav">
-                        <span>Try for Free</span>
+                        <span data-i18n="buttons.tryForFree">Try for Free</span>
                         <svg class="icon" viewBox="0 0 16 16" fill="white">
                             <path
                                 d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -135,8 +136,8 @@
         <!-- Privacy Hero Section -->
         <section class="privacy-hero">
             <div class="privacy-hero__content">
-                <h1 class="privacy-hero__title">Privacy Policy</h1>
-                <p class="privacy-hero__description">
+                <h1 data-i18n="privacy.hero.title" class="privacy-hero__title">Privacy Policy</h1>
+                <p data-i18n="privacy.hero.description" class="privacy-hero__description">
                     At eUnternehmen, we value the trust you place in us. This Privacy Policy explains how we collect,
                     use, share, and protect your information when you use our platform. Your privacy is not just a
                     feature – it is a promise. Please take a moment to read this policy carefully.
@@ -149,8 +150,8 @@
             <div class="privacy-content container">
                 <!-- Information on data protection -->
                 <section class="privacy-section">
-                    <h2>Information on data protection</h2>
-                    <h6>
+                    <h2 data-i18n="privacy.dataProtection.title">Information on data protection</h2>
+                    <h6 data-i18n="privacy.dataProtection.description">
                         This privacy policy informs you about how we handle your personal data and your rights under the
                         European General Data Protection Regulation (GDPR) and the German Federal Data Protection Act
                         (BDSG). HPMA Consulting UG (hereinafter referred to as "we" or "us") is responsible for data
@@ -161,16 +162,18 @@
 
                 <!-- General information -->
                 <section class="privacy-section">
-                    <h2>General information</h2>
+                    <h2 data-i18n="privacy.generalInfo.title">General information</h2>
                     <div class="privacy-subsection">
-                        <h3>1. Contact</h3>
-                        <h5>If you have any questions or suggestions regarding this information or would like to contact
+                        <h3 data-i18n="privacy.generalInfo.contact.title">1. Contact</h3>
+                        <h5 data-i18n="privacy.generalInfo.contact.description">If you have any questions or suggestions
+                            regarding this information or would like to contact
                             us regarding the assertion of your rights, please address your request to: HPMA GmbH
                             Ritterstraße 24-27, 10969 Berlin Email: hello@info@hpma-consluting.de.com</h5>
                     </div>
                     <div class="privacy-subsection">
-                        <h3>2. Legal basis</h3>
-                        <h5>The data protection term “personal data” refers to all information relating to an identified
+                        <h3 data-i18n="privacy.generalInfo.legalBasis.title">2. Legal basis</h3>
+                        <h5 data-i18n="privacy.generalInfo.legalBasis.description">The data protection term “personal
+                            data” refers to all information relating to an identified
                             or identifiable individual. We process personal data in compliance with the applicable data
                             protection regulations, in particular the GDPR and the BDSG. Data processing by us only
                             takes place on the basis of a legal authorization.<br><br>We process personal data only with
@@ -184,8 +187,9 @@
                         </h5>
                     </div>
 
-                    <h3>3. Storage Duration</h3>
-                    <h5>Unless otherwise stated in the following information, we will store data only as long as
+                    <h3 data-i18n="privacy.generalInfo.storageDuration.title">3. Storage Duration</h3>
+                    <h5 data-i18n="privacy.generalInfo.storageDuration.description">Unless otherwise stated in the
+                        following information, we will store data only as long as
                         necessary to achieve the processing purpose or to fulfill our contractual or legal
                         obligations.<br><br>
                         Such legal retention obligations may arise, in particular, from commercial or tax regulations.
@@ -198,8 +202,8 @@
                         purpose.</h5>
 
 
-                    <h3>4. Data Transfer to Third Countries</h3>
-                    <h5>
+                    <h3 data-i18n="privacy.generalInfo.dataTransfer.title">4. Data Transfer to Third Countries</h3>
+                    <h5 data-i18n="privacy.generalInfo.dataTransfer.description">
                         Visiting our website or using our services may involve the transfer of certain personal data to
                         third countries, i.e., countries where the GDPR does not apply. Such a transfer is permitted if
                         the European Commission has determined that an adequate level of data protection is provided in
@@ -214,8 +218,8 @@
                         on the legal basis of Art. 49(1)(a) GDPR.
                     </h5>
 
-                    <h3>5. Categories of Data Recipients</h3>
-                    <h5>
+                    <h3 data-i18n="privacy.generalInfo.dataRecipients.title">5. Categories of Data Recipients</h3>
+                    <h5 data-i18n="privacy.generalInfo.dataRecipients.description">
                         We use processors for the processing of your data. Processing activities carried out by such
                         processors include, for example, hosting, email delivery, maintenance and support of IT systems,
                         customer and order management, scanning services, communication services, order processing,
@@ -231,19 +235,20 @@
                         recipients may arise as indicated in the following information.
                     </h5>
 
-                    <h3>6. Google Tag Manager</h3>
-                    <h5>At Google services can one transmission from Data to the Google Inc. in the USA as well as in
+                    <h3 data-i18n="privacy.generalInfo.googleTagManager.title">6. Google Tag Manager</h3>
+                    <h5 data-i18n="privacy.generalInfo.googleTagManager.description">At Google services can one
+                        transmission from Data to the Google Inc. in the USA as well as in
                         Countries, in those Google Ireland or Google Ireland's Subcontractors Facilities entertain not
                         excluded become. Observe She in addition please the Notes in the Section “Data transfer in third
                         countries”.<br><br>For more information about data protection at Google, please see Google’s
                         privacy
                         policy: https://policies.google.com/privacy.</h5>
 
-                    <h3>7. Statistics</h3>
+                    <h3 data-i18n="privacy.statistics.title">7. Statistics</h3>
                     <div class="flex flex-col gap-3">
                         <div class="white-section">
-                            <h4>A. Google Analytics</h4>
-                            <p>
+                            <h4 data-i18n="privacy.statistics.googleAnalytics.title">A. Google Analytics</h4>
+                            <p data-i18n="privacy.statistics.googleAnalytics.description">
                                 We use Google Analytics, a service provided by Google Ireland Limited (Google
                                 Ireland/EU),
                                 on our website. Google Analytics is a web analysis service that enables us to collect
@@ -294,8 +299,9 @@
                             </p>
                         </div>
                         <div class="white-section">
-                            <h4>B. Hotjar</h4>
-                            <p>We use the Hotjar service provided by Hotjar Ltd. (Malta/EU) on our website. Hotjar
+                            <h4 data-i18n="privacy.statistics.hotjar.title">B. Hotjar</h4>
+                            <p data-i18n="privacy.statistics.hotjar.description">We use the Hotjar service provided by
+                                Hotjar Ltd. (Malta/EU) on our website. Hotjar
                                 allows us
                                 to analyze traffic on our website using so-called "heat maps." This allows us to see,
                                 for
@@ -328,14 +334,13 @@
                                 Consent Management Tool and in Hotjar's privacy policy at
                                 https://help.hotjar.com/hc/en-us/sections/115003180467-Data-Privacy.</p>
                         </div>
-
                     </div>
 
-                    <h3>8. Tracking & Retargeting</h3>
+                    <h3 data-i18n="privacy.tracking.title">8. Tracking & Retargeting</h3>
                     <div class="flex flex-col gap-3">
                         <div class="white-section">
-                            <h4>A. Segment.io</h4>
-                            <p>
+                            <h4 data-i18n="privacy.tracking.segment.title">A. Segment.io</h4>
+                            <p data-i18n="privacy.tracking.segment.description">
                                 This website uses software from Segment, a service provided by Segment.io Inc. (USA).
                                 Segment.io helps us manage the data collected by third-party providers using the tools
                                 described below and stores data in pseudonymous user profiles. These user profiles are
@@ -349,8 +354,8 @@
                             </p>
                         </div>
                         <div class="white-section">
-                            <h4>B. Google Marketing Services</h4>
-                            <p>
+                            <h4 data-i18n="privacy.tracking.googleMarketing.title">B. Google Marketing Services</h4>
+                            <p data-i18n="privacy.tracking.googleMarketing.description">
                                 We use the Google Ads Conversions marketing service provided by Google Ireland Limited
                                 (Ireland/EU). Google Ads enables us to place ads relevant to users in the Google
                                 advertising network (e.g. in search results or on other websites), improve campaign
@@ -388,8 +393,8 @@
                             </p>
                         </div>
                         <div class="white-section">
-                            <h4>C. Microsoft Ads</h4>
-                            <p>
+                            <h4 data-i18n="privacy.tracking.microsoftAds.title">C. Microsoft Ads</h4>
+                            <p data-i18n="privacy.tracking.microsoftAds.description">
                                 We use the Microsoft Advertising service (formerly Bing Ads) provided by Microsoft
                                 Ireland Operations Limited (Microsoft Ireland/EU) on our website. Microsoft Advertising
                                 is an online marketing service that uses the Universal Event Tracking (UET) tool to help
@@ -415,88 +420,133 @@
                             </p>
                         </div>
                         <div class="white-section">
-                            <h4>D. Facebook-Pixel </h4>
-                            <div class="special-paragraph">We use the Facebook Pixel, a Facebook Business tool provided
-                                by Meta Platforms Ireland
-                                Limited ("Meta," Ireland/EU), on our website. Information about Meta's contact details
-                                and the contact details of its data protection officer can be found in Meta's data
-                                policy at https://www.facebook.com/about/privacy.<br><br>
-                                Information about the actions and activities of visitors to our website, such as
-                                searching for and viewing a product or purchasing a product;<br><br>
-                                <ul>
-                                    <li> Specific ePixel information such as the pixel ID and the Facebook cookie;</li>
-                                    <li> Information about buttons clicked by visitors to the website;</li>
-                                    <li> Information contained in HTTP headers, such as IP addresses, information about
-                                        the web browser, the location of the page and the referrer;</li>
-                                    <li> Information about the status of ad tracking deactivation/restriction;</li>
+                            <h4 data-i18n="privacy.tracking.facebookPixel.title">D. Facebook-Pixel </h4>
+                            <div class="special-paragraph">
+                                <p data-i18n="privacy.tracking.facebookPixel.paragraph">
+                                    We use
+                                    the
+                                    Facebook Pixel, a Facebook Business tool provided
+                                    by Meta Platforms Ireland
+                                    Limited ("Meta," Ireland/EU), on our website. Information about Meta's contact
+                                    details
+                                    and the contact details of its data protection officer can be found in Meta's data
+                                    policy at https://www.facebook.com/about/privacy.<br><br>
+                                    Information about the actions and activities of visitors to our website, such as
+                                    searching for and viewing a product or purchasing a product;
+                                </p><br>
+                                <ul class="leading-2">
+                                    <li data-i18n="privacy.tracking.facebookPixel.features.first">
+                                        Specific ePixel
+                                        information such as the pixel ID and the Facebook cookie;</li><br>
+                                    <li data-i18n="privacy.tracking.facebookPixel.features.second">
+                                        Information about
+                                        buttons
+                                        clicked by visitors to the website;</li><br>
+                                    <li data-i18n="privacy.tracking.facebookPixel.features.third">
+                                        Information contained
+                                        in
+                                        HTTP headers, such as IP addresses, information about
+                                        the web browser, the location of the page and the referrer;</li><br>
+                                    <li data-i18n="privacy.tracking.facebookPixel.features.forth">
+                                        Information about the
+                                        status of ad tracking deactivation/restriction;</li>
                                 </ul>
                                 <br><br>
-                                Some of this event data is information stored on your device. Furthermore, the Facebook
-                                pixel also uses cookies to store information on your device. Such storage of information
-                                by the Facebook pixel, or access to information already stored on your device, only
-                                occurs with your consent.<br><br>
-                                Tracked conversions appear in our Facebook Ads Manager and Facebook Analytics
-                                dashboards. We may use tracked conversions there to measure the effectiveness of our
-                                ads, set custom audiences for ad targeting, for Dynamic Ads campaigns, and analyze the
-                                effectiveness of our website's conversion funnels. The features we use through the
-                                Facebook pixel are described in more detail below.<br><br>
-                                <strong class="font-medium text-black text-[20px]">
-                                    Processing of event data for advertising purposes
-                                </strong>
-                                <br>
-                                The event data collected via the Facebook pixel is used to target our ads and improve ad
-                                delivery, personalize features and content, and improve and secure Facebook products.
-                                For this purpose, event data is collected on our website using the Facebook pixel and
-                                transmitted to Meta Platforms Ireland Limited. This only occurs if you have given your
-                                prior consent. The legal basis for the collection and transmission of personal data by
-                                us to Facebook Ireland is therefore Art. 6 (1) (a) GDPR.<br><br>
-                                This collection and transmission of event data is carried out by us and Meta Platforms
-                                Ireland Limited as joint controllers. We have entered into a processing agreement with
-                                Meta Platforms Ireland Limited as joint controllers, which specifies the distribution of
-                                data protection obligations between us and Meta Platforms Ireland Limited. In this
-                                agreement, we and Meta Platforms Ireland Limited have agreed, among other
-                                things,<br>
-                                <br><br>that we are responsible for providing you with all information pursuant to Art.
-                                13,
-                                14
-                                GDPR regarding the joint processing of personal data;
-                                <br><br>that Meta Platforms Ireland Limited is responsible for enabling the rights of
-                                data
-                                subjects pursuant to Articles 15 to 20 GDPR with regard to the personal data stored by
-                                Facebook Ireland after the joint processing.<br><br>
-                                You can access the agreement concluded between us and Meta Platforms Ireland Limited at
-                                www.facebook.com/legal/controller_addendum.
-                                Meta Platforms Ireland Limited is solely responsible for the subsequent processing of
-                                the submitted event data. Further information on how Meta Platforms Ireland Limited
-                                processes personal data, including the legal basis it relies on and the options for
-                                exercising your rights against Meta Platforms Ireland Limited, can be found in Meta
-                                Platforms Ireland Limited's data policy at
-                                https://www.facebook.com/about/privacy.<br><br>
-                                <strong class="font-medium text-black text-[20px]">
-                                    Processing event data for measurement solutions and analysis services
-                                </strong>
-                                <br><br>
-                                We have also commissioned Meta Platforms Ireland Limited to prepare reports on the
-                                impact of our advertising campaigns and other online content (campaign reports) and to
-                                create analyses and insights about users and their use of our website, products, and
-                                services (analyses) based on the event data collected via the Facebook pixel. For this
-                                purpose, we transmit personal data contained in the event data to Meta Platforms Ireland
-                                Limited. The transmitted personal data is processed by Meta Platforms Ireland Limited as
-                                our processor in order to provide us with the campaign reports and analyses. Personal
-                                data will only be processed to create analyses and campaign reports if you have given
-                                your prior consent. The legal basis for this processing of personal data is therefore
-                                Art. 6 (1) (a) GDPR.<br><br>
-                                The data processed on our behalf is transferred by Meta Platforms Ireland Limited to
-                                Meta Platforms, Inc. in the USA. Meta Platforms Ireland Limited transfers the data to
-                                Meta Platforms, Inc. based on processor-to-processor standard contractual clauses, but
-                                reserves the right to use an alternative transfer option recognized by the GDPR and
-                                other applicable data protection laws in the European Economic Area, the United Kingdom,
-                                and Switzerland.
+                                <p data-i18n="privacy.tracking.facebookPixel.paragraphTwo">
+                                    Some of this event data is information stored on your device. Furthermore, the
+                                    Facebook
+                                    pixel also uses cookies to store information on your device. Such storage of
+                                    information
+                                    by the Facebook pixel, or access to information already stored on your device, only
+                                    occurs with your consent.<br><br>
+                                    Tracked conversions appear in our Facebook Ads Manager and Facebook Analytics
+                                    dashboards. We may use tracked conversions there to measure the effectiveness of our
+                                    ads, set custom audiences for ad targeting, for Dynamic Ads campaigns, and analyze
+                                    the
+                                    effectiveness of our website's conversion funnels. The features we use through the
+                                    Facebook pixel are described in more detail below.
+                                    <br><br>
+                                    <strong class="font-medium text-black text-[20px]">
+                                        Processing of event data for advertising purposes
+                                    </strong>
+                                    <br>
+                                    The event data collected via the Facebook pixel is used to target our ads and
+                                    improve ad
+                                    delivery, personalize features and content, and improve and secure Facebook
+                                    products.
+                                    For this purpose, event data is collected on our website using the Facebook pixel
+                                    and
+                                    transmitted to Meta Platforms Ireland Limited. This only occurs if you have given
+                                    your
+                                    prior consent. The legal basis for the collection and transmission of personal data
+                                    by
+                                    us to Facebook Ireland is therefore Art. 6 (1) (a) GDPR.<br><br>
+                                    This collection and transmission of event data is carried out by us and Meta
+                                    Platforms
+                                    Ireland Limited as joint controllers. We have entered into a processing agreement
+                                    with
+                                    Meta Platforms Ireland Limited as joint controllers, which specifies the
+                                    distribution of
+                                    data protection obligations between us and Meta Platforms Ireland Limited. In this
+                                    agreement, we and Meta Platforms Ireland Limited have agreed, among other
+                                    things,<br>
+                                    <br><br>that we are responsible for providing you with all information pursuant to
+                                    Art.
+                                    13,
+                                    14
+                                    GDPR regarding the joint processing of personal data;
+                                    <br><br>that Meta Platforms Ireland Limited is responsible for enabling the rights
+                                    of
+                                    data
+                                    subjects pursuant to Articles 15 to 20 GDPR with regard to the personal data stored
+                                    by
+                                    Facebook Ireland after the joint processing.<br><br>
+                                    You can access the agreement concluded between us and Meta Platforms Ireland Limited
+                                    at
+                                    www.facebook.com/legal/controller_addendum.
+                                    Meta Platforms Ireland Limited is solely responsible for the subsequent processing
+                                    of
+                                    the submitted event data. Further information on how Meta Platforms Ireland Limited
+                                    processes personal data, including the legal basis it relies on and the options for
+                                    exercising your rights against Meta Platforms Ireland Limited, can be found in Meta
+                                    Platforms Ireland Limited's data policy at
+                                    https://www.facebook.com/about/privacy.<br><br>
+                                    <strong class="font-medium text-black text-[20px]">
+                                        Processing event data for measurement solutions and analysis services
+                                    </strong>
+                                    <br><br>
+                                    We have also commissioned Meta Platforms Ireland Limited to prepare reports on the
+                                    impact of our advertising campaigns and other online content (campaign reports) and
+                                    to
+                                    create analyses and insights about users and their use of our website, products, and
+                                    services (analyses) based on the event data collected via the Facebook pixel. For
+                                    this
+                                    purpose, we transmit personal data contained in the event data to Meta Platforms
+                                    Ireland
+                                    Limited. The transmitted personal data is processed by Meta Platforms Ireland
+                                    Limited as
+                                    our processor in order to provide us with the campaign reports and analyses.
+                                    Personal
+                                    data will only be processed to create analyses and campaign reports if you have
+                                    given
+                                    your prior consent. The legal basis for this processing of personal data is
+                                    therefore
+                                    Art. 6 (1) (a) GDPR.<br><br>
+                                    The data processed on our behalf is transferred by Meta Platforms Ireland Limited to
+                                    Meta Platforms, Inc. in the USA. Meta Platforms Ireland Limited transfers the data
+                                    to
+                                    Meta Platforms, Inc. based on processor-to-processor standard contractual clauses,
+                                    but
+                                    reserves the right to use an alternative transfer option recognized by the GDPR and
+                                    other applicable data protection laws in the European Economic Area, the United
+                                    Kingdom,
+                                    and Switzerland.
+                                </p>
                             </div>
                         </div>
                         <div class="white-section">
-                            <h4>E. LinkedIn Conversion Tracking</h4>
-                            <p>
+                            <h4 data-i18n="privacy.tracking.linkedinTracking.title">E. LinkedIn Conversion Tracking</h4>
+                            <p data-i18n="privacy.tracking.linkedinTracking.description">
                                 We use the LinkedIn Insight Tag, a marketing product of LinkedIn Ireland Unlimited
                                 Company (Ireland/EU), on our website. Information on LinkedIn Ireland's contact details
                                 and the contact details of LinkedIn Ireland's data protection officer can be found in
@@ -538,8 +588,8 @@
                             </p>
                         </div>
                         <div class="white-section">
-                            <h4>A. Google Marketing Services</h4>
-                            <p>
+                            <h4 data-i18n="privacy.tracking.marketingServices.title">A. Google Marketing Services</h4>
+                            <p data-i18n="privacy.tracking.marketingServices.description">
                                 We use the Google Ads Conversions marketing service provided by Google Ireland Limited
                                 (Ireland/EU). Google Ads enables us to place ads relevant to users in the Google
                                 advertising network (e.g. in search results or on other websites), improve campaign
@@ -577,79 +627,128 @@
                             </p>
                         </div>
                         <div class="white-section">
-                            <h4>B. Facebook-Pixel</h4>
+                            <h4 data-i18n="privacy.tracking.facebookPixelSecond.title">B. Facebook-Pixel </h4>
                             <div class="special-paragraph">
-                                We use the Facebook Pixel, a Facebook Business tool provided by Meta Platforms Ireland
-                                Limited ("Meta," Ireland/EU), on our website. Information about Meta's contact details
-                                and the contact details of its data protection officer can be found in Meta's data
-                                policy at https://www.facebook.com/about/privacy.<br><br>
-                                Information about the actions and activities of visitors to our website, such as
-                                searching for and viewing a product or purchasing a product;<br><br>
-                                <ul>
-                                    <li> Specific ePixel information such as the pixel ID and the Facebook cookie;</li>
-                                    <li> Information about buttons clicked by visitors to the website;</li>
-                                    <li> Information contained in HTTP headers, such as IP addresses, information about
-                                        the web browser, the location of the page and the referrer;</li>
-                                    <li> Information about the status of ad tracking deactivation/restriction;</li>
-                                </ul><br>
-                                Some of this event data is information stored on your device. Furthermore, the Facebook
-                                pixel also uses cookies to store information on your device. Such storage of information
-                                by the Facebook pixel, or access to information already stored on your device, only
-                                occurs with your consent.<br><br>
-                                Tracked conversions appear in our Facebook Ads Manager and Facebook Analytics
-                                dashboards. We may use tracked conversions there to measure the effectiveness of our
-                                ads, set custom audiences for ad targeting, for Dynamic Ads campaigns, and analyze the
-                                effectiveness of our website's conversion funnels. The features we use through the
-                                Facebook pixel are described in more detail below.<br><br>
-                                <strong class="font-medium text-black text-[20px]">
-                                    Processing of event data for advertising purposes
-                                </strong>
-                                <br>
-                                The event data collected via the Facebook pixel is used to target our ads and improve ad
-                                delivery, personalize features and content, and improve and secure Facebook products.
-                                For this purpose, event data is collected on our website using the Facebook pixel and
-                                transmitted to Meta Platforms Ireland Limited. This only occurs if you have given your
-                                prior consent. The legal basis for the collection and transmission of personal data by
-                                us to Facebook Ireland is therefore Art. 6 (1) (a) GDPR.<br><br>
-                                This collection and transmission of event data is carried out by us and Meta Platforms
-                                Ireland Limited as joint controllers. We have entered into a processing agreement with
-                                Meta Platforms Ireland Limited as joint controllers, which specifies the distribution of
-                                data protection obligations between us and Meta Platforms Ireland Limited. In this
-                                agreement, we and Meta Platforms Ireland Limited have agreed, among other
-                                things,<br><br>
-                                that we are responsible for providing you with all information pursuant to Art. 13, 14
-                                GDPR regarding the joint processing of personal data;<br><br>
-                                that Meta Platforms Ireland Limited is responsible for enabling the rights of data
-                                subjects pursuant to Articles 15 to 20 GDPR with regard to the personal data stored by
-                                Facebook Ireland after the joint processing.<br><br>
-                                You can access the agreement concluded between us and Meta Platforms Ireland Limited at
-                                www.facebook.com/legal/controller_addendum.
-                                Meta Platforms Ireland Limited is solely responsible for the subsequent processing of
-                                the submitted event data. Further information on how Meta Platforms Ireland Limited
-                                processes personal data, including the legal basis it relies on and the options for
-                                exercising your rights against Meta Platforms Ireland Limited, can be found in Meta
-                                Platforms Ireland Limited's data policy at
-                                https://www.facebook.com/about/privacy.<br><br>
-                                <strong class="font-medium text-black text-[20px]">
-                                    Processing event data for measurement solutions and analysis services
-                                </strong>
+                                <p data-i18n="privacy.tracking.facebookPixelSecond.paragraph">
+                                    We use
+                                    the
+                                    Facebook Pixel, a Facebook Business tool provided
+                                    by Meta Platforms Ireland
+                                    Limited ("Meta," Ireland/EU), on our website. Information about Meta's contact
+                                    details
+                                    and the contact details of its data protection officer can be found in Meta's data
+                                    policy at https://www.facebook.com/about/privacy.<br><br>
+                                    Information about the actions and activities of visitors to our website, such as
+                                    searching for and viewing a product or purchasing a product;
+                                </p><br>
+                                <ul class="leading-2">
+                                    <li data-i18n="privacy.tracking.facebookPixelSecond.features.first">
+                                        Specific ePixel
+                                        information such as the pixel ID and the Facebook cookie;</li><br>
+                                    <li data-i18n="privacy.tracking.facebookPixelSecond.features.second">
+                                        Information about
+                                        buttons
+                                        clicked by visitors to the website;</li><br>
+                                    <li data-i18n="privacy.tracking.facebookPixelSecond.features.third">
+                                        Information contained
+                                        in
+                                        HTTP headers, such as IP addresses, information about
+                                        the web browser, the location of the page and the referrer;</li><br>
+                                    <li data-i18n="privacy.tracking.facebookPixelSecond.features.forth">
+                                        Information about the
+                                        status of ad tracking deactivation/restriction;</li>
+                                </ul>
                                 <br><br>
-                                We have also commissioned Meta Platforms Ireland Limited to prepare reports on the
-                                impact of our advertising campaigns and other online content (campaign reports) and to
-                                create analyses and insights about users and their use of our website, products, and
-                                services (analyses) based on the event data collected via the Facebook pixel. For this
-                                purpose, we transmit personal data contained in the event data to Meta Platforms Ireland
-                                Limited. The transmitted personal data is processed by Meta Platforms Ireland Limited as
-                                our processor in order to provide us with the campaign reports and analyses. Personal
-                                data will only be processed to create analyses and campaign reports if you have given
-                                your prior consent. The legal basis for this processing of personal data is therefore
-                                Art. 6 (1) (a) GDPR.<br><br>
-                                The data processed on our behalf is transferred by Meta Platforms Ireland Limited to
-                                Meta Platforms, Inc. in the USA. Meta Platforms Ireland Limited transfers the data to
-                                Meta Platforms, Inc. based on processor-to-processor standard contractual clauses, but
-                                reserves the right to use an alternative transfer option recognized by the GDPR and
-                                other applicable data protection laws in the European Economic Area, the United Kingdom,
-                                and Switzerland.
+                                <p data-i18n="privacy.tracking.facebookPixelSecond.paragraphTwo">
+                                    Some of this event data is information stored on your device. Furthermore, the
+                                    Facebook
+                                    pixel also uses cookies to store information on your device. Such storage of
+                                    information
+                                    by the Facebook pixel, or access to information already stored on your device, only
+                                    occurs with your consent.<br><br>
+                                    Tracked conversions appear in our Facebook Ads Manager and Facebook Analytics
+                                    dashboards. We may use tracked conversions there to measure the effectiveness of our
+                                    ads, set custom audiences for ad targeting, for Dynamic Ads campaigns, and analyze
+                                    the
+                                    effectiveness of our website's conversion funnels. The features we use through the
+                                    Facebook pixel are described in more detail below.
+                                    <br><br>
+                                    <strong class="font-medium text-black text-[20px]">
+                                        Processing of event data for advertising purposes
+                                    </strong>
+                                    <br>
+                                    The event data collected via the Facebook pixel is used to target our ads and
+                                    improve ad
+                                    delivery, personalize features and content, and improve and secure Facebook
+                                    products.
+                                    For this purpose, event data is collected on our website using the Facebook pixel
+                                    and
+                                    transmitted to Meta Platforms Ireland Limited. This only occurs if you have given
+                                    your
+                                    prior consent. The legal basis for the collection and transmission of personal data
+                                    by
+                                    us to Facebook Ireland is therefore Art. 6 (1) (a) GDPR.<br><br>
+                                    This collection and transmission of event data is carried out by us and Meta
+                                    Platforms
+                                    Ireland Limited as joint controllers. We have entered into a processing agreement
+                                    with
+                                    Meta Platforms Ireland Limited as joint controllers, which specifies the
+                                    distribution of
+                                    data protection obligations between us and Meta Platforms Ireland Limited. In this
+                                    agreement, we and Meta Platforms Ireland Limited have agreed, among other
+                                    things,<br>
+                                    <br><br>that we are responsible for providing you with all information pursuant to
+                                    Art.
+                                    13,
+                                    14
+                                    GDPR regarding the joint processing of personal data;
+                                    <br><br>that Meta Platforms Ireland Limited is responsible for enabling the rights
+                                    of
+                                    data
+                                    subjects pursuant to Articles 15 to 20 GDPR with regard to the personal data stored
+                                    by
+                                    Facebook Ireland after the joint processing.<br><br>
+                                    You can access the agreement concluded between us and Meta Platforms Ireland Limited
+                                    at
+                                    www.facebook.com/legal/controller_addendum.
+                                    Meta Platforms Ireland Limited is solely responsible for the subsequent processing
+                                    of
+                                    the submitted event data. Further information on how Meta Platforms Ireland Limited
+                                    processes personal data, including the legal basis it relies on and the options for
+                                    exercising your rights against Meta Platforms Ireland Limited, can be found in Meta
+                                    Platforms Ireland Limited's data policy at
+                                    https://www.facebook.com/about/privacy.<br><br>
+                                    <strong class="font-medium text-black text-[20px]">
+                                        Processing event data for measurement solutions and analysis services
+                                    </strong>
+                                    <br><br>
+                                    We have also commissioned Meta Platforms Ireland Limited to prepare reports on the
+                                    impact of our advertising campaigns and other online content (campaign reports) and
+                                    to
+                                    create analyses and insights about users and their use of our website, products, and
+                                    services (analyses) based on the event data collected via the Facebook pixel. For
+                                    this
+                                    purpose, we transmit personal data contained in the event data to Meta Platforms
+                                    Ireland
+                                    Limited. The transmitted personal data is processed by Meta Platforms Ireland
+                                    Limited as
+                                    our processor in order to provide us with the campaign reports and analyses.
+                                    Personal
+                                    data will only be processed to create analyses and campaign reports if you have
+                                    given
+                                    your prior consent. The legal basis for this processing of personal data is
+                                    therefore
+                                    Art. 6 (1) (a) GDPR.<br><br>
+                                    The data processed on our behalf is transferred by Meta Platforms Ireland Limited to
+                                    Meta Platforms, Inc. in the USA. Meta Platforms Ireland Limited transfers the data
+                                    to
+                                    Meta Platforms, Inc. based on processor-to-processor standard contractual clauses,
+                                    but
+                                    reserves the right to use an alternative transfer option recognized by the GDPR and
+                                    other applicable data protection laws in the European Economic Area, the United
+                                    Kingdom,
+                                    and Switzerland.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -664,10 +763,10 @@
             <div class="footer__content">
                 <!-- Navigation Links -->
                 <div class="footer__nav">
-                    <a href="./about.html" class="footer__link">About Us</a>
-                    <a href="./imprint.html" class="footer__link">Imprint</a>
-                    <a href="./privacy.html" class="footer__link">Privacy Policy</a>
-                    <a href="./terms.html" class="footer__link">Terms and Conditions</a>
+                    <a data-i18n="footer.aboutUs" href="./about.html" class="footer__link">About Us</a>
+                    <a data-i18n="footer.imprint" href="./imprint.html" class="footer__link">Imprint</a>
+                    <a data-i18n="footer.privacy" href="./privacy.html" class="footer__link">Privacy Policy</a>
+                    <a data-i18n="footer.terms" href="./terms.html" class="footer__link">Terms and Conditions</a>
                 </div>
 
                 <!-- Divider Line -->
@@ -677,13 +776,13 @@
                     <!-- Logo Section -->
                     <div class="footer__brand">
                         <a href="/" class="footer__logo">
-                            <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
-                            <span class="footer__logo-text">eCompany</span>
+                            <img src="/src/assets/icons/logo.svg" alt="eCompany Logo" class="footer__logo-img">
+                            <span data-i18n="nav.logo" class="footer__logo-text">eCompany</span>
                         </a>
                     </div>
                     <!-- Copyright -->
                     <div class="footer__copyright">
-                        <span>© 2024 ecompany. All rights reserved.</span>
+                        <span data-i18n="footer.copyright">© 2024 ecompany. All rights reserved.</span>
                     </div>
                 </div>
             </div>
