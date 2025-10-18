@@ -10,23 +10,25 @@
 </head>
 
 <body>
-    <header class="container">
+    <header>
         <nav class="nav">
             <!-- Logo -->
             <a href="/" class="nav__logo">
                 <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
-                <span class="nav__logo-text">eCompany</span>
+                <span data-i18n="nav.logo" class="nav__logo-text">eCompany</span>
             </a>
 
             <!-- Desktop Menu -->
             <ul class="nav__menu">
-                <li><a href="/" class="nav__link">Home</a></li>
-                <li><a href="./features.html" class="nav__link">Features</a></li>
-                <li><a href="./incorporation-assistant.html" class="nav__link">Incorporation Assistant</a></li>
-                <li><a href="./demo-dashboard.html" class="nav__link">Demo Dashboard</a></li>
-                <li><a href="./pricing.html" class="nav__link">Pricing</a></li>
-                <li><a href="./faq.html" class="nav__link">FAQ</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.home">Home</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.features">Features</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
+                </li>
+                <li><a href="/" class="nav__link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="/" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
             </ul>
+
 
             <!-- Desktop Actions -->
             <div class="nav__actions">
@@ -50,19 +52,19 @@
                         </svg>
                     </button>
                     <div class="lang-selector__menu hidden" id="lang-desktop">
-                        <a href="#" class="lang-selector__item" data-lang="English" data-flag="🇺🇸">
+                        <a href="#" class="lang-selector__item" data-lang="Eng" data-flag="🇺🇸">
                             <span class="lang-selector__flag">🇺🇸</span>
                             <span>English</span>
                         </a>
-                        <a href="#" class="lang-selector__item" data-lang="Deutsch" data-flag="🇩🇪">
+                        <a href="#" class="lang-selector__item" data-lang="Deu" data-flag="🇩🇪">
                             <span class="lang-selector__flag">🇩🇪</span>
-                            <span>Deutsch</span>
+                            <span>German</span>
                         </a>
                     </div>
                 </div>
 
                 <button class="btn btn--primary btn--mobile--nav">
-                    <span>Try for Free</span>
+                    <span data-i18n="buttons.tryForFree">Try for Free</span>
                     <svg class="icon" viewBox="0 0 16 16" fill="white">
                         <path
                             d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -80,12 +82,14 @@
             <!-- Mobile Menu -->
             <div class="nav__mobile-menu" id="mobile-menu">
                 <ul class="nav__mobile-links">
-                    <li><a href="./index.html" class="nav__mobile-link">Home</a></li>
-                    <li><a href="#" class="nav__mobile-link">Features</a></li>
-                    <li><a href="#" class="nav__mobile-link">Incorporation Assistant</a></li>
-                    <li><a href="#" class="nav__mobile-link">Demo Dashboard</a></li>
-                    <li><a href="#" class="nav__mobile-link">Pricing</a></li>
-                    <li><a href="#" class="nav__mobile-link">FAQ</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.features">Features</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.incorporationAssistant">Incorporation
+                            Assistant</a>
+                    </li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="/" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
                 </ul>
 
                 <!-- Mobile Actions - Hamburger menunun içində -->
@@ -95,11 +99,8 @@
                         <button class="btn btn--outline btn--mobile--nav lang-selector__trigger"
                             data-dropdown="lang-mobile">
                             <svg class="icon" viewBox="0 0 16 16" fill="none">
-                                <g clip-path="url(#clip0_2025_13829)">
-                                    <path
-                                        d="M8 0C3.58875 0 0 3.58875 0 8C0 12.4113 3.58875 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58875 12.4113 0 8 0ZM7.53125 3.92676C6.81812 3.89612 6.11218 3.7959 5.43811 3.63293C5.54578 3.37781 5.6626 3.13281 5.78857 2.90063C6.30542 1.94824 6.93994 1.27991 7.53125 1.03784V3.92676ZM7.53125 4.86499V7.53125H4.60339C4.64465 6.4906 4.82202 5.45752 5.11536 4.51782C5.8927 4.71362 6.70874 4.83215 7.53125 4.86499ZM7.53125 8.46875V11.135C6.70874 11.1678 5.8927 11.2864 5.11536 11.4822C4.82202 10.5425 4.64465 9.5094 4.60339 8.46875H7.53125ZM7.53125 12.0732V14.9622C6.93994 14.7201 6.30542 14.0518 5.78857 13.0994C5.6626 12.8672 5.54578 12.6222 5.43811 12.3671C6.11218 12.2041 6.81799 12.1039 7.53125 12.0732ZM8.46875 12.0732C9.18188 12.1039 9.88782 12.2041 10.5619 12.3671C10.4542 12.6222 10.3374 12.8672 10.2114 13.0994C9.69458 14.0518 9.06006 14.7201 8.46875 14.9622V12.0732ZM8.46875 11.135V8.46875H11.3966C11.3553 9.5094 11.178 10.5425 10.8846 11.4822C10.1073 11.2864 9.29126 11.1678 8.46875 11.135ZM8.46875 7.53125V4.86499C9.29126 4.83215 10.1073 4.71362 10.8846 4.51782C11.178 5.45752 11.3553 6.4906 11.3966 7.53125H8.46875ZM8.46875 3.92676V1.03784C9.06006 1.27991 9.69458 1.94824 10.2114 2.90063C10.3374 3.13281 10.4542 3.37781 10.5619 3.63293C9.88782 3.7959 9.18188 3.89612 8.46875 3.92676ZM11.0354 2.45349C10.8007 2.02087 10.5457 1.63953 10.2769 1.31421C11.2141 1.63428 12.0631 2.14636 12.7771 2.8031C12.3699 3.02124 11.931 3.21069 11.4694 3.36902C11.3384 3.0509 11.1936 2.74487 11.0354 2.45349ZM4.9646 2.45349C4.8064 2.74487 4.66162 3.0509 4.53064 3.36902C4.06897 3.21069 3.63013 3.02112 3.2229 2.8031C3.93689 2.14636 4.78589 1.63428 5.72314 1.31421C5.45435 1.63953 5.19946 2.02075 4.9646 2.45349ZM4.2135 4.25012C3.89355 5.27368 3.70544 6.38953 3.66492 7.53125H0.953491C1.05383 6.00769 1.63892 4.61438 2.5564 3.50525C3.06555 3.79724 3.62317 4.047 4.2135 4.25012ZM3.66492 8.46875C3.70544 9.6106 3.89355 10.7263 4.2135 11.7499C3.62317 11.953 3.06555 12.2028 2.5564 12.4948C1.63892 11.3856 1.05383 9.99231 0.953491 8.46875H3.66492ZM4.53064 12.631C4.66162 12.9491 4.8064 13.2551 4.9646 13.5465C5.19946 13.9791 5.45435 14.3605 5.72314 14.6858C4.78589 14.3657 3.93689 13.8536 3.22302 13.1969C3.63 12.9789 4.06897 12.7893 4.53064 12.631ZM11.0354 13.5465C11.1936 13.2551 11.3384 12.9491 11.4694 12.631C11.931 12.7893 12.3699 12.9789 12.7771 13.1969C12.0631 13.8536 11.2141 14.3657 10.2769 14.6858C10.5457 14.3605 10.8005 13.9792 11.0354 13.5465ZM11.7865 11.7499C12.1064 10.7263 12.2946 9.61047 12.3351 8.46875H15.0465C14.9462 9.99231 14.3611 11.3856 13.4436 12.4948C12.9344 12.2028 12.3768 11.953 11.7865 11.7499ZM12.3351 7.53125C12.2946 6.3894 12.1064 5.27368 11.7865 4.25012C12.3768 4.047 12.9344 3.79724 13.4436 3.50525C14.3611 4.61438 14.9462 6.00769 15.0465 7.53125H12.3351Z"
-                                        fill="#0D0D12" />
-                                </g>
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" />
+                                <path d="M8 1v14M1 8h14" stroke="currentColor" />
                             </svg>
                             <span>Eng</span>
                             <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
@@ -120,7 +121,7 @@
 
                     <!-- Mobile Try Button -->
                     <button class="btn btn--primary btn--mobile--nav">
-                        <span>Try for Free</span>
+                        <span data-i18n="buttons.tryForFree">Try for Free</span>
                         <svg class="icon" viewBox="0 0 16 16" fill="white">
                             <path
                                 d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -137,19 +138,20 @@
             <div class="about__container container">
                 <!-- Breadcrumb -->
                 <nav class="about__breadcrumb">
-                    <a href="./index.html" class="about__breadcrumb-link">Home</a>
+                    <a href="./index.html" class="about__breadcrumb-link" data-i18n="about.breadcrumb.home">Home</a>
                     <span class="about__breadcrumb-separator">></span>
-                    <span class="about__breadcrumb-current">About Us</span>
+                    <span class="about__breadcrumb-current" data-i18n="about.breadcrumb.current">About Us</span>
                 </nav>
 
                 <div class="about__content">
                     <!-- Left Content -->
                     <div class="about__text">
-                        <h1 class="about__title">HPMA</h1>
+                        <h1 class="about__title" data-i18n="about.hero.title">HPMA</h1>
                         <div class="about__description">
-                            <p>We are HPMA Consulting, a interdisciplinary Founding team out of the areas engineering,
+                            <p data-i18n="about.hero.description">We are HPMA Consulting, a interdisciplinary Founding
+                                team out of the areas engineering,
                                 Financial accounting and Right – with one common Mission: Pursue in Germany and Europe
-                                the digital transformation to facilitate.<br>
+                                the digital transformation to facilitate.
                                 With our Experience and Expertise have we one powerful platform developed, the classic
                                 business processes How accounting, Annual financial statements, Document management and
                                 digital Business addresses new thinks – efficient, secure and complete digital.
@@ -157,7 +159,7 @@
                         </div>
 
                         <button class="about__cta-button">
-                            <span>Our Services</span>
+                            <span data-i18n="about.hero.cta">Our Services</span>
                             <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
                                 <path
                                     d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -179,14 +181,17 @@
                 <!-- Top Content -->
                 <div class="hpma-solutions__header">
                     <div class="hpma-solutions__badge">
-                        <span>• Who We Are</span>
+                        <span data-i18n="about.solutions.badge">• Who We Are</span>
                     </div>
-                    <h2 class="hpma-solutions__title">HPMA – Your partner for digital business solutions</h2>
+                    <h2 class="hpma-solutions__title" data-i18n="about.solutions.title">HPMA – Your partner for digital
+                        business solutions</h2>
                     <div class="hpma-solutions__description">
-                        <p>Our solutions combine automated workflows, proprietary AI models, and GDPR-compliant hosting
+                        <p data-i18n="about.solutions.description.0">Our solutions combine automated workflows,
+                            proprietary AI models, and GDPR-compliant hosting
                             to not only optimize but also modernize workflows – for law firms, startups, and established
                             companies alike.</p>
-                        <p>With DataKub, we also offer a digital business address with transparent registry information
+                        <p data-i18n="about.solutions.description.1">With DataKub, we also offer a digital business
+                            address with transparent registry information
                             – ideal for modern companies that value efficiency, structure, and legal certainty.</p>
                     </div>
                 </div>
@@ -201,7 +206,8 @@
 
                     <!-- Right - Features -->
                     <div class="hpma-solutions__features">
-                        <h3 class="hpma-solutions__features-title">What sets us apart:</h3>
+                        <h3 data-i18n="about.solutions.features.title" class="hpma-solutions__features-title">What sets
+                            us apart:</h3>
 
                         <div class="hpma-solutions__features-list">
                             <div class="hpma-solutions__feature">
@@ -212,7 +218,8 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
-                                <span class="hpma-solutions__feature-text">Practical experience in technology, tax
+                                <span data-i18n="about.solutions.features.list.0"
+                                    class="hpma-solutions__feature-text">Practical experience in technology, tax
                                     consulting and law</span>
                             </div>
 
@@ -224,7 +231,8 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
-                                <span class="hpma-solutions__feature-text">Clear, user-friendly solutions instead of
+                                <span data-i18n="about.solutions.features.list.1"
+                                    class="hpma-solutions__feature-text">Clear, user-friendly solutions instead of
                                     complicated tools</span>
                             </div>
 
@@ -236,7 +244,8 @@
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
-                                <span class="hpma-solutions__feature-text">Responsible handling of data – made & hosted
+                                <span data-i18n="about.solutions.features.list.2"
+                                    class="hpma-solutions__feature-text">Responsible handling of data – made & hosted
                                     in Germany</span>
                             </div>
                         </div>
@@ -251,19 +260,20 @@
                 <div class="flex flex-col gap-3">
                     <!-- Vision Badge -->
                     <div class="vision-section__badge">
-                        <span>• Vision</span>
+                        <span data-i18n="about.vision.badge">• Vision</span>
                     </div>
 
                     <!-- Vision Content -->
                     <div class="vision-section__content">
                         <!-- Left - Title -->
                         <div class="vision-section__text">
-                            <h2 class="vision-section__title">Our Vision</h2>
+                            <h2 class="vision-section__title" data-i18n="about.vision.title">Our Vision</h2>
                         </div>
 
                         <!-- Right - Description -->
                         <div class="vision-section__description">
-                            <p>We believe that digital processes must be not only efficient, but also understandable and
+                            <p data-i18n="about.vision.description">We believe that digital processes must be not only
+                                efficient, but also understandable and
                                 enjoyable. That's why we develop tools that take real work off your hands, save time,
                                 and
                                 meet the highest data protection standards.</p>
@@ -284,12 +294,12 @@
                 <div class="gap-3 flex flex-col">
                     <!-- Badge -->
                     <div class="missions-section__badge">
-                        <span>• Our Missions</span>
+                        <span data-i18n="about.missions.badge">• Our Missions</span>
                     </div>
 
                     <!-- Title -->
-                    <h2 class="missions-section__title">Digitize processes, simplify procedures and sustainably
-                        strengthen companies.</h2>
+                    <h2 class="missions-section__title" data-i18n="about.missions.title">Digitize processes, simplify
+                        procedures and sustainably strengthen companies.</h2>
                 </div>
 
                 <!-- Content Grid -->
@@ -298,7 +308,8 @@
                     <div class="missions-section__features">
                         <!-- Main Mission -->
                         <div class="missions-section__main-feature">
-                            <p>We are committed to transforming complex workflows into smart, digital solutions that
+                            <p data-i18n="about.missions.mainFeature">We are committed to transforming complex workflows
+                                into smart, digital solutions that
                                 empower businesses to grow with confidence.</p>
                         </div>
 
@@ -319,8 +330,9 @@
                                     </svg>
                                 </div>
                                 <div class="missions-section__feature-content">
-                                    <h3>Empowering entrepreneurs</h3>
-                                    <p>We support founders and teams with clear digital solutions, automation, and
+                                    <h3 data-i18n="about.missions.features.0.title">Empowering entrepreneurs</h3>
+                                    <p data-i18n="about.missions.features.0.description">We support founders and teams
+                                        with clear digital solutions, automation, and
                                         structure – so the focus is back on the business, not on paperwork. Simplify
                                         operational processes</p>
                                 </div>
@@ -362,16 +374,17 @@
                 <div class="flex flex-col gap-3 container">
                     <!-- Badge -->
                     <div class="team-section__badge">
-                        <span>• Team</span>
+                        <span data-i18n="about.team.badge">• Team</span>
                     </div>
 
                     <!-- Title -->
-                    <h2 class="team-section__title">Our Team</h2>
+                    <h2 class="team-section__title" data-i18n="about.team.title">Our Team</h2>
 
                     <!-- Description -->
-                    <p class="team-section__description">Our solutions combine automated workflows , proprietary AI
-                        models , and GDPR-compliant hosting to not only optimize but also modernize workflows - for law
-                        firms, startups, and established companies alike.<br><br>
+                    <p class="team-section__description" data-i18n="about.team.description">Our solutions combine
+                        automated workflows, proprietary AI models, and GDPR-compliant hosting to not only optimize but
+                        also modernize workflows - for law firms, startups, and established companies alike.
+
                         With DataKub, we also offer a digital business address with transparent registry information –
                         ideal for modern companies that value efficiency, structure, and legal certainty.</p>
                 </div>
@@ -389,20 +402,24 @@
                         <div class="join-team__content">
                             <div class="join-team__image">
                                 <div class="join-team__overlay">
-                                    <h2 class="join-team__overlay-title">Our team behind all our successes</h2>
-                                    <p class="join-team__overlay-text">Our success is driven by our dedicated team,
+                                    <h2 data-i18n="about.joinTeam.title" class="join-team__overlay-title">Our team
+                                        behind all our successes</h2>
+                                    <p data-i18n="about.joinTeam.description" class="join-team__overlay-text">Our
+                                        success is driven by our dedicated team,
                                         whose expertise, dedication, and hard work drive our success and innovation.</p>
                                 </div>
                                 <img src="./src/assets/images/team-success.png" alt="Join Our Team"
                                     class="join-team__img">
                             </div>
                             <div class="join-team__text">
-                                <h2 class="join-team__title">Become part of the team</h2>
-                                <p class="join-team__description">If you are interested in becoming part of our team,
+                                <h2 data-i18n="about.joinTeam.secondTitle" class="join-team__title">Become part of the
+                                    team</h2>
+                                <p data-i18n="about.joinTeam.secondDescription" class="join-team__description">If you
+                                    are interested in becoming part of our team,
                                     please share your skills and experience with us and we would be happy to discuss
                                     possible entry opportunities with you.</p>
                                 <a href="#" class="join-team__button">
-                                    <span>We are hiring</span>
+                                    <span data-i18n="about.joinTeam.cta">We are hiring</span>
                                     <svg class="icon" viewBox="0 0 16 16" fill="currentColor">
                                         <path
                                             d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -421,10 +438,10 @@
             <div class="footer__content">
                 <!-- Navigation Links -->
                 <div class="footer__nav">
-                    <a href="./about.html" class="footer__link">About Us</a>
-                    <a href="./imprint.html" class="footer__link">Imprint</a>
-                    <a href="./privacy.html" class="footer__link">Privacy Policy</a>
-                    <a href="./terms.html" class="footer__link">Terms and Conditions</a>
+                    <a data-i18n="footer.aboutUs" href="./about.html" class="footer__link">About Us</a>
+                    <a data-i18n="footer.imprint" href="./imprint.html" class="footer__link">Imprint</a>
+                    <a data-i18n="footer.privacy" href="./privacy.html" class="footer__link">Privacy Policy</a>
+                    <a data-i18n="footer.terms" href="./terms.html" class="footer__link">Terms and Conditions</a>
                 </div>
 
                 <!-- Divider Line -->
@@ -434,13 +451,13 @@
                     <!-- Logo Section -->
                     <div class="footer__brand">
                         <a href="/" class="footer__logo">
-                            <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
-                            <span class="footer__logo-text">eCompany</span>
+                            <img src="/src/assets/icons/logo.svg" alt="eCompany Logo" class="footer__logo-img">
+                            <span data-i18n="nav.logo" class="footer__logo-text">eCompany</span>
                         </a>
                     </div>
                     <!-- Copyright -->
                     <div class="footer__copyright">
-                        <span>© 2024 ecompany. All rights reserved.</span>
+                        <span data-i18n="footer.copyright">© 2024 ecompany. All rights reserved.</span>
                     </div>
                 </div>
             </div>

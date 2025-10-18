@@ -7,26 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>eCompany</title>
   <link rel="stylesheet" href="./src/css/main.css">
+  <script type="module" src="/src/js/main.js"></script>
+
 </head>
 
 <body>
-  <header class="container">
+  <header>
     <nav class="nav">
       <!-- Logo -->
       <a href="/" class="nav__logo">
         <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
-        <span class="nav__logo-text">eCompany</span>
+        <span data-i18n="nav.logo" class="nav__logo-text">eCompany</span>
       </a>
 
       <!-- Desktop Menu -->
       <ul class="nav__menu">
-        <li><a href="./src/html/pages/homepage.html" class="nav__link">Home</a></li>
-        <li><a href="#" class="nav__link">Features</a></li>
-        <li><a href="#" class="nav__link">Incorporation Assistant</a></li>
-        <li><a href="#" class="nav__link">Demo Dashboard</a></li>
-        <li><a href="#" class="nav__link">Pricing</a></li>
-        <li><a href="#" class="nav__link">FAQ</a></li>
+        <li><a href="/" class="nav__link" data-i18n="nav.home">Home</a></li>
+        <li><a href="/" class="nav__link" data-i18n="nav.features">Features</a></li>
+        <li><a href="/" class="nav__link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a></li>
+        <li><a href="/" class="nav__link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+        <li><a href="/" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="/" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
       </ul>
+
 
       <!-- Desktop Actions -->
       <div class="nav__actions">
@@ -50,19 +53,19 @@
             </svg>
           </button>
           <div class="lang-selector__menu hidden" id="lang-desktop">
-            <a href="#" class="lang-selector__item" data-lang="English" data-flag="🇺🇸">
+            <a href="#" class="lang-selector__item" data-lang="Eng" data-flag="🇺🇸">
               <span class="lang-selector__flag">🇺🇸</span>
               <span>English</span>
             </a>
-            <a href="#" class="lang-selector__item" data-lang="Deutsch" data-flag="🇩🇪">
+            <a href="#" class="lang-selector__item" data-lang="Deu" data-flag="🇩🇪">
               <span class="lang-selector__flag">🇩🇪</span>
-              <span>Deutsch</span>
+              <span>German</span>
             </a>
           </div>
         </div>
 
         <button class="btn btn--primary btn--mobile--nav">
-          <span>Try for Free</span>
+          <span data-i18n="buttons.tryForFree">Try for Free</span>
           <svg class="icon" viewBox="0 0 16 16" fill="white">
             <path
               d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
@@ -80,12 +83,13 @@
       <!-- Mobile Menu -->
       <div class="nav__mobile-menu" id="mobile-menu">
         <ul class="nav__mobile-links">
-          <li><a href="#" class="nav__mobile-link">Home</a></li>
-          <li><a href="#" class="nav__mobile-link">Features</a></li>
-          <li><a href="#" class="nav__mobile-link">Incorporation Assistant</a></li>
-          <li><a href="#" class="nav__mobile-link">Demo Dashboard</a></li>
-          <li><a href="#" class="nav__mobile-link">Pricing</a></li>
-          <li><a href="#" class="nav__mobile-link">FAQ</a></li>
+          <li><a href="/" class="nav__mobile-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="/" class="nav__mobile-link" data-i18n="nav.features">Features</a></li>
+          <li><a href="/" class="nav__mobile-link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
+          </li>
+          <li><a href="/" class="nav__mobile-link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+          <li><a href="/" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="/" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
         </ul>
 
         <!-- Mobile Actions - Hamburger menunun içində -->
@@ -116,25 +120,13 @@
 
           <!-- Mobile Try Button -->
           <button class="btn btn--primary btn--mobile--nav">
-            <span>Try for Free</span>
+            <span data-i18n="buttons.tryForFree">Try for Free</span>
             <svg class="icon" viewBox="0 0 16 16" fill="white">
               <path
                 d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
             </svg>
           </button>
         </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="nav__mobile-menu" id="mobile-menu">
-        <ul class="nav__mobile-links">
-          <li><a href="#" class="nav__mobile-link">Home</a></li>
-          <li><a href="#" class="nav__mobile-link">Features</a></li>
-          <li><a href="#" class="nav__mobile-link">Incorporation Assistant</a></li>
-          <li><a href="#" class="nav__mobile-link">Demo Dashboard</a></li>
-          <li><a href="#" class="nav__mobile-link">Pricing</a></li>
-          <li><a href="#" class="nav__mobile-link">FAQ</a></li>
-        </ul>
       </div>
     </nav>
   </header>
@@ -148,18 +140,19 @@
               d="M3.46699 8.26659L8.66699 1.33325L8.00033 6.66659H12.0003C12.5497 6.66659 12.8633 7.29376 12.5337 7.73325L7.33366 14.6666L8.00033 9.33325H4.00033C3.45096 9.33325 3.13737 8.70608 3.46699 8.26659Z"
               fill="#7A77FF" fill-opacity="0.32" stroke="#7A77FF" stroke-width="1.33333" stroke-linejoin="round" />
           </svg>
-          <span>Digital Business Address</span>
+          <span data-i18n="hero.badge">Digital Business Address</span>
         </div>
-        <h1 class="hero__title">Everything for your company from the address to the articles.</h1>
+        <h1 data-i18n="hero.title" class="hero__title">Everything for your company from the address to the articles.
+        </h1>
         <div class="hero__actions">
           <button class="btn btn--primary btn--large">
-            <span>Get Started Now</span>
+            <span data-i18n="buttons.getStarted">Get Started Now</span>
             <svg class="icon" viewBox="0 0 16 16" fill="white">
               <path
                 d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
             </svg>
           </button>
-          <button class="btn hero__subtitle">Incorporate in 10 Minutes</button>
+          <button data-i18n="buttons.incorporateIn" class="btn hero__subtitle">Incorporate in 10 Minutes</button>
         </div>
 
         <!-- Features List -->
@@ -170,7 +163,7 @@
               <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <span class="text-3 md:text-[16px]">OCR & AI Analysis</span>
+            <span data-i18n="hero.features.ocr" class="text-3 md:text-[16px]">OCR & AI Analysis</span>
           </div>
           <div class="hero__feature">
             <svg class="hero__feature-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -178,7 +171,8 @@
               <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <span class="text-3 md:text-[16px]">Transparency Register Service</span>
+            <span data-i18n="hero.features.transparency" class="text-3 md:text-[16px]">Transparency Register
+              Service</span>
           </div>
           <div class="hero__feature">
             <svg class="hero__feature-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -186,7 +180,7 @@
               <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <span class="text-3 md:text-[16px]">Notary Appointment</span>
+            <span data-i18n="hero.features.notary" class="text-3 md:text-[16px]">Notary Appointment</span>
           </div>
           <div class="hero__feature">
             <svg class="hero__feature-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -194,7 +188,7 @@
               <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            <span class="text-3 md:text-[16px]">Mail Forwarding</span>
+            <span data-i18n="hero.features.mailForwarding" class="text-3 md:text-[16px]">Mail Forwarding</span>
           </div>
         </div>
 
@@ -225,10 +219,11 @@
       <div class="pricing__header relative">
         <div class="pricing__badge">
           <span class="pricing__badge-icon"></span>
-          <span class="pricing__badge-text">Pricing</span>
+          <span data-i18n="pricing.badge" class="pricing__badge-text">Pricing</span>
         </div>
-        <h2 class="pricing__title">Pricing & Packages</h2>
-        <p class="pricing__subtitle">Transparent, modular, and fully scalable - giving you the flexibility to pay only
+        <h2 data-i18n="pricing.title" class="pricing__title">Pricing & Packages</h2>
+        <p data-i18n="pricing.subtitle" class="pricing__subtitle">Transparent, modular, and fully scalable - giving you
+          the flexibility to pay only
           for what you need, when you need it.</p>
       </div>
 
@@ -237,16 +232,17 @@
         <!-- Starter Plan -->
         <div class="pricing__card">
           <div class="pricing__card-header">
-            <h3 class="pricing__card-title">Starter</h3>
-            <p class="pricing__card-description">Perfect for individuals or small teams</p>
+            <h3 data-i18n="pricing.starter.title" class="pricing__card-title">Starter</h3>
+            <p data-i18n="pricing.starter.description" class="pricing__card-description">Perfect for individuals or
+              small teams</p>
           </div>
-          <div class="w-full h-[0.2px] absolute left-0 right-0 top-22 bg-[#374151]"></div>
+          <div class="w-full h-[0.2px] absolute left-0 right-0 sm:top-22 bg-[#374151]"></div>
           <div class="pricing__card-price">
             <span class="pricing__price">€69.90</span>
-            <span class="pricing__period">/month</span>
+            <span data-i18n="pricing.starter.period" class="pricing__period">/month</span>
           </div>
           <div class="pricing__card-features">
-            <p class="pricing__features-title">You will get:</p>
+            <p data-i18n="pricing.starter.featuresTitle" class="pricing__features-title">You will get:</p>
             <ul class="pricing__features-list">
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -254,7 +250,9 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                Digital business address
+                <span data-i18n="pricing.starter.features.address">
+                  Digital business address
+                </span>
               </li>
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -262,7 +260,9 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                10 GB storage
+                <span data-i18n="pricing.starter.features.storage">
+                  10 GB storage
+                </span>
               </li>
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -270,7 +270,7 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                OCR inbox & categories
+                <span data-i18n="pricing.starter.features.ocr">OCR inbox & categories</span>
               </li>
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -278,12 +278,12 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                Basic deadlines & reminders
+                <span data-i18n="pricing.starter.features.deadlines">Basic deadlines & reminders</span>
               </li>
             </ul>
           </div>
           <button class="pricing__button pricing__button--starter">
-            <span class="pricing__button-text">Choose Starter</span>
+            <span data-i18n="buttons.chooseStarter" class="pricing__button-text">Choose Starter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
               <path
                 d="M14.0306 9.31064L9.53063 13.8106C9.38973 13.9515 9.19863 14.0307 8.99938 14.0307C8.80012 14.0307 8.60902 13.9515 8.46813 13.8106C8.32723 13.6697 8.24807 13.4786 8.24807 13.2794C8.24807 13.0801 8.32723 12.889 8.46813 12.7481L11.6875 9.53002H2.5C2.30109 9.53002 2.11032 9.451 1.96967 9.31035C1.82902 9.16969 1.75 8.97893 1.75 8.78002C1.75 8.5811 1.82902 8.39034 1.96967 8.24969C2.11032 8.10903 2.30109 8.03002 2.5 8.03002H11.6875L8.46937 4.81002C8.32848 4.66912 8.24932 4.47802 8.24932 4.27877C8.24932 4.07951 8.32848 3.88841 8.46937 3.74752C8.61027 3.60662 8.80137 3.52747 9.00062 3.52747C9.19988 3.52747 9.39098 3.60662 9.53187 3.74752L14.0319 8.24752C14.1018 8.31729 14.1573 8.40019 14.1951 8.49145C14.2329 8.58272 14.2523 8.68055 14.2522 8.77934C14.252 8.87812 14.2324 8.97591 14.1944 9.06709C14.1564 9.15827 14.1007 9.24103 14.0306 9.31064Z"
@@ -295,16 +295,17 @@
         <!-- Professional Plan -->
         <div class="pricing__card--featured">
           <div class="pricing__card-header">
-            <h3 class="pricing__card-title">Professional</h3>
-            <p class="pricing__card-description">Perfect for scaling company, big corporate</p>
+            <h3 data-i18n="pricing.professional.title" class="pricing__card-title">Professional</h3>
+            <p data-i18n="pricing.professional.description" class="pricing__card-description">Perfect for scaling
+              company, big corporate</p>
           </div>
-          <div class="w-full h-[0.2px] absolute left-0 right-0 top-22 bg-[#374151]"></div>
+          <div class="w-full h-[0.2px] absolute left-0 right-0 sm:top-22 bg-[#374151]"></div>
           <div class="pricing__card-price">
             <span class="pricing__price">€79.90</span>
-            <span class="pricing__period">/month</span>
+            <span data-i18n="pricing.professional.period" class="pricing__period">/month</span>
           </div>
           <div class="pricing__card-features">
-            <p class="pricing__features-title">You will get:</p>
+            <p data-i18n="pricing.professional.featuresTitle" class="pricing__features-title">You will get:</p>
             <ul class="pricing__features-list">
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -312,7 +313,9 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                Everything in Starter
+                <span data-i18n="pricing.professional.features.starter">
+                  Everything in Starter
+                </span>
               </li>
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -320,7 +323,9 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                AI deadline detection
+                <span data-i18n="pricing.professional.features.ai">
+                  AI deadline detection
+                </span>
               </li>
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -328,7 +333,9 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                Team undos & escalation
+                <span data-i18n="pricing.professional.features.team">
+                  Team undos & escalation
+                </span>
               </li>
               <li class="pricing__feature">
                 <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8"
@@ -336,12 +343,14 @@
                   <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-                DATEV export / accounting
+                <span data-i18n="pricing.professional.features.accounting">
+                  DATEV export / accounting
+                </span>
               </li>
             </ul>
           </div>
           <button class="pricing__button pricing__button--pro">
-            <span>Choose Pro</span>
+            <span data-i18n="buttons.choosePro">Choose Pro</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
               <path
                 d="M14.0306 9.31064L9.53063 13.8106C9.38973 13.9515 9.19863 14.0307 8.99938 14.0307C8.80012 14.0307 8.60902 13.9515 8.46813 13.8106C8.32723 13.6697 8.24807 13.4786 8.24807 13.2794C8.24807 13.0801 8.32723 12.889 8.46813 12.7481L11.6875 9.53002H2.5C2.30109 9.53002 2.11032 9.451 1.96967 9.31035C1.82902 9.16969 1.75 8.97893 1.75 8.78002C1.75 8.5811 1.82902 8.39034 1.96967 8.24969C2.11032 8.10903 2.30109 8.03002 2.5 8.03002H11.6875L8.46937 4.81002C8.32848 4.66912 8.24932 4.47802 8.24932 4.27877C8.24932 4.07951 8.32848 3.88841 8.46937 3.74752C8.61027 3.60662 8.80137 3.52747 9.00062 3.52747C9.19988 3.52747 9.39098 3.60662 9.53187 3.74752L14.0319 8.24752C14.1018 8.31729 14.1573 8.40019 14.1951 8.49145C14.2329 8.58272 14.2523 8.68055 14.2522 8.77934C14.252 8.87812 14.2324 8.97591 14.1944 9.06709C14.1564 9.15827 14.1007 9.24103 14.0306 9.31064Z"
@@ -357,16 +366,17 @@
           <div class="pricing__slide pricing__slide--active">
             <div class="pricing__card">
               <div class="pricing__card-header">
-                <h3 class="pricing__card-title">Starter</h3>
-                <p class="pricing__card-description">Perfect for individuals or small teams</p>
+                <h3 data-i18n="pricing.starter.title" class="pricing__card-title">Starter</h3>
+                <p data-i18n="pricing.starter.description" class="pricing__card-description">Perfect for individuals or
+                  small teams</p>
               </div>
               <div class="w-full h-[0.2px] absolute left-0 right-0 top-22 bg-[#374151]"></div>
               <div class="pricing__card-price">
                 <span class="pricing__price">€69.90</span>
-                <span class="pricing__period">/month</span>
+                <span data-i18n="pricing.starter.period" class="pricing__period">/month</span>
               </div>
               <div class="pricing__card-features">
-                <p class="pricing__features-title">You will get:</p>
+                <p data-i18n="pricing.starter.featuresTitle" class="pricing__features-title">You will get:</p>
                 <ul class="pricing__features-list">
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -374,7 +384,9 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Digital business address
+                    <span data-i18n="pricing.starter.features.address">
+                      Digital business address
+                    </span>
                   </li>
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -382,7 +394,9 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    10 GB storage
+                    <span data-i18n="pricing.starter.features.storage">
+                      10 GB storage
+                    </span>
                   </li>
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -390,7 +404,9 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    OCR inbox & categories
+                    <span data-i18n="pricing.starter.features.ocr">
+                      OCR inbox & categories
+                    </span>
                   </li>
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -398,12 +414,14 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecp="round" stroke-linejoin="round" />
                     </svg>
-                    Basic deadlines & reminders
+                    <span data-i18n="pricing.starter.features.deadlines">
+                      Basic deadlines & reminders
+                    </span>
                   </li>
                 </ul>
               </div>
               <button class="pricing__button pricing__button--starter">
-                <span class="pricing__button-text">Choose Starter</span>
+                <span data-i18n="buttons.chooseStarter" class="pricing__button-text">Choose Starter</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path
                     d="M14.0306 9.31064L9.53063 13.8106C9.38973 13.9515 9.19863 14.0307 8.99938 14.0307C8.80012 14.0307 8.60902 13.9515 8.46813 13.8106C8.32723 13.6697 8.24807 13.4786 8.24807 13.2794C8.24807 13.0801 8.32723 12.889 8.46813 12.7481L11.6875 9.53002H2.5C2.30109 9.53002 2.11032 9.451 1.96967 9.31035C1.82902 9.16969 1.75 8.97893 1.75 8.78002C1.75 8.5811 1.82902 8.39034 1.96967 8.24969C2.11032 8.10903 2.30109 8.03002 2.5 8.03002H11.6875L8.46937 4.81002C8.32848 4.66912 8.24932 4.47802 8.24932 4.27877C8.24932 4.07951 8.32848 3.88841 8.46937 3.74752C8.61027 3.60662 8.80137 3.52747 9.00062 3.52747C9.19988 3.52747 9.39098 3.60662 9.53187 3.74752L14.0319 8.24752C14.1018 8.31729 14.1573 8.40019 14.1951 8.49145C14.2329 8.58272 14.2523 8.68055 14.2522 8.77934C14.252 8.87812 14.2324 8.97591 14.1944 9.06709C14.1564 9.15827 14.1007 9.24103 14.0306 9.31064Z"
@@ -416,16 +434,17 @@
           <div class="pricing__slide">
             <div class="pricing__card--featured">
               <div class="pricing__card-header">
-                <h3 class="pricing__card-title">Professional</h3>
-                <p class="pricing__card-description">Perfect for scaling company, big corporate</p>
+                <h3 data-i18n="pricing.professional.title" class="pricing__card-title">Professional</h3>
+                <p data-i18n="pricing.professional.description" class="pricing__card-description">Perfect for scaling
+                  company, big corporate</p>
               </div>
               <div class="w-full h-[0.2px] absolute left-0 right-0 top-22 bg-[#374151]"></div>
               <div class="pricing__card-price">
                 <span class="pricing__price">€79.90</span>
-                <span class="pricing__period">/month</span>
+                <span data-i18n="pricing.professional.period" class="pricing__period">/month</span>
               </div>
               <div class="pricing__card-features">
-                <p class="pricing__features-title">You will get:</p>
+                <p data-i18n="pricing.professional.featuresTitle" class="pricing__features-title">You will get:</p>
                 <ul class="pricing__features-list">
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -433,7 +452,9 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Everything in Starter
+                    <span data-i18n="pricing.professional.features.starter">
+                      Everything in Starter
+                    </span>
                   </li>
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -441,7 +462,9 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    AI deadline detection
+                    <span data-i18n="pricing.professional.features.ai">
+                      AI deadline detection
+                    </span>
                   </li>
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -449,7 +472,9 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Team undos & escalation
+                    <span data-i18n="pricing.professional.features.team">
+                      Team undos & escalation
+                    </span>
                   </li>
                   <li class="pricing__feature">
                     <svg class="pricing__check" xmlns="http://www.w3.org/2000/svg" width="10" height="8"
@@ -457,12 +482,14 @@
                       <path d="M1 4.00004L3.66667 6.66671L9 1.33337" stroke="white" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    DATEV export / accounting
+                    <span data-i18n="pricing.professional.features.accounting">
+                      DATEV export / accounting
+                    </span>
                   </li>
                 </ul>
               </div>
               <button class="pricing__button pricing__button--pro">
-                <span>Choose Pro</span>
+                <span data-i18n="buttons.choosePro">Choose Pro</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                   <path
                     d="M14.0306 9.31064L9.53063 13.8106C9.38973 13.9515 9.19863 14.0307 8.99938 14.0307C8.80012 14.0307 8.60902 13.9515 8.46813 13.8106C8.32723 13.6697 8.24807 13.4786 8.24807 13.2794C8.24807 13.0801 8.32723 12.889 8.46813 12.7481L11.6875 9.53002H2.5C2.30109 9.53002 2.11032 9.451 1.96967 9.31035C1.82902 9.16969 1.75 8.97893 1.75 8.78002C1.75 8.5811 1.82902 8.39034 1.96967 8.24969C2.11032 8.10903 2.30109 8.03002 2.5 8.03002H11.6875L8.46937 4.81002C8.32848 4.66912 8.24932 4.47802 8.24932 4.27877C8.24932 4.07951 8.32848 3.88841 8.46937 3.74752C8.61027 3.60662 8.80137 3.52747 9.00062 3.52747C9.19988 3.52747 9.39098 3.60662 9.53187 3.74752L14.0319 8.24752C14.1018 8.31729 14.1573 8.40019 14.1951 8.49145C14.2329 8.58272 14.2523 8.68055 14.2522 8.77934C14.252 8.87812 14.2324 8.97591 14.1944 9.06709C14.1564 9.15827 14.1007 9.24103 14.0306 9.31064Z"
@@ -499,23 +526,29 @@
       <div class="pricing__additional pricing__additional--desktop">
         <div class="pricing__service">
           <div>
-            <h4 class="pricing__service-title">Incorporation package</h4>
-            <p class="pricing__service-description">Standard articles + notary coordination + chamber check</p>
+            <h4 data-i18n="pricing.additional.incorporation.title" class="pricing__service-title">Incorporation package
+            </h4>
+            <p data-i18n="pricing.additional.incorporation.description" class="pricing__service-description">Standard
+              articles + notary coordination + chamber check</p>
           </div>
           <div class="pricing__service-price">€99</div>
         </div>
 
         <div class="pricing__service">
           <div>
-            <h4 class="pricing__service-title">Transparency register service</h4>
-            <p class="pricing__service-description">Filing by our team</p>
+            <h4 data-i18n="pricing.additional.transparency.title" class="pricing__service-title">Transparency register
+              service</h4>
+            <p data-i18n="pricing.additional.transparency.description" class="pricing__service-description">Filing by
+              our team</p>
           </div>
           <div class="pricing__service-price">€49.90</div>
         </div>
         <div class="pricing__service">
           <div>
-            <h4 class="pricing__service-title">Opening balance / annual accounts</h4>
-            <p class="pricing__service-description">Standard articles + notary coordination + chamber check</p>
+            <h4 data-i18n="pricing.additional.balance.title" class="pricing__service-title">Opening balance / annual
+              accounts</h4>
+            <p data-i18n="pricing.additional.balance.description" class="pricing__service-description">Standard articles
+              + notary coordination + chamber check</p>
           </div>
           <div class="pricing__service-price">€49.90</div>
         </div>
@@ -525,18 +558,24 @@
       <div class="pricing__additional-slider">
         <div class="pricing__additional-wrapper">
           <div class="pricing__service">
-            <h4 class="pricing__service-title">Incorporation package</h4>
-            <p class="pricing__service-description">Standard articles + notary coordination + chamber check</p>
+            <h4 data-i18n="pricing.additional.incorporation.title" class="pricing__service-title">Incorporation package
+            </h4>
+            <p data-i18n="pricing.additional.incorporation.description" class="pricing__service-description">Standard
+              articles + notary coordination + chamber check</p>
             <div class="pricing__service-price">€99</div>
           </div>
           <div class="pricing__service">
-            <h4 class="pricing__service-title">Transparency register service</h4>
-            <p class="pricing__service-description">Filing by our team</p>
+            <h4 data-i18n="pricing.additional.transparency.title" class="pricing__service-title">Transparency register
+              service</h4>
+            <p data-i18n="pricing.additional.transparency.description" class="pricing__service-description">Filing by
+              our team</p>
             <div class="pricing__service-price">€49.90</div>
           </div>
           <div class="pricing__service">
-            <h4 class="pricing__service-title">Opening balance / annual accounts</h4>
-            <p class="pricing__service-description">Standard articles + notary coordination + chamber check</p>
+            <h4 data-i18n="pricing.additional.balance.title" class="pricing__service-title">Opening balance / annual
+              accounts</h4>
+            <p data-i18n="pricing.additional.balance.description" class="pricing__service-description">Standard articles
+              + notary coordination + chamber check</p>
             <div class="pricing__service-price">€49.90</div>
           </div>
         </div>
@@ -550,10 +589,11 @@
         <div class="features__header">
           <div class="features__badge">
             <span class="features__badge-icon"></span>
-            <span class="features__badge-text">Features</span>
+            <span data-i18n="features.badge" class="features__badge-text">Features</span>
           </div>
-          <h2 class="features__title">Features that save you time</h2>
-          <p class="features__subtitle">Everything modern companies need to succeed: built with security, compliance,
+          <h2 data-i18n="features.title" class="features__title">Features that save you time</h2>
+          <p data-i18n="features.subtitle" class="features__subtitle">Everything modern companies need to succeed: built
+            with security, compliance,
             and
             efficiency at the core, so you can grow with confidence.</p>
         </div>
@@ -567,8 +607,10 @@
                   stroke="#7A77FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Digital Business Address & Mail</h3>
-            <p class="features__card-description">Letters are scanned, recognized via OCR and auto-categorized. Selected
+            <h3 data-i18n="features.cards.address.title" class="features__card-title">Digital Business Address & Mail
+            </h3>
+            <p data-i18n="features.cards.address.description" class="features__card-description">Letters are scanned,
+              recognized via OCR and auto-categorized. Selected
               letters can be forwarded physically with one click (plus postage).</p>
           </div>
 
@@ -590,8 +632,9 @@
                   stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">OCR Analysis & Documents</h3>
-            <p class="features__card-description">Automatic extraction of sender, subject, deadlines, payment and
+            <h3 data-i18n="features.cards.ocr.title" class="features__card-title">OCR Analysis & Documents</h3>
+            <p data-i18n="features.cards.ocr.description" class="features__card-description">Automatic extraction of
+              sender, subject, deadlines, payment and
               contract
               data. PDFs stored in a structured way, folders per client.</p>
           </div>
@@ -611,8 +654,9 @@
                   stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">AI Deadline Calendar</h3>
-            <p class="features__card-description">Legal and internal deadlines are detected, tracked and reminded. Can
+            <h3 data-i18n="features.cards.calendar.title" class="features__card-title">AI Deadline Calendar</h3>
+            <p data-i18n="features.cards.calendar.description" class="features__card-description">Legal and internal
+              deadlines are detected, tracked and reminded. Can
               be
               handed over to calendar apps.</p>
           </div>
@@ -633,8 +677,9 @@
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Reminders & To-Dos</h3>
-            <p class="features__card-description">Team-ready to-do lists, escalations, ownership and SLA warnings.</p>
+            <h3 data-i18n="features.cards.reminders.title" class="features__card-title">Reminders & To-Dos</h3>
+            <p data-i18n="features.cards.reminders.description" class="features__card-description">Team-ready to-do
+              lists, escalations, ownership and SLA warnings.</p>
           </div>
 
           <div class="features__card">
@@ -659,8 +704,9 @@
                   stroke="#E5B402" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Incorporation Assistant</h3>
-            <p class="features__card-description">Step by step to GmbH/UG: standard articles, notary appointment,
+            <h3 data-i18n="features.cards.incorporation.title" class="features__card-title">Incorporation Assistant</h3>
+            <p data-i18n="features.cards.incorporation.description" class="features__card-description">Step by step to
+              GmbH/UG: standard articles, notary appointment,
               chamber
               name check and checklists.</p>
           </div>
@@ -676,8 +722,10 @@
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Digital Business Address & Mail</h3>
-            <p class="features__card-description">On request, we file your transparency register notification (€49.90)
+            <h3 data-i18n="features.cards.register.title" class="features__card-title">Digital Business Address & Mail
+            </h3>
+            <p data-i18n="features.cards.register.description" class="features__card-description">On request, we file
+              your transparency register notification (€49.90)
               and
               guide you through further obligations.</p>
           </div>
@@ -697,8 +745,9 @@
                   stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Mail Forwarding & Archive</h3>
-            <p class="features__card-description">Select individual items for physical delivery. Version history,
+            <h3 data-i18n="features.cards.forwarding.title" class="features__card-title">Mail Forwarding & Archive</h3>
+            <p data-i18n="features.cards.forwarding.description" class="features__card-description">Select individual
+              items for physical delivery. Version history,
               auditability and export.</p>
           </div>
 
@@ -716,8 +765,9 @@
                   stroke="#126DFB" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Accounting & Receipts</h3>
-            <p class="features__card-description">Receipt inbox, categories, DATEV export, opening balance sheet/annual
+            <h3 data-i18n="features.cards.accounting.title" class="features__card-title">Accounting & Receipts</h3>
+            <p data-i18n="features.cards.accounting.description" class="features__card-description">Receipt inbox,
+              categories, DATEV export, opening balance sheet/annual
               accounts (each €49.90 optional).</p>
           </div>
 
@@ -739,8 +789,9 @@
                   stroke="#B977FF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <h3 class="features__card-title">Storage & Retention</h3>
-            <p class="features__card-description">10 GB included, automatic deletion rules or low-cost extensions.
+            <h3 data-i18n="features.cards.storage.title" class="features__card-title">Storage & Retention</h3>
+            <p data-i18n="features.cards.storage.description" class="features__card-description">10 GB included,
+              automatic deletion rules or low-cost extensions.
               GDPR-compliant.</p>
           </div>
         </div>
@@ -752,10 +803,11 @@
       <div class="dashboard__header">
         <div class="dashboard__badge">
           <span class="dashboard__badge-icon"></span>
-          <span class="dashboard__badge-text">Your Business on Track</span>
+          <span data-i18n="dashboard.badge" class="dashboard__badge-text">Your Business on Track</span>
         </div>
-        <h2 class="dashboard__title">All-in-One to Keep Your Business on Track</h2>
-        <p class="dashboard__subtitle">From managing your inbox, deadlines, and tasks to secure storage and physical
+        <h2 data-i18n="dashboard.title" class="dashboard__title">All-in-One to Keep Your Business on Track</h2>
+        <p data-i18n="dashboard.subtitle" class="dashboard__subtitle">From managing your inbox, deadlines, and tasks to
+          secure storage and physical
           forwarding everything you need is seamlessly integrated to save you time and boost productivity.</p>
       </div>
 
@@ -775,8 +827,9 @@
                 </svg>
               </div>
               <div>
-                <h3 class="dashboard__widget-title">Inbox</h3>
-                <p class="dashboard__widget-description">Your inbox, deadlines, tasks, storage, and forwarding: all
+                <h3 data-i18n="dashboard.widgets.inbox.title" class="dashboard__widget-title">Inbox</h3>
+                <p data-i18n="dashboard.widgets.inbox.description" class="dashboard__widget-description">Your inbox,
+                  deadlines, tasks, storage, and forwarding: all
                   seamlessly organized in one place for maximum productivity.
                 </p>
               </div>
@@ -800,8 +853,9 @@
                 </svg>
               </div>
               <div>
-                <h3 class="dashboard__widget-title">Deadlines</h3>
-                <p class="dashboard__widget-description">Your inbox, deadlines, tasks, storage, and forwarding: all
+                <h3 data-i18n="dashboard.widgets.deadlines.title" class="dashboard__widget-title">Deadlines</h3>
+                <p data-i18n="dashboard.widgets.deadlines.description" class="dashboard__widget-description">Your inbox,
+                  deadlines, tasks, storage, and forwarding: all
                   seamlessly organized in one place for maximum productivity.
                 </p>
               </div>
@@ -827,13 +881,15 @@
                 </svg>
               </div>
               <div>
-                <h3 class="dashboard__widget-title">Physical forwarding</h3>
-                <p class="dashboard__widget-description">Select which letters should be sent physically.</p>
+                <h3 data-i18n="dashboard.widgets.forwarding.title" class="dashboard__widget-title">Physical forwarding
+                </h3>
+                <p data-i18n="dashboard.widgets.forwarding.description" class="dashboard__widget-description">Select
+                  which letters should be sent physically.</p>
               </div>
             </div>
             <div class="dashboard__forwarding-content">
-              <img class="dashboard__all__images w-full h-full sm:h-[240px]" src="/src/assets/images/physical forwarding.png"
-                alt="Physical Forwarding" />
+              <img class="dashboard__all__images w-full h-full sm:h-[240px]"
+                src="/src/assets/images/physical forwarding.png" alt="Physical Forwarding" />
             </div>
           </div>
 
@@ -851,8 +907,9 @@
                 </svg>
               </div>
               <div>
-                <h3 class="dashboard__widget-title">Storage</h3>
-                <p class="dashboard__widget-description">GDPR-compliant data retention with secure storage and automated
+                <h3 data-i18n="dashboard.widgets.storage.title" class="dashboard__widget-title">Storage</h3>
+                <p data-i18n="dashboard.widgets.storage.description" class="dashboard__widget-description">
+                  GDPR-compliant data retention with secure storage and automated
                   policies.
                 </p>
               </div>
@@ -877,12 +934,14 @@
                 </svg>
               </div>
               <div>
-                <h3 class="dashboard__widget-title">To-Dos</h3>
-                <p class="dashboard__widget-description">Team-ready with smart reminders to keep everyone on track.</p>
+                <h3 data-i18n="dashboard.widgets.todos.title" class="dashboard__widget-title">To-Dos</h3>
+                <p data-i18n="dashboard.widgets.todos.description" class="dashboard__widget-description">Team-ready with
+                  smart reminders to keep everyone on track.</p>
               </div>
             </div>
             <div class="dashboard__todo-content">
-              <img class="dashboard__all__images w-full h-full" src="/src/assets/images/Contact Modal.png" alt="contact-modal" />
+              <img class="dashboard__all__images w-full h-full" src="/src/assets/images/Contact Modal.png"
+                alt="contact-modal" />
             </div>
           </div>
         </div>
@@ -895,10 +954,11 @@
           <div class="incorporation__content">
             <div class="incorporation__badge">
               <span class="incorporation__badge-icon"></span>
-              <span class="incorporation__badge-text">Start Your Company Journey</span>
+              <span data-i18n="incorporation.badge" class="incorporation__badge-text">Start Your Company Journey</span>
             </div>
-            <h2 class="incorporation__title">Start Your Company Incorporation Journey</h2>
-            <p class="incorporation__description">
+            <h2 data-i18n="incorporation.title" class="incorporation__title">Start Your Company Incorporation Journey
+            </h2>
+            <p data-i18n="incorporation.description" class="incorporation__description">
               Step through a simple guided process to set up your company from choosing your legal form and defining
               your
               business purpose to finalizing your registered address. We'll take care of the details, so you can focus
@@ -906,7 +966,7 @@
               building your business.
             </p>
             <button class="incorporation__button">
-              <span>Begin Incorporation Steps</span>
+              <span data-i18n="buttons.beginIncorporation">Begin Incorporation Steps</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                 <path
                   d="M14.0306 9.09079L9.53063 13.5908C9.38973 13.7317 9.19863 13.8108 8.99938 13.8108C8.80012 13.8108 8.60902 13.7317 8.46813 13.5908C8.32723 13.4499 8.24807 13.2588 8.24807 13.0595C8.24807 12.8603 8.32723 12.6692 8.46813 12.5283L11.6875 9.31017H2.5C2.30109 9.31017 2.11032 9.23115 1.96967 9.0905C1.82902 8.94984 1.75 8.75908 1.75 8.56017C1.75 8.36126 1.82902 8.17049 1.96967 8.02984C2.11032 7.88918 2.30109 7.81017 2.5 7.81017H11.6875L8.46937 4.59017C8.32848 4.44927 8.24932 4.25818 8.24932 4.05892C8.24932 3.85966 8.32848 3.66856 8.46937 3.52767C8.61027 3.38677 8.80137 3.30762 9.00062 3.30762C9.19988 3.30762 9.39098 3.38677 9.53187 3.52767L14.0319 8.02767C14.1018 8.09744 14.1573 8.18034 14.1951 8.2716C14.2329 8.36287 14.2523 8.4607 14.2522 8.55949C14.252 8.65827 14.2324 8.75606 14.1944 8.84724C14.1564 8.93842 14.1007 9.02119 14.0306 9.09079Z"
@@ -927,9 +987,9 @@
         <div class="streamline__header">
           <div class="streamline__badge">
             <span class="streamline__badge-icon"></span>
-            <span class="streamline__badge-text">Tools</span>
+            <span data-i18n="streamline.badge" class="streamline__badge-text">Tools</span>
           </div>
-          <h2 class="streamline__title">Features That Streamline Your Day</h2>
+          <h2 data-i18n="streamline.title" class="streamline__title">Features That Streamline Your Day</h2>
         </div>
 
         <div class="streamline__visual">
@@ -1040,10 +1100,11 @@
       <div class="faq__header">
         <div class="faq__badge">
           <span class="faq__badge-icon"></span>
-          <span class="faq__badge-text">FAQ</span>
+          <span data-i18n="faq.badge" class="faq__badge-text">FAQ</span>
         </div>
-        <h2 class="faq__title">Frequently Asked Questions</h2>
-        <p class="faq__subtitle">Still unclear? Here are the key answers to help you quickly understand everything you
+        <h2 data-i18n="faq.title" class="faq__title">Frequently Asked Questions</h2>
+        <p data-i18n="faq.subtitle" class="faq__subtitle">Still unclear? Here are the key answers to help you quickly
+          understand everything you
           need without the confusion.</p>
       </div>
 
@@ -1051,26 +1112,28 @@
         <div class="faq__list">
           <div class="faq__item active">
             <button class="faq__question">
-              <span>Is the digital address a real business address?</span>
+              <span data-i18n="faq.items.q1.question">Is the digital address a real business address?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Yes. You receive a fixed address (e.g., in Berlin). Incoming mail is scanned, archived legally and
+              <p data-i18n="faq.items.q1.answer">Yes. You receive a fixed address (e.g., in Berlin). Incoming mail is
+                scanned, archived legally and
                 forwarded physically on request.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question">
-              <span>How does the articles generation work?</span>
+              <span data-i18n="faq.items.q2.question">How does the articles generation work?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Our AI-powered system generates customized articles of incorporation based on your business
+              <p data-i18n="faq.items.q2.answer">Our AI-powered system generates customized articles of incorporation
+                based on your business
                 requirements and German legal standards. Simply fill out the form, and we'll create professional
                 documents ready for notarization.</p>
             </div>
@@ -1078,13 +1141,14 @@
 
           <div class="faq__item">
             <button class="faq__question">
-              <span>What does physical forwarding cost?</span>
+              <span data-i18n="faq.items.q3.question">What does physical forwarding cost?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Physical forwarding is charged at cost price plus a small handling fee. Typical costs range from €2-5
+              <p data-i18n="faq.items.q3.answer">Physical forwarding is charged at cost price plus a small handling fee.
+                Typical costs range from €2-5
                 per letter depending on size and destination. You can select which letters to forward with one click.
               </p>
             </div>
@@ -1092,39 +1156,42 @@
 
           <div class="faq__item">
             <button class="faq__question">
-              <span>What happens when my storage is full?</span>
+              <span data-i18n="faq.items.q4.question">What happens when my storage is full?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
               </svg>
             </button>
             <div class="faq__answer">
-              <p>You'll receive notifications before reaching your limit. You can upgrade your storage plan or set up
+              <p data-i18n="faq.items.q4.answer">You'll receive notifications before reaching your limit. You can
+                upgrade your storage plan or set up
                 automatic deletion rules for older documents. Additional storage is available at competitive rates.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question">
-              <span>How long does company incorporation take?</span>
+              <span data-i18n="faq.items.q5.question">How long does company incorporation take?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
               </svg>
             </button>
             <div class="faq__answer">
-              <p>The entire incorporation process typically takes 7-14 business days from document preparation to final
+              <p data-i18n="faq.items.q5.answer">The entire incorporation process typically takes 7-14 business days
+                from document preparation to final
                 registration. We handle all paperwork and coordinate with notaries to expedite the process.</p>
             </div>
           </div>
 
           <div class="faq__item">
             <button class="faq__question">
-              <span>Can I change my business address later?</span>
+              <span data-i18n="faq.items.q6.question">Can I change my business address later?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.2L1.76 5.55l.75-.75L8 9.76l5.49-5.96.75.75L8 11.2z" />
               </svg>
             </button>
             <div class="faq__answer">
-              <p>Yes, you can change your registered business address at any time. We'll handle the legal notifications
+              <p data-i18n="faq.items.q6.answer">Yes, you can change your registered business address at any time. We'll
+                handle the legal notifications
                 and update all relevant authorities. There's a small administrative fee for address changes.</p>
             </div>
           </div>
@@ -1138,10 +1205,10 @@
       <div class="footer__content">
         <!-- Navigation Links -->
         <div class="footer__nav">
-          <a href="./about.html" class="footer__link">About Us</a>
-          <a href="./imprint.html" class="footer__link">Imprint</a>
-          <a href="./privacy.html" class="footer__link">Privacy Policy</a>
-          <a href="./terms.html" class="footer__link">Terms and Conditions</a>
+          <a data-i18n="footer.aboutUs" href="./about.html" class="footer__link">About Us</a>
+          <a data-i18n="footer.imprint" href="./imprint.html" class="footer__link">Imprint</a>
+          <a data-i18n="footer.privacy" href="./privacy.html" class="footer__link">Privacy Policy</a>
+          <a data-i18n="footer.terms" href="./terms.html" class="footer__link">Terms and Conditions</a>
         </div>
 
         <!-- Divider Line -->
@@ -1152,12 +1219,12 @@
           <div class="footer__brand">
             <a href="/" class="footer__logo">
               <img src="/src/assets/icons/logo.svg" alt="eCompany Logo" class="footer__logo-img">
-              <span class="footer__logo-text">eCompany</span>
+              <span data-i18n="nav.logo" class="footer__logo-text">eCompany</span>
             </a>
           </div>
           <!-- Copyright -->
           <div class="footer__copyright">
-            <span>© 2024 ecompany. All rights reserved.</span>
+            <span data-i18n="footer.copyright">© 2024 ecompany. All rights reserved.</span>
           </div>
         </div>
       </div>
@@ -1165,7 +1232,6 @@
   </footer>
 
   <!-- JavaScript Modules -->
-  <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
