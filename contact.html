@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eCompany</title>
     <link rel="stylesheet" href="./src/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -170,7 +171,8 @@
                             </div>
 
                             <div class="price-card__info-row">
-                                <span data-i18n="contact.description.minimumCommitment" class="price-card__info-label">Minimum
+                                <span data-i18n="contact.description.minimumCommitment"
+                                    class="price-card__info-label">Minimum
                                     Commitment</span>
                                 <span data-i18n="contact.description.commitmentDuration">1 month (recurring)</span>
                             </div>
@@ -220,23 +222,23 @@
                 <form class="signup-form" id="signupForm">
                     <!-- Account Details Section -->
                     <div class="signup-form__section">
-                        <h2 data-i18n="contact.accountDetails.title" class="signup-form__section-title">Account Details</h2>
-                        <div class="signup-form__divider"></div>        
+                        <h2 data-i18n="contact.accountDetails.title" class="signup-form__section-title">Account Details
+                        </h2>
+                        <div class="signup-form__divider"></div>
 
                         <div class="signup-form__field">
                             <label data-i18n="contact.accountDetails.emailLabel" for="email" class="signup-form__label">
                                 Email <span class="signup-form__required">*</span>
                             </label>
-                            <input type="email" id="email" name="email" class="signup-form__input"
-                                required>
+                            <input type="email" id="email" name="email" class="signup-form__input" required>
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.passwordLabel" for="password" class="signup-form__label">
+                            <label data-i18n="contact.accountDetails.passwordLabel" for="password"
+                                class="signup-form__label">
                                 Password <span class="signup-form__required">*</span>
                             </label>
-                            <input type="password" id="password" name="password"
-                                class="signup-form__input" required>
+                            <input type="password" id="password" name="password" class="signup-form__input" required>
                             <p data-i18n="contact.forgotPassword" class="signup-form__helper-text">
                                 If you don't have an account, enter a new password.
                                 <a href="#" class="signup-form__link">Forgot password?</a>
@@ -250,40 +252,51 @@
                         <div class="signup-form__divider"></div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.fullNameLabel" for="fullname" class="signup-form__label">Full Name</label>
+                            <label data-i18n="contact.accountDetails.fullNameLabel" for="fullname"
+                                class="signup-form__label">Full Name</label>
                             <input type="text" id="fullname" name="fullname" class="signup-form__input">
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.companyLabel" for="company" class="signup-form__label">
+                            <label data-i18n="contact.accountDetails.companyLabel" for="company"
+                                class="signup-form__label">
                                 Company <span class="signup-form__required">*</span>
                             </label>
                             <input type="text" id="company" name="company" class="signup-form__input" required>
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.addressLabel" for="address" class="signup-form__label">
+                            <label data-i18n="contact.accountDetails.addressLabel" for="address"
+                                class="signup-form__label">
                                 Street Address <span class="signup-form__required">*</span>
                             </label>
                             <textarea id="address" name="address" class="signup-form__textarea" required></textarea>
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.countryLabel" for="country" class="signup-form__label">Country</label>
+                            <label data-i18n="contact.accountDetails.countryLabel" for="country"
+                                class="signup-form__label">Country</label>
                             <select id="country" name="country" class="signup-form__select">
-                                <option data-i18n="contact.accountDetails.selectCountry" value="">Select country</option>
-                                <option value="us">United States</option>
-                                <option value="uk">United Kingdom</option>
-                                <option value="de">Germany</option>
-                                <option value="fr">France</option>
-                                <option value="az">Azerbaijan</option>
+                                <option data-i18n="contact.accountDetails.selectCountry" value="">Select country
+                                </option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Azerbaijan">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
                             </select>
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.stateLabel" for="state" class="signup-form__label">State</label>
+                            <label data-i18n="contact.accountDetails.stateLabel" for="state"
+                                class="signup-form__label">State</label>
                             <select id="state" name="state" class="signup-form__select">
                                 <option data-i18n="contact.accountDetails.selectState" value="">Select state</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Azerbaijan">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
                             </select>
                         </div>
 
@@ -291,13 +304,19 @@
                             <label data-i18n="contact.accountDetails.cityLabel" for="city" class="signup-form__label">
                                 City <span class="signup-form__required">*</span>
                             </label>
-                            <select id="city" name="city" class="signup-form__select" required>
+                            <select id="city" name="city" required class="signup-form__select">
                                 <option data-i18n="contact.accountDetails.selectCity" value="">Select city</option>
+                                 <option value="United States">New York</option>
+                                <option value="United Kingdom">London</option>
+                                <option value="Azerbaijan">Baku</option>
+                                <option value="France">Paris</option>
+                                <option value="Azerbaijan">Ganja</option>
                             </select>
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.postCodeLabel" for="postcode" class="signup-form__label">
+                            <label data-i18n="contact.accountDetails.postCodeLabel" for="postcode"
+                                class="signup-form__label">
                                 Post Code <span class="signup-form__required">*</span>
                             </label>
                             <input type="text" id="postcode" name="postcode" class="signup-form__input" required>
@@ -311,7 +330,8 @@
                         </div>
 
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.ustIDLabel" for="ustid" class="signup-form__label">USt-ID: DE339807129</label>
+                            <label data-i18n="contact.accountDetails.ustIDLabel" for="ustid"
+                                class="signup-form__label">USt-ID: DE339807129</label>
                             <input type="text" id="ustid" name="ustid" class="signup-form__input">
                         </div>
                     </div>
@@ -332,14 +352,16 @@
 
                         <div class="signup-form__checkbox-wrapper">
                             <input type="checkbox" id="newsletter" name="newsletter" class="signup-form__checkbox">
-                            <label data-i18n="contact.agreementText" for="newsletter" class="signup-form__checkbox-label">
+                            <label data-i18n="contact.agreementText" for="newsletter"
+                                class="signup-form__checkbox-label">
                                 I agree to receive e-mail newsletters in the future
                             </label>
                         </div>
 
                         <div class="signup-form__checkbox-wrapper">
                             <input type="checkbox" id="terms" name="terms" class="signup-form__checkbox" required>
-                            <label data-i18n="contact.acceptanceTextTerms" for="terms" class="signup-form__checkbox-label">
+                            <label data-i18n="contact.acceptanceTextTerms" for="terms"
+                                class="signup-form__checkbox-label">
                                 I accept the CoWoS Berlin <a href="./terms.html" class="signup-form__link">Terms and
                                     Conditions<span class="signup-form__required">*</span></a>
                             </label>
@@ -347,14 +369,16 @@
 
                         <div class="signup-form__checkbox-wrapper">
                             <input type="checkbox" id="privacy" name="privacy" class="signup-form__checkbox" required>
-                            <label data-i18n="contact.acceptanceTextPrivacy" for="privacy" class="signup-form__checkbox-label">
+                            <label data-i18n="contact.acceptanceTextPrivacy" for="privacy"
+                                class="signup-form__checkbox-label">
                                 I accept the CoWoS Berlin <a href="./privacy.html" class="signup-form__link">Privacy
                                     Policy<span class="signup-form__required">*</span></a>
                             </label>
                         </div>
                     </div>
 
-                    <button type="submit" data-i18n="contact.signUpButton" class="btn btn--primary btn--large w-full">Sign up</button>
+                    <button type="submit" data-i18n="contact.signUpButton"
+                        class="btn btn--primary btn--large w-full">Sign up</button>
                 </form>
             </div>
         </main>
@@ -393,6 +417,7 @@
     </div>
 
     <!-- JavaScript Modules -->
+    <script src="/src/js/email.js"></script>
     <script type="module" src="/src/js/main.js"></script>
 </body>
 
