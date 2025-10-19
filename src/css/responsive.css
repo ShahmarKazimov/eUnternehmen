@@ -2,7 +2,231 @@
    RESPONSIVE STYLES
    ============================================ */
 
-/* Join Team Section Responsive */
+/* ============================================
+   MOBILE STYLES (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* Join Team Section */
+    .join-team {
+        max-height: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 32px 0 !important;
+    }
+
+    .join-team__content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .join-team__text {
+        max-width: 100%;
+        text-align: center;
+        padding: 32px 20px;
+        order: 2;
+        box-shadow: 0px 1.344px 2.537px -0.625px rgba(0, 0, 0, 0.07),
+            0px 3.185px 6.274px -1.25px rgba(0, 0, 0, 0.07),
+            0px 5.809px 12.324px -1.875px rgba(0, 0, 0, 0.06);
+        border-radius: 16px;
+    }
+
+    .join-team__title {
+        color: #0D0D12;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .join-team__description {
+        color: #686E7E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: start;
+        margin-bottom: 32px;
+    }
+
+    .join-team__image {
+        width: 100%;
+        order: 1;
+    }
+
+    .join-team__img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .join-team__overlay {
+        left: 24px;
+        right: 24px;
+    }
+
+    .join-team__overlay-title {
+        margin-bottom: 8px;
+        color: #FFF;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .join-team__overlay-text {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .join-team__overlay-title {
+        font-size: 32px;
+    }
+
+    .join-team__overlay-text {
+        font-size: 14px;
+    }
+
+    /* Contact Page */
+    .contact-main {
+        flex-direction: column;
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+        display: block;
+    }
+
+    .signup-form {
+        padding: 0;
+    }
+
+    .signup-form__section-title {
+        font-size: 16px;
+    }
+
+    .signup-form__checkbox-label {
+        font-size: 16px;
+    }
+
+    .price-card__title,
+    .price-card__price,
+    .price-card__date-title {
+        font-size: 18px;
+    }
+
+    .price-card__subtitle,
+    .price-card__info-row,
+    .price-card__date-value {
+        font-size: 16px;
+    }
+
+    .price-card__image {
+        width: 100%;
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    /* Team Section */
+    .team-section__slide {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    .team-section__slider {
+        padding: 10px 0;
+    }
+
+    .team-section__dots {
+        margin: 24px 16px;
+        justify-content: center;
+    }
+
+    /* Dashboard */
+    .dashboard__widget--inbox,
+    .dashboard__widget--deadlines {
+        overflow: visible;
+    }
+
+    .dashboard {
+        padding: 32px 16px;
+        gap: 48px;
+    }
+
+    .dashboard__title {
+        font-size: 24px;
+    }
+
+    .dashboard__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .dashboard__content {
+        gap: 24px;
+    }
+
+    .dashboard__top-row,
+    .dashboard__bottom-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dashboard__main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .dashboard__widget {
+        padding: 20px 0 0 0;
+    }
+
+    .dashboard__widget-header {
+        padding: 0 20px;
+        padding-bottom: 16px;
+    }
+}
+
+/* ============================================
+   DESKTOP STYLES (min-width: 768px)
+   ============================================ */
+@media (min-width: 768px) {
+    .nav__menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .lang-selector__trigger {
+        display: flex;
+    }
+
+    .nav__mobile-menu {
+        display: none !important;
+    }
+
+    .nav__mobile-menu.active {
+        display: none !important;
+    }
+
+    .pricing__cards--desktop {
+        display: flex;
+    }
+
+    .pricing__mobile-slider {
+        display: none;
+    }
+
+    .pricing__additional--desktop {
+        display: grid;
+    }
+
+    .pricing__additional-slider {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .join-team {
         max-height: none;
@@ -807,49 +1031,6 @@
     .faq__icon {
         width: 18px;
         height: 18px;
-    }
-
-    /* ===== FOOTER SECTION ===== */
-    .footer {
-        padding: 32px 0;
-    }
-
-    .footer__container {
-        padding: 0 16px;
-    }
-
-    .footer__content {
-        flex-direction: column;
-        gap: 24px;
-        text-align: center;
-    }
-
-    .footer__nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px 32px;
-        justify-items: center;
-        order: 1;
-    }
-
-    .footer__divider {
-        order: 2;
-    }
-
-    .footer_logo-copyright {
-        order: 3;
-    }
-
-    .footer__link {
-        font-size: 14px;
-    }
-
-    .footer__copyright span {
-        font-size: 12px;
-    }
-
-    .footer_logo-copyright {
-        flex-direction: column;
     }
 
     /* ===== INCORPORATION SECTION ===== */

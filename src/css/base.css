@@ -27,8 +27,10 @@
 }
 
 body {
-    background: linear-gradient(115deg, rgba(199, 199, 252, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 75%, rgba(190, 189, 252, 1) 100%);
+/* background: linear-gradient(120deg, rgba(220, 220, 255, 0.4) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(225, 225, 255, 0.4) 100%); */
     height: 1083px;
+    background-image: url('../assets/images/backgorund-image.jpeg');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
