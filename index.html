@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <nav class="nav">
+    <nav id="nav" class="nav">
       <!-- Logo -->
       <a href="/" class="nav__logo">
         <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
@@ -23,11 +23,11 @@
       <!-- Desktop Menu -->
       <ul class="nav__menu">
         <li><a href="/" class="nav__link" data-i18n="nav.home">Home</a></li>
-        <li><a href="/" class="nav__link" data-i18n="nav.features">Features</a></li>
-        <li><a href="/" class="nav__link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a></li>
-        <li><a href="/" class="nav__link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
-        <li><a href="/" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
-        <li><a href="/" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="#pricing" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#incorporationAssistant" class="nav__link" data-i18n="nav.incorporationAssistant">Incorporation
+            Assistant</a></li>
+        <li><a href="#demoDashboard" class="nav__link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+        <li><a href="#faq" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
       </ul>
 
 
@@ -84,12 +84,12 @@
       <div class="nav__mobile-menu" id="mobile-menu">
         <ul class="nav__mobile-links">
           <li><a href="/" class="nav__mobile-link" data-i18n="nav.home">Home</a></li>
-          <li><a href="/" class="nav__mobile-link" data-i18n="nav.features">Features</a></li>
-          <li><a href="/" class="nav__mobile-link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
+          <li><a href="#pricing" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#incorporationAssistant" class="nav__mobile-link"
+              data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
           </li>
-          <li><a href="/" class="nav__mobile-link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
-          <li><a href="/" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="/" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="#demoDashboard" class="nav__mobile-link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
+          <li><a href="#faq" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
         </ul>
 
         <!-- Mobile Actions - Hamburger menunun içində -->
@@ -145,13 +145,13 @@
         <h1 data-i18n="hero.title" class="hero__title">Everything for your company from the address to the articles.
         </h1>
         <div class="hero__actions">
-          <button class="btn btn--primary btn--large">
+          <a href="/contact.html" class="btn btn--primary btn--large">
             <span data-i18n="buttons.getStarted">Get Started Now</span>
             <svg class="icon" viewBox="0 0 16 16" fill="white">
               <path
                 d="M14.03 8.53l-4.5 4.5a.75.75 0 01-1.06-1.06l3.22-3.22H2.5a.75.75 0 010-1.5h9.19l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5c.3.3.3.77 0 1.06z" />
             </svg>
-          </button>
+          </a>
           <button data-i18n="buttons.incorporateIn" class="btn hero__subtitle">Incorporate in 10 Minutes</button>
         </div>
 
@@ -215,7 +215,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing">
+    <section id="pricing" class="pricing">
       <div class="pricing__header relative">
         <div class="pricing__badge">
           <span class="pricing__badge-icon"></span>
@@ -282,7 +282,7 @@
               </li>
             </ul>
           </div>
-          <button class="pricing__button pricing__button--starter">
+          <button id="starterBtn" class="pricing__button pricing__button--starter">
             <span data-i18n="buttons.chooseStarter" class="pricing__button-text">Choose Starter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
               <path
@@ -349,7 +349,7 @@
               </li>
             </ul>
           </div>
-          <button class="pricing__button pricing__button--pro">
+          <button id="proBtn" class="pricing__button pricing__button--pro">
             <span data-i18n="buttons.choosePro">Choose Pro</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
               <path
@@ -584,7 +584,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="bg-[#f7f7f7]">
+    <section id="incorporationAssistant" class="bg-[#f7f7f7]">
       <div class="features container">
         <div class="features__header">
           <div class="features__badge">
@@ -799,7 +799,7 @@
     </section>
 
     <!-- Dashboard Section -->
-    <section class="dashboard container">
+    <section id="demoDashboard" class="dashboard container">
       <div class="dashboard__header">
         <div class="dashboard__badge">
           <span class="dashboard__badge-icon"></span>
@@ -949,7 +949,7 @@
 
     <!-- Incorporation Journey Section -->
     <section class="bg-[#f7f7f7]">
-      <div class="incorporation container">
+      <div id="incorporation" class="incorporation container">
         <div class="incorporation__container">
           <div class="incorporation__content">
             <div class="incorporation__badge">
@@ -982,7 +982,7 @@
     </section>
 
     <!-- Streamline Section -->
-    <section class="streamline container">
+    <!-- <section class="streamline container">
       <div class="streamline__content">
         <div class="streamline__header">
           <div class="streamline__badge">
@@ -998,7 +998,6 @@
               <img src="/src/assets/icons/logo.svg" alt="Main feature" class="streamline__center-img">
             </div>
 
-            <!-- Top icons -->
             <div class="streamline__icon streamline__icon--1">
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                 <path
@@ -1031,7 +1030,6 @@
               </svg>
             </div>
 
-            <!-- Side icons -->
             <div class="streamline__icon streamline__icon--3">
               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37" fill="none">
                 <path
@@ -1065,7 +1063,6 @@
               </svg>
             </div>
 
-            <!-- Bottom icons -->
             <div class="streamline__icon streamline__icon--5">
               <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                 <path
@@ -1094,9 +1091,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- FAQ Section -->
-    <section class="faq container">
+    <section id="faq" class="faq container">
       <div class="faq__header">
         <div class="faq__badge">
           <span class="faq__badge-icon"></span>
@@ -1110,7 +1107,7 @@
 
       <div class="faq__content">
         <div class="faq__list">
-          <div class="faq__item active">
+          <div class="faq__item">
             <button class="faq__question">
               <span data-i18n="faq.items.q1.question">Is the digital address a real business address?</span>
               <svg class="faq__icon" viewBox="0 0 16 16" fill="currentColor">
@@ -1201,36 +1198,78 @@
 
   </main>
   <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__content">
-        <!-- Navigation Links -->
-        <div class="footer__nav">
-          <a data-i18n="footer.aboutUs" href="./about.html" class="footer__link">About Us</a>
-          <a data-i18n="footer.imprint" href="./imprint.html" class="footer__link">Imprint</a>
-          <a data-i18n="footer.privacy" href="./privacy.html" class="footer__link">Privacy Policy</a>
-          <a data-i18n="footer.terms" href="./terms.html" class="footer__link">Terms and Conditions</a>
+    <div class="container">
+      <div class="footer__top">
+        <!-- Company Info -->
+        <div class="footer__company">
+          <a href="/" class="nav__logo">
+            <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
+            <span data-i18n="nav.logo" class="footer__logo">eCompany</span>
+          </a>
+          <p class="footer__company-desc" data-i18n="footer.companyDesc">
+            Geschäftsklarheit, operative Exzellenz und Transformationsunterstützung für Führungskräfte, die bereit sind,
+            zielgerichtet zu wachsen.
+          </p>
         </div>
 
-        <!-- Divider Line -->
-        <div class="footer__divider"></div>
-
-        <div class="footer_logo-copyright">
-          <!-- Logo Section -->
-          <div class="footer__brand">
-            <a href="/" class="footer__logo">
-              <img src="/src/assets/icons/logo.svg" alt="eCompany Logo" class="footer__logo-img">
-              <span data-i18n="nav.logo" class="footer__logo-text">eCompany</span>
-            </a>
+        <!-- Navigation Links -->
+        <div class="footer__section">
+          <h3 class="footer__section-title" data-i18n="footer.companyTitle">Unternehmen</h3>
+          <div class="footer__links">
+            <a href="/" class="footer__link" data-i18n="footer.home">Startseite</a>
+            <a href="/about.html" class="footer__link" data-i18n="footer.about">About</a>
+            <a href="/contact.html" class="footer__link" data-i18n="footer.contact">Kontakt</a>
           </div>
-          <!-- Copyright -->
-          <div class="footer__copyright">
-            <span data-i18n="footer.copyright">© 2024 ecompany. All rights reserved.</span>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer__section">
+          <h3 class="footer__section-title" data-i18n="footer.contactTitle">Kontaktieren Sie uns</h3>
+          <div class="footer__contact-info">
+            <div class="footer__contact-item">
+              <p class="footer__address">
+                HPMA Consulting UG,<br>
+                Stresemannsr. 23, 10963 Berlin
+              </p>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label" data-i18n="footer.emailLabel">Email:</span>
+              <a href="mailto:info@hpma-consulting.de" class="footer__contact-value">
+                info@hpma-consulting.de
+              </a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label" data-i18n="footer.phoneLabel">Phone:</span>
+              <a href="tel:+491791050948" class="footer__contact-value">
+                +49 179 1050948
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer__section">
+          <h3 class="footer__section-title" data-i18n="footer.socialLinks">Soziale Medien</h3>
+          <div class="footer__social-links">
+            <a href="#" class="footer__social-link" data-i18n="footer.facebook">Facebook</a>
+            <a href="#" class="footer__social-link" data-i18n="footer.twitter">Twitter</a>
+            <a href="#" class="footer__social-link" data-i18n="footer.linkedin">Linkedin</a>
           </div>
         </div>
       </div>
     </div>
-  </footer>
 
+    <!-- Footer Bottom -->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-content">
+          <a href="/privacy.html" class="footer__bottom-link" data-i18n="footer.privacy">Datenschutzrichtlinie</a>
+          <a href="/terms.html" class="footer__bottom-link" data-i18n="footer.terms">AGB</a>
+          <a href="/imprint.html" class="footer__bottom-link" data-i18n="footer.imprint">Imprint</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- JavaScript Modules -->
 </body>
 

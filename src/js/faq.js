@@ -16,11 +16,10 @@ class FAQ {
         const faqItems = document.querySelectorAll('.faq__item');
 
         faqItems.forEach(item => {
-            const question = item.querySelector('.faq__question');
             const answer = item.querySelector('.faq__answer');
 
-            if (question && answer) {
-                question.addEventListener('click', () => {
+            if (answer) {
+                item.addEventListener('click', () => {
                     // Close all other FAQ items
                     faqItems.forEach(otherItem => {
                         if (otherItem !== item) {

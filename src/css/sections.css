@@ -2,6 +2,10 @@
    SECTIONS STYLES
    ============================================ */
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Join Team Section */
 .join-team {
     background-color: white;
@@ -2037,7 +2041,8 @@
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    /* gap: 12px; */
+    cursor: pointer;
     padding: 16px 20px;
 }
 
@@ -2061,7 +2066,7 @@
     transition: all 0.3s ease;
 }
 
-.faq__question:hover {
+.faq__item:hover .faq__question {
     color: #7A77FF;
 }
 
@@ -2076,6 +2081,7 @@
 .faq__item.active .faq__icon {
     transform: rotate(180deg);
     color: #7A77FF;
+    /* Removed rotation to keep arrow pointing down */
 }
 
 .faq__answer {
@@ -2353,7 +2359,7 @@
 }
 
 .special-paragraph p {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 .privacy-section ul {
@@ -3024,7 +3030,8 @@
 
 /* Modal CSS - main.css faylına əlavə edin */
 .modal {
-    display: none; /* BUNU ƏLAVƏ EDİN */
+    display: none;
+    /* BUNU ƏLAVƏ EDİN */
     position: fixed;
     z-index: 1000;
     left: 0;
