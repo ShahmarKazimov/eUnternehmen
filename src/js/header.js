@@ -98,4 +98,28 @@ if (typeof module !== 'undefined' && module.exports) {
     window.Header = Header;
 }
 
+const targetSections = document.querySelectorAll('#pricing, #incorporation');
+const nav = document.querySelector('#nav');
+
+window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY + 100;
+    let isInsideSection = false;
+
+    targetSections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+            isInsideSection = true;
+        }
+    });
+
+    if (isInsideSection) {
+        nav.style.background = '#fbfbfb';
+    } else {
+        nav.style.background = '';
+    }
+});
+
+
 export default Header;

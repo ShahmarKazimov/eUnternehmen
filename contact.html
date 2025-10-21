@@ -13,7 +13,7 @@
 <body>
     <div class="bg-[#F9FAFB] text-[#0D0D12]">
         <header>
-            <nav class="nav">
+            <nav id="nav" class="nav">
                 <!-- Logo -->
                 <a href="/" class="nav__logo">
                     <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
@@ -23,12 +23,12 @@
                 <!-- Desktop Menu -->
                 <ul class="nav__menu">
                     <li><a href="/" class="nav__link" data-i18n="nav.home">Home</a></li>
-                    <li><a href="/" class="nav__link" data-i18n="nav.features">Features</a></li>
-                    <li><a href="/" class="nav__link" data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
-                    </li>
-                    <li><a href="/" class="nav__link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
-                    <li><a href="/" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
-                    <li><a href="/" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="/index.html#pricing" class="nav__link" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="/index.html#incorporationAssistant" class="nav__link"
+                            data-i18n="nav.incorporationAssistant">Incorporation Assistant</a></li>
+                    <li><a href="/index.html#demoDashboard" class="nav__link" data-i18n="nav.demoDashboard">Demo
+                            Dashboard</a></li>
+                    <li><a href="/index.html#faq" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
                 </ul>
 
 
@@ -86,13 +86,15 @@
                 <div class="nav__mobile-menu" id="mobile-menu">
                     <ul class="nav__mobile-links">
                         <li><a href="/" class="nav__mobile-link" data-i18n="nav.home">Home</a></li>
-                        <li><a href="/" class="nav__mobile-link" data-i18n="nav.features">Features</a></li>
-                        <li><a href="/" class="nav__mobile-link" data-i18n="nav.incorporationAssistant">Incorporation
-                                Assistant</a>
+                        <li><a href="/index.html#pricing" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a>
                         </li>
-                        <li><a href="/" class="nav__mobile-link" data-i18n="nav.demoDashboard">Demo Dashboard</a></li>
-                        <li><a href="/" class="nav__mobile-link" data-i18n="nav.pricing">Pricing</a></li>
-                        <li><a href="/" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
+                        <li><a href="/index.html#incorporationAssistant" class="nav__mobile-link"
+                                data-i18n="nav.incorporationAssistant">Incorporation Assistant</a>
+                        </li>
+                        <li><a href="/index.html#demoDashboard" class="nav__mobile-link"
+                                data-i18n="nav.demoDashboard">Demo
+                                Dashboard</a></li>
+                        <li><a href="/index.html#faq" class="nav__mobile-link" data-i18n="nav.faq">FAQ</a></li>
                     </ul>
 
                     <!-- Mobile Actions - Hamburger menunun içində -->
@@ -225,6 +227,14 @@
                         <h2 data-i18n="contact.accountDetails.title" class="signup-form__section-title">Account Details
                         </h2>
                         <div class="signup-form__divider"></div>
+                        <div class="signup-form__field">
+                            <label data-i18n="contact.accountDetails.planLabel" for="plan" class="signup-form__label">Choose your plan:</label>
+                            <select id="plan" name="plan" class="signup-form__select">
+                                <option value="" disabled selected>Select a plan</option>
+                                <option value="Starter">Starter</option>
+                                <option value="Pro">Pro</option>
+                            </select>
+                        </div>
 
                         <div class="signup-form__field">
                             <label data-i18n="contact.accountDetails.emailLabel" for="email" class="signup-form__label">
@@ -248,7 +258,7 @@
 
                     <!-- Personal Details Section -->
                     <div class="signup-form__section">
-                        <h2 class="signup-form__section-title">Personal Details</h2>
+                        <h2 data-i18n="contact.personalDetails" class="signup-form__section-title">Personal Details</h2>
                         <div class="signup-form__divider"></div>
 
                         <div class="signup-form__field">
@@ -306,7 +316,7 @@
                             </label>
                             <select id="city" name="city" required class="signup-form__select">
                                 <option data-i18n="contact.accountDetails.selectCity" value="">Select city</option>
-                                 <option value="United States">New York</option>
+                                <option value="United States">New York</option>
                                 <option value="United Kingdom">London</option>
                                 <option value="Azerbaijan">Baku</option>
                                 <option value="France">Paris</option>
@@ -385,31 +395,76 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="footer__container container">
-                <div class="footer__content">
-                    <!-- Navigation Links -->
-                    <div class="footer__nav">
-                        <a data-i18n="footer.aboutUs" href="./about.html" class="footer__link">About Us</a>
-                        <a data-i18n="footer.imprint" href="./imprint.html" class="footer__link">Imprint</a>
-                        <a data-i18n="footer.privacy" href="./privacy.html" class="footer__link">Privacy Policy</a>
-                        <a data-i18n="footer.terms" href="./terms.html" class="footer__link">Terms and Conditions</a>
+            <div class="container">
+                <div class="footer__top">
+                    <!-- Company Info -->
+                    <div class="footer__company">
+                        <a href="/" class="nav__logo">
+                            <img src="/src/assets/icons/logo.svg" alt="eCompany Logo">
+                            <span data-i18n="nav.logo" class="footer__logo">eCompany</span>
+                        </a>
+                        <p class="footer__company-desc" data-i18n="footer.companyDesc">
+                            Geschäftsklarheit, operative Exzellenz und Transformationsunterstützung für Führungskräfte,
+                            die bereit sind,
+                            zielgerichtet zu wachsen.
+                        </p>
                     </div>
 
-                    <!-- Divider Line -->
-                    <div class="footer__divider"></div>
+                    <!-- Navigation Links -->
+                    <div class="footer__section">
+                        <h3 class="footer__section-title" data-i18n="footer.companyTitle">Unternehmen</h3>
+                        <div class="footer__links">
+                            <a href="/" class="footer__link" data-i18n="footer.home">Startseite</a>
+                            <a href="/about.html" class="footer__link" data-i18n="footer.about">Service</a>
+                            <a href="/contact.html" class="footer__link" data-i18n="footer.contact">Kontakt</a>
+                        </div>
+                    </div>
 
-                    <div class="footer_logo-copyright">
-                        <!-- Logo Section -->
-                        <div class="footer__brand">
-                            <a href="/" class="footer__logo">
-                                <img src="/src/assets/icons/logo.svg" alt="eCompany Logo" class="footer__logo-img">
-                                <span data-i18n="nav.logo" class="footer__logo-text">eCompany</span>
-                            </a>
+                    <!-- Contact Info -->
+                    <div class="footer__section">
+                        <h3 class="footer__section-title" data-i18n="footer.contactTitle">Kontaktieren Sie uns</h3>
+                        <div class="footer__contact-info">
+                            <div class="footer__contact-item">
+                                <p class="footer__address">
+                                    HPMA Consulting UG,<br>
+                                    Stresemannsr. 23, 10963 Berlin
+                                </p>
+                            </div>
+                            <div class="footer__contact-item">
+                                <span class="footer__contact-label" data-i18n="footer.emailLabel">Email:</span>
+                                <a href="mailto:info@hpma-consulting.de" class="footer__contact-value">
+                                    info@hpma-consulting.de
+                                </a>
+                            </div>
+                            <div class="footer__contact-item">
+                                <span class="footer__contact-label" data-i18n="footer.phoneLabel">Phone:</span>
+                                <a href="tel:+491791050948" class="footer__contact-value">
+                                    +49 179 1050948
+                                </a>
+                            </div>
                         </div>
-                        <!-- Copyright -->
-                        <div class="footer__copyright">
-                            <span data-i18n="footer.copyright">© 2024 ecompany. All rights reserved.</span>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="footer__section">
+                        <h3 class="footer__section-title" data-i18n="footer.socialLinks">Soziale Medien</h3>
+                        <div class="footer__social-links">
+                            <a href="#" class="footer__social-link" data-i18n="footer.facebook">Facebook</a>
+                            <a href="#" class="footer__social-link" data-i18n="footer.twitter">Twitter</a>
+                            <a href="#" class="footer__social-link" data-i18n="footer.linkedin">Linkedin</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-content">
+                        <a href="/privacy.html" class="footer__bottom-link"
+                            data-i18n="footer.privacy">Datenschutzrichtlinie</a>
+                        <a href="/terms.html" class="footer__bottom-link" data-i18n="footer.terms">AGB</a>
+                        <a href="/imprint.html" class="footer__bottom-link" data-i18n="footer.imprint">Imprint</a>
                     </div>
                 </div>
             </div>
@@ -417,7 +472,7 @@
     </div>
 
     <!-- JavaScript Modules -->
-    <script src="/src/js/email.js"></script>
+    <script type="module" src="/src/js/email.js"></script>
     <script type="module" src="/src/js/main.js"></script>
 </body>
 

@@ -359,26 +359,6 @@
    DESKTOP STYLES (min-width: 768px)
    ============================================ */
 @media (min-width: 768px) {
-    .nav__menu {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .lang-selector__trigger {
-        display: flex;
-    }
-
-    .nav__mobile-menu {
-        display: none !important;
-    }
-
-    .nav__mobile-menu.active {
-        display: none !important;
-    }
-
     .pricing__cards--desktop {
         display: flex;
     }
@@ -400,14 +380,11 @@
    TEAM SECTION RESPONSIVE
    ============================================ */
 
-
 @media (max-width: 768px) {
     .team-section__slide {
         width: calc(50% - 20px);
     }
-}
 
-@media (max-width: 768px) {
     .team-section__slide {
         width: calc(100% - 20px);
         margin: 0 10px;
@@ -542,10 +519,6 @@
         line-height: 24px;
     }
 
-}
-
-/* Tablet Styles */
-@media screen and (max-width: 768px) {
 
     /* ===== GLOBAL ===== */
     .container {
@@ -553,38 +526,9 @@
         padding: 0 16px;
     }
 
-    /* ===== HEADER ===== */
-    header {
-        top: 11px;
-        padding: 0 16px;
-
-    }
-
     main {
         padding-top: 100px;
     }
-
-    .nav {
-        flex-wrap: wrap;
-        padding: 16px;
-        border: 0.385px solid #DBDAFF;
-        border-radius: 4.615px;
-    }
-
-    .nav__actions .lang-selector,
-    .nav__actions .btn--mobile--nav {
-        display: none;
-    }
-
-    /* Language selector mobile adjustments */
-    .lang-selector__menu {
-        left: 0;
-        right: 0;
-        min-width: 80px;
-        top: auto;
-        bottom: calc(100% + 8px);
-    }
-
 
 
     /* ===== HERO SECTION ===== */

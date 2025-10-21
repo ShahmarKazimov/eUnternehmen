@@ -10,6 +10,7 @@ class Homepage {
     init() {
         this.initVideoPlayer();
         this.initPricingSlider();
+        this.initPricingPlanButtons();
     }
 
     // Video play functionality
@@ -124,6 +125,18 @@ class Homepage {
                 isDragging = false;
             });
         }
+    }
+
+    initPricingPlanButtons() {
+        document.getElementById('starterBtn').addEventListener('click', () => {
+            sessionStorage.setItem('selectedPlan', 'Starter');
+            window.location.href = '/contact.html'; 
+        });
+
+        document.getElementById('proBtn').addEventListener('click', () => {
+            sessionStorage.setItem('selectedPlan', 'Pro');
+            window.location.href = '/contact.html';
+        });
     }
 
     // Additional Services Slider
