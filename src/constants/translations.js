@@ -125,11 +125,11 @@ export const translations = {
             widgets: {
                 inbox: {
                     title: "Posteingang",
-                    description: "Ihr Posteingang, Fristen, Aufgaben, Speicher und Weiterleitung: alles nahtlos an einem Ort organisiert für maximale Produktivität."
+                    description: "Erhalten Sie Ihre Firmenpost digital über unsere Plattform und immer auch zusätzlich per Mail. So geht nichts mehr verloren."
                 },
                 deadlines: {
                     title: "Fristen",
-                    description: "Ihr Posteingang, Fristen, Aufgaben, Speicher und Weiterleitung: alles nahtlos an einem Ort organisiert für maximale Produktivität."
+                    description: "Das KI-Fristentool erkennt aus der eingehenden Post Fristen, die für Sie wichtig sind. Die Fristen werden automatisch in einen Kalendar für Sie eingetragen und Sie erhalten kurz vor Fristablauf eine kleine Erinnerungsmail.*(Unser Fristenkalender unterstützt Sie bestmöglich – dennoch bleibt die eigenständige Kontrolle und Einhaltung aller Fristen in Ihrer Verantwortung. Eine Gewähr für die Richtigkeit der Erinnerungen übernehmen wir nicht.)."
                 },
                 forwarding: {
                     title: "Physische Weiterleitung",
@@ -137,17 +137,17 @@ export const translations = {
                 },
                 storage: {
                     title: "Speicher",
-                    description: "DSGVO-konforme Datenaufbewahrung mit sicherer Speicherung und automatisierten Richtlinien."
+                    description: "DSGVO-konforme Datenspeicherung mit sicherem Speicher und automatisierten Richtlinien."
                 },
                 todos: {
-                    title: "Aufgaben",
-                    description: "Teamfähig mit intelligenten Erinnerungen, um alle auf Kurs zu halten."
+                    title: "To‑Dos",
+                    description: "Team-fähig mit intelligenten Erinnerungen, damit alle auf Kurs bleiben."
                 }
             }
         },
         incorporation: {
             badge: "Starten Sie Ihre Unternehmensreise",
-            title: "Starten Sie Ihre Unternehmensgründungsreise",
+            title: "Starten Sie Ihre Unternehmensgründung",
             description: "Durchlaufen Sie einen einfachen geführten Prozess zur Gründung Ihres Unternehmens – von der Wahl Ihrer Rechtsform und der Definition Ihres Unternehmenszwecks bis zur Finalisierung Ihrer eingetragenen Adresse. Wir kümmern uns um die Details, damit Sie sich auf den Aufbau Ihres Unternehmens konzentrieren können."
         },
         streamline: {
@@ -626,8 +626,8 @@ export const translations = {
             startDate: "Startdatum",
             startQuestion: "Wann möchten Sie beginnen?<span class=\"signup-form__required\">*</span>",
             agreementText: "Ich möchte zukünftig E-Mail-Newsletter erhalten.",
-            acceptanceTextTerms: `Ich akzeptiere die CoWoS Berlin<a class="signup-form__link" href="/terms">Nutzungsbedingungen</a>`,
-            acceptanceTextPrivacy: `Ich akzeptiere die CoWoS Berlin<a class="signup-form__link" href="/privacy">Datenschutzbestimmungen</a>`,
+            acceptanceTextTerms: `Ich akzeptiere die <a class="signup-form__link" href="/terms">Nutzungsbedingungen</a>`,
+            acceptanceTextPrivacy: `Ich akzeptiere die <a class="signup-form__link" href="/privacy">Datenschutzbestimmungen</a>`,
             signUpButton: "Registrieren",
         },
         footer: {

@@ -128,15 +128,22 @@ class Homepage {
     }
 
     initPricingPlanButtons() {
-        document.getElementById('starterBtn').addEventListener('click', () => {
-            sessionStorage.setItem('selectedPlan', 'Starter');
-            window.location.href = '/contact.html'; 
-        });
+        const starterBtn = document.getElementById('starterBtn');
+        const proBtn = document.getElementById('proBtn');
 
-        document.getElementById('proBtn').addEventListener('click', () => {
-            sessionStorage.setItem('selectedPlan', 'Pro');
-            window.location.href = '/contact.html';
-        });
+        if (starterBtn) {
+            starterBtn.addEventListener('click', () => {
+                sessionStorage.setItem('selectedPlan', 'Starter');
+                window.location.href = '/contact.html'; 
+            });
+        }
+
+        if (proBtn) {
+            proBtn.addEventListener('click', () => {
+                sessionStorage.setItem('selectedPlan', 'Pro');
+                window.location.href = '/contact.html';
+            });
+        }
     }
 
     // Additional Services Slider

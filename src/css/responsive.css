@@ -141,9 +141,25 @@
         justify-content: center;
     }
 
-    /* Dashboard */
+    .dashboard__forwarding-content {
+        padding: 0 20px !important;
+    }
+
+    .dashboard__inbox-items,
+    .dashboard__deadline-items {
+        padding: 0 9px !important;
+    }
+
     .dashboard__widget--inbox,
     .dashboard__widget--deadlines {
+        max-height: max-content;
+        display: flex;
+    }
+
+    .dashboard__widget--forwarding,
+    .dashboard__widget--storage,
+    .dashboard__widget--todos {
+        max-height: max-content;
         overflow: visible;
     }
 
@@ -999,7 +1015,7 @@
     }
 
     .incorporation__title {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .incorporation__description {
