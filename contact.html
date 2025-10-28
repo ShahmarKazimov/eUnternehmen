@@ -189,33 +189,6 @@
                                 AG, SE, as well as associations and societies, as well as sole proprietors and solo
                                 entrepreneurs. Mail service with delivery once a week.
                             </p>
-
-                            <div class="price-card__info-row">
-                                <a data-i18n="contact.linkText" href="/terms.html" class="price-card__link">Terms and
-                                    Conditions »</a>
-                            </div>
-                        </div>
-
-                        <div class="price-card__divider"></div>
-
-                        <div class="price-card__dates">
-                            <div class="price-card__date-item">
-                                <p data-i18n="contact.plan.dateLabel" class="price-card__date-title">Plan start date:
-                                </p>
-                                <p class="price-card__date-value">09 Sep</p>
-                            </div>
-
-                            <div class="price-card__date-item">
-                                <p data-i18n="contact.plan.amountLabel" class="price-card__date-title">Prorated amount
-                                    for September:</p>
-                                <p class="price-card__date-value">25.67 EUR</p>
-                            </div>
-                        </div>
-
-                        <div class="price-card__details" style="padding-bottom: 24px;">
-                            <p data-i18n="contact.plan.membershipLabel" class="price-card__date-title">Regular
-                                membership due:</p>
-                            <p class="price-card__date-value">01 Oct 2025</p>
                         </div>
                     </div>
                 </div>
@@ -228,31 +201,41 @@
                         </h2>
                         <div class="signup-form__divider"></div>
                         <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.planLabel" for="plan" class="signup-form__label">Choose your plan:</label>
-                            <select id="plan" name="plan" class="signup-form__select">
-                                <option value="" disabled selected>Select a plan</option>
-                                <option value="Starter">Starter</option>
-                                <option value="Pro">Pro</option>
-                            </select>
-                        </div>
-
-                        <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.emailLabel" for="email" class="signup-form__label">
-                                Email <span class="signup-form__required">*</span>
-                            </label>
-                            <input type="email" id="email" name="email" class="signup-form__input" required>
-                        </div>
-
-                        <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.passwordLabel" for="password"
-                                class="signup-form__label">
-                                Password <span class="signup-form__required">*</span>
-                            </label>
-                            <input type="password" id="password" name="password" class="signup-form__input" required>
-                            <p data-i18n="contact.forgotPassword" class="signup-form__helper-text">
-                                If you don't have an account, enter a new password.
-                                <a href="#" class="signup-form__link">Forgot password?</a>
-                            </p>
+                            <label data-i18n="contact.accountDetails.planLabel" for="plan"
+                                class="signup-form__label">Your selected plan:</label>
+                            <div class="plan-selector">
+                                <div class="plan-selector__options">
+                                    <div class="plan-option" data-value="Starter">
+                                        <div class="plan-option__content">
+                                            <h3 class="plan-option__name">Starter</h3>
+                                            <p class="plan-option__price">€25/month</p>
+                                        </div>
+                                        <div class="plan-option__check">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.25 6.25L8.125 14.375L3.75 10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="plan-option" data-value="Pro">
+                                        <div class="plan-option__content">
+                                            <h3 class="plan-option__name">Pro</h3>
+                                            <p class="plan-option__price">€35/month</p>
+                                        </div>
+                                        <div class="plan-option__check">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.25 6.25L8.125 14.375L3.75 10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <select id="plan" name="plan" class="signup-form__select hidden">
+                                    <option value="" disabled selected>Select a plan</option>
+                                    <option value="Starter">Starter</option>
+                                    <option value="Pro">Pro</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -286,42 +269,15 @@
                         <div class="signup-form__field">
                             <label data-i18n="contact.accountDetails.countryLabel" for="country"
                                 class="signup-form__label">Country</label>
-                            <select id="country" name="country" class="signup-form__select">
-                                <option data-i18n="contact.accountDetails.selectCountry" value="">Select country
-                                </option>
-                                <option value="United States">United States</option>
-                                <option value="United Kingdom">United Kingdom</option>
-                                <option value="Azerbaijan">Germany</option>
-                                <option value="France">France</option>
-                                <option value="Azerbaijan">Azerbaijan</option>
-                            </select>
-                        </div>
-
-                        <div class="signup-form__field">
-                            <label data-i18n="contact.accountDetails.stateLabel" for="state"
-                                class="signup-form__label">State</label>
-                            <select id="state" name="state" class="signup-form__select">
-                                <option data-i18n="contact.accountDetails.selectState" value="">Select state</option>
-                                <option value="United States">United States</option>
-                                <option value="United Kingdom">United Kingdom</option>
-                                <option value="Azerbaijan">Germany</option>
-                                <option value="France">France</option>
-                                <option value="Azerbaijan">Azerbaijan</option>
-                            </select>
+                            <input type="text" id="country" name="country" class="signup-form__input" required/>
                         </div>
 
                         <div class="signup-form__field">
                             <label data-i18n="contact.accountDetails.cityLabel" for="city" class="signup-form__label">
                                 City <span class="signup-form__required">*</span>
                             </label>
-                            <select id="city" name="city" required class="signup-form__select">
-                                <option data-i18n="contact.accountDetails.selectCity" value="">Select city</option>
-                                <option value="United States">New York</option>
-                                <option value="United Kingdom">London</option>
-                                <option value="Azerbaijan">Baku</option>
-                                <option value="France">Paris</option>
-                                <option value="Azerbaijan">Ganja</option>
-                            </select>
+                            <input type="text" id="city" name="city" class="signup-form__input"
+                                required>
                         </div>
 
                         <div class="signup-form__field">
@@ -339,11 +295,11 @@
                             <input type="tel" id="phone" name="phone" class="signup-form__input" required>
                         </div>
 
-                        <div class="signup-form__field">
+                        <!-- <div class="signup-form__field">
                             <label data-i18n="contact.accountDetails.ustIDLabel" for="ustid"
                                 class="signup-form__label">USt-ID: DE339807129</label>
                             <input type="text" id="ustid" name="ustid" class="signup-form__input">
-                        </div>
+                        </div> -->
                     </div>
 
                     <!-- Start Date Section -->
@@ -426,8 +382,7 @@
                         <div class="footer__contact-info">
                             <div class="footer__contact-item">
                                 <p class="footer__address">
-                                    HPMA Consulting UG,<br>
-                                    Stresemannsr. 23, 10963 Berlin
+                                    HPMA Consulting UG
                                 </p>
                             </div>
                             <div class="footer__contact-item">

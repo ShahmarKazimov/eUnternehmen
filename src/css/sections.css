@@ -289,6 +289,103 @@ html {
     cursor: pointer;
 }
 
+/* Plan Selector Styles */
+.plan-selector {
+    position: relative;
+}
+
+.plan-selector__options {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+.plan-option {
+    flex: 1;
+    background: #FFFFFF;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.plan-option:hover {
+    border-color: #7A77FF;
+    box-shadow: 0 4px 12px rgba(122, 119, 255, 0.1);
+}
+
+.plan-option.selected {
+    border-color: #7A77FF;
+    background: linear-gradient(135deg, rgba(122, 119, 255, 0.1) 0%, rgba(122, 119, 255, 0.05) 100%);
+    box-shadow: 0 4px 16px rgba(122, 119, 255, 0.2);
+}
+
+.plan-option__content {
+    margin-bottom: 0;
+}
+
+.plan-option__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0D0D12;
+    margin: 0 0 8px 0;
+}
+
+.plan-option__price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7A77FF;
+    margin: 0;
+}
+
+.plan-option__check {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    background: #7A77FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.plan-option.selected .plan-option__check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.plan-option__check svg {
+    color: white;
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 640px) {
+    .plan-selector__options {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .plan-option {
+        padding: 16px;
+    }
+
+    .plan-option__name {
+        font-size: 16px;
+    }
+
+    .plan-option__price {
+        font-size: 14px;
+    }
+}
+
 /* Price Card Styles */
 .price-card {
     flex: 1 1 0;
@@ -351,7 +448,7 @@ html {
 }
 
 .price-card__details {
-    padding: 0 24px;
+    padding: 0 24px 24px 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -435,7 +532,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--font-size-22, 22px);
+    gap: 22px;
     align-self: stretch;
 }
 
@@ -512,7 +609,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--opacity-20, 20px);
+    gap: 20px;
     align-self: stretch;
 }
 
@@ -576,7 +673,7 @@ html {
     bottom: -20px;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 80px;
     background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8), white);
     pointer-events: none;
     z-index: 1;
@@ -1666,11 +1763,23 @@ html {
 }
 
 .dashboard__widget--inbox,
-.dashboard__widget--deadlines {
+.dashboard__widget--deadlines,
+.dashboard__widget--forwarding,
+.dashboard__widget--storage,
+.dashboard__widget--todos {
     max-height: 400px;
     display: flex;
     overflow: hidden;
 }
+
+.dashboard__inbox-items {
+    padding: 0 !important;
+}
+
+.dashboard__widget--forwarding {
+    padding: 24px 36px 0 36px;
+}
+
 
 .dashboard__widget--deadlines {
     grid-column: 1 / -1;
@@ -1680,7 +1789,6 @@ html {
     display: flex;
     align-items: start;
     gap: 12px;
-    padding: 0 16px;
     padding-bottom: 24px;
     width: 100%;
     align-self: stretch;
@@ -1711,7 +1819,7 @@ html {
 
 .dashboard__widget-description {
     color: #6B7280;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     font-style: normal;
@@ -1727,7 +1835,7 @@ html {
 .dashboard__forwarding-content {
     width: 100%;
     overflow: hidden;
-    height: 240px;
+    height: 300px;
 }
 
 /* Deadlines Widget */
@@ -2136,8 +2244,8 @@ html {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    padding: 24px 0;
     flex: 1;
+    max-width: 578px;
 }
 
 .incorporation__badge {
@@ -2649,13 +2757,14 @@ html {
 }
 
 .imprint-section ul li {
+    font-size: 16px;
     color: #686E7E;
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
     list-style: disc;
 }
+
 
 /* ============================================
    ABOUT SECTION

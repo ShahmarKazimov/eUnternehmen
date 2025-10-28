@@ -1,4 +1,3 @@
-
 (function () {
   emailjs.init("q9B9LMYmWEzkuOdOc");
 })();
@@ -41,22 +40,74 @@ document.addEventListener('DOMContentLoaded', function () {
       window.location.href = '/contact.html';
     });
   });
-});
 
-const selectedPlan = sessionStorage.getItem('selectedPlan');
+  // Initialize plan selector
+  initializePlanSelector();
 
-if (selectedPlan) {
+  // Move the select logic inside DOMContentLoaded to ensure the element exists
   const select = document.getElementById('plan');
-  select.value = selectedPlan;
-} else {
-  select.value = "";
-}
 
-document.getElementById('plan').addEventListener('change', function () {
-  const selectedValue = this.value;
-  sessionStorage.setItem('selectedPlan', selectedValue);
+  if (select) {
+    const selectedPlan = sessionStorage.getItem('selectedPlan');
+
+    if (selectedPlan) {
+      select.value = selectedPlan;
+    } else {
+      select.value = "";
+    }
+
+    select.addEventListener('change', function () {
+      const selectedValue = this.value;
+      sessionStorage.setItem('selectedPlan', selectedValue);
+    });
+  }
 });
 
-  window.addEventListener('beforeunload', () => {
-    sessionStorage.removeItem('selectedPlan');
+// Plan selector functionality
+function initializePlanSelector() {
+  const planOptions = document.querySelectorAll('.plan-option');
+  const hiddenSelect = document.getElementById('plan');
+
+  if (planOptions.length === 0 || !hiddenSelect) return;
+
+  // Get selected plan from storage and set initial state
+  const selectedPlan = sessionStorage.getItem('selectedPlan');
+
+  if (selectedPlan) {
+    planOptions.forEach(option => {
+      const value = option.getAttribute('data-value');
+      if (value === selectedPlan) {
+        option.classList.add('selected');
+        hiddenSelect.value = selectedPlan;
+      } else {
+        option.classList.remove('selected');
+      }
+    });
+  }
+
+  // Add click handlers to plan options
+  planOptions.forEach(option => {
+    option.addEventListener('click', function () {
+      const value = this.getAttribute('data-value');
+
+      // Remove selected class from all options
+      planOptions.forEach(opt => opt.classList.remove('selected'));
+
+      // Add selected class to clicked option
+      this.classList.add('selected');
+
+      // Update hidden select value
+      hiddenSelect.value = value;
+
+      // Save to session storage
+      sessionStorage.setItem('selectedPlan', value);
+
+      // Trigger change event on hidden select
+      hiddenSelect.dispatchEvent(new Event('change'));
+    });
   });
+};
+
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('selectedPlan');
+});
