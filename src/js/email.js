@@ -5,7 +5,45 @@
 document.getElementById("signupForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_nlsgtni", "template_bffyn8c", this)
+  // Collect form data manually
+  const formData = new FormData(this);
+  const emailData = {};
+
+  // Get all form fields
+  formData.forEach((value, key) => {
+    emailData[key] = value;
+  });
+
+  // Get plan information from sessionStorage
+  const selectedPlan = sessionStorage.getItem('selectedPlan');
+  const selectedPlanName = sessionStorage.getItem('selectedPlanName');
+  const selectedPlanPrice = sessionStorage.getItem('selectedPlanPrice');
+
+  // Fallback to form data if sessionStorage is empty
+  let planName = selectedPlanName;
+  let planPrice = selectedPlanPrice;
+
+  if (!planName && emailData.plan) {
+    planName = emailData.plan;
+    // Set default prices based on plan
+    if (emailData.plan === 'Starter') {
+      planPrice = '69.90';
+    } else if (emailData.plan === 'Pro') {
+      planPrice = '79.90';
+    }
+  }
+
+  // Format plan as expected by template: "PlanName: €XX.XX"
+  if (planName && planPrice) {
+    emailData['planName:planPrice'] = `${planName}: €${planPrice}`;
+  } else if (planName) {
+    emailData['planName:planPrice'] = planName;
+  } else {
+    emailData['planName:planPrice'] = 'Not specified';
+  }
+
+
+  emailjs.send("service_nlsgtni", "template_bffyn8c", emailData)
     .then(() => {
       alert("Message sent successfully!");
       this.reset();
