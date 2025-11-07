@@ -98,7 +98,7 @@ if (typeof module !== 'undefined' && module.exports) {
     window.Header = Header;
 }
 
-const targetSections = document.querySelectorAll('#pricing, #incorporation');
+const targetSections = document.querySelectorAll('#pricing, #incorporation,#footer');
 const nav = document.querySelector('#nav');
 
 window.addEventListener('scroll', function () {

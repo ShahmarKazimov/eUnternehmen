@@ -32,8 +32,8 @@
 
 .btn--primary:hover {
     background: #6865ee;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(122, 119, 255, 0.4);
+    /* transform: translateY(-2px); */
+    /* box-shadow: 0 8px 25px rgba(122, 119, 255, 0.4); */
 }
 
 .btn--outline {
