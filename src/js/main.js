@@ -1,4 +1,4 @@
-import TeamSlider from './team.js';
+import TeamDisplay from './team.js';
 import Header from './header.js';
 import FAQ from './faq.js';
 import Homepage from './homepage.js';
@@ -41,9 +41,10 @@ class App {
             if (FAQ) {
                 new FAQ();
             }
-            // Team slider functionality
-            if (TeamSlider) {
-                new TeamSlider();
+
+            // Team display functionality
+            if (TeamDisplay) {
+                new TeamDisplay();
             }
 
             if (I18n) {
@@ -51,10 +52,10 @@ class App {
             }
 
         } catch (error) {
-            console.error('❌ Error initializing components:', error);
+            console.error('Error initializing components:', error);
         }
     }
 }
 
-// Initialize the application
+// Initialize the app
 new App();
