@@ -16,11 +16,10 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
   // Get plan information from sessionStorage
   const selectedPlan = sessionStorage.getItem('selectedPlan');
-  const selectedPlanName = sessionStorage.getItem('selectedPlanName');
   const selectedPlanPrice = sessionStorage.getItem('selectedPlanPrice');
 
   // Fallback to form data if sessionStorage is empty
-  let planName = selectedPlanName;
+  let planName = selectedPlan;
   let planPrice = selectedPlanPrice;
 
   if (!planName && emailData.plan) {
@@ -62,8 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   starterButtons.forEach(function (button) {
     button.addEventListener('click', function (e) {
       e.preventDefault();
-      sessionStorage.setItem('selectedPlan', 'starter');
-      sessionStorage.setItem('selectedPlanName', 'Starter');
+      sessionStorage.setItem('selectedPlan', 'Starter');
       sessionStorage.setItem('selectedPlanPrice', '69.90');
       window.location.href = '/contact.html';
     });
@@ -72,8 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
   proButtons.forEach(function (button) {
     button.addEventListener('click', function (e) {
       e.preventDefault();
-      sessionStorage.setItem('selectedPlan', 'professional');
-      sessionStorage.setItem('selectedPlanName', 'Professional');
+      sessionStorage.setItem('selectedPlan', 'Pro');
       sessionStorage.setItem('selectedPlanPrice', '79.90');
       window.location.href = '/contact.html';
     });
@@ -81,6 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize plan selector
   initializePlanSelector();
+
+  // Update price display on page load
+  updatePriceDisplay();
 
   // Move the select logic inside DOMContentLoaded to ensure the element exists
   const select = document.getElementById('plan');
@@ -137,8 +137,18 @@ function initializePlanSelector() {
       // Update hidden select value
       hiddenSelect.value = value;
 
-      // Save to session storage
+      // Save to session storage with plan price
       sessionStorage.setItem('selectedPlan', value);
+
+      // Set plan price based on selection
+      let planPrice = '';
+      if (value === 'Starter') {
+        planPrice = '69.90';
+      } else if (value === 'Pro') {
+        planPrice = '79.90';
+      }
+      sessionStorage.setItem('selectedPlanPrice', planPrice);      // Update price display
+      updatePriceDisplay();
 
       // Trigger change event on hidden select
       hiddenSelect.dispatchEvent(new Event('change'));
@@ -146,6 +156,24 @@ function initializePlanSelector() {
   });
 };
 
-window.addEventListener('beforeunload', () => {
-  sessionStorage.removeItem('selectedPlan');
-});
+// Update price display from sessionStorage
+function updatePriceDisplay() {
+  const priceDisplay = document.getElementById('priceDisplay');
+  const priceCard = document.querySelector('.price-card__price');
+
+  if (!priceDisplay) return;
+
+  const selectedPrice = sessionStorage.getItem('selectedPlanPrice');
+
+  if (selectedPrice) {
+    priceDisplay.textContent = selectedPrice;
+    if (priceCard) {
+      priceCard.style.display = 'block';
+    }
+  } else {
+    // If no price selected, hide the entire price section
+    if (priceCard) {
+      priceCard.style.display = 'none';
+    }
+  }
+}
